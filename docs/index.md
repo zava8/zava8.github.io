@@ -1,4 +1,4 @@
-1. [android keyboard app indian languages/bhasa](http://github.com/zava8/free/tree/master/apk)
+1. [dounload n install android keyboard app](http://github.com/zava8/free/tree/master/apk)
 
 ![](./imz/aalkb.gif)
 
