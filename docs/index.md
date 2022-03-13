@@ -1,6 +1,6 @@
 ## [dounload n install android keyboard app](http://github.com/zava8/free/tree/master/apk)
 
-![](./imz/aalkb.gif)
+![](./imz/bzplotus34.jpg)
 
 -----
 
