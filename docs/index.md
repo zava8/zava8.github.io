@@ -1,7 +1,3 @@
-## velcome free softvares at github/zava8/free for :
-
--------------
-
 ## [android keyboard app indian languages/bhasa](http://github.com/zava8/free/tree/master/apk)
 
 ![](https://github.com/zava8/free/blob/master/imz/kb/aalkb.gif)
