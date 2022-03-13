@@ -1,6 +1,6 @@
 ## [android keyboard app indian languages/bhasa](http://github.com/zava8/free/tree/master/apk)
 
-![](https://github.com/zava8/free/blob/master/imz/kb/aalkb.gif)
+<img src="https://github.com/zava8/free/blob/master/imz/kb/aalkb.gif"></img>
 
 
 1. [font for indian languages/bhasa](http://github.com/zava8/free/tree/master/font)
