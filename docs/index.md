@@ -1,6 +1,7 @@
-## velcome to zava8 git repo
-
-[zbuk](./zbuk/)
+## velcome to zava8 git repo,
+<table>
+<tr><td><a href="./zbuk/">zbuk</a></td></tr>
+</table>
 
 gh-pages related urls:
 1. [editor on GitHub](https://github.com/zava8/zava8.github.io/edit/gh-pages/docs/index.md)
