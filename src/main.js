@@ -32,3 +32,18 @@ createApp(fgrm8app).mount('#fgrm8')
 
 import mkanapp from './mkan.vue'
 createApp(mkanapp).mount('#mkan')
+
+import aboutapp from './about.vue'
+createApp(aboutapp).mount('#about')
+
+import zoinapp from './zoin.vue'
+createApp(zoinapp).mount('#zoin')
+
+import shopapp from './shop.vue'
+createApp(shopapp).mount('#shop')
+
+import seoapp from './seo.vue'
+createApp(seoapp).mount('#seo')
+
+import cmsapp from './cms.vue'
+createApp(cmsapp).mount('#cms')
