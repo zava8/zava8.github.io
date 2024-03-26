@@ -24,8 +24,8 @@ createApp(ztr8app).mount('#ztr8')
 import niyuzapp from './niyuz.vue'
 createApp(niyuzapp).mount('#niyuz')
 
-import blogapp from './blog.vue'
-createApp(blogapp).mount('#blog')
+// import blogapp from './blog.vue'
+// createApp(blogapp).mount('#blog')
 
 import fgrm8app from './8fgrm.vue'
 createApp(fgrm8app).mount('#fgrm8')
@@ -33,8 +33,8 @@ createApp(fgrm8app).mount('#fgrm8')
 import mkanapp from './mkan.vue'
 createApp(mkanapp).mount('#mkan')
 
-import aboutapp from './about.vue'
-createApp(aboutapp).mount('#about')
+// import aboutapp from './about.vue'
+// createApp(aboutapp).mount('#about')
 
 import zoinapp from './zoin.vue'
 createApp(zoinapp).mount('#zoin')
@@ -45,5 +45,5 @@ createApp(shopapp).mount('#shop')
 import seoapp from './seo.vue'
 createApp(seoapp).mount('#seo')
 
-import cmsapp from './cms.vue'
-createApp(cmsapp).mount('#cms')
+/* import cmsapp from './cms.vue'
+createApp(cmsapp).mount('#cms') */
