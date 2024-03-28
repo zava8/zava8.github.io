@@ -14,8 +14,8 @@
             <td>{{ ro.id }}</td>
             <td>{{ ro.os }}</td>
             <td>{{ ro.lang }}</td>
-            <td>{{ ro.font }}</td>
-            <td><a :href="ro.insurl">install</a></td>
+            <td><a :href="ro.durl">{{ ro.durlt }}</a></td>
+            <td><a :href="ro.iurl">{{ ro.iurlt }}</a></td>
         </tr>     
     </tbody>
     </table>
@@ -25,6 +25,10 @@
 import { ref } from 'vue'
 
 const roz = ref([
-  { id: 1, os: 'लiनux', lang: "हiनदi" , font: "hin58.ttf" , insurl: ""},
+  {
+    id: 1, os: 'लiनux', lang: "हiनदi" ,
+    durlt: "डauनलoड hin58.ttf font", durl: "https://github.com/zava8/free/blob/master/font/hin58.ttf",
+    iurlt: "iनसटaलल hin58.ttf font", iurl: "",
+  },
 ])
 </script>
