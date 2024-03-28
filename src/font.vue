@@ -10,27 +10,21 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-        <th scope="row">1</th>
-        <td>अनडरoiड</td>
-        <td>हiनदi</td>
-        <td>hiन58</td>
-        <td>hiन58</td>
-        </tr>
-        <tr>
-        <th scope="row">2</th>
-        <td>अनडरoiड</td>
-        <td>हiनदi</td>
-        <td>hiन58</td>
-        <td>hiन58</td>
-        </tr>
-        <tr>
-        <th scope="row">3</th>
-        <td>अनडरoiड</td>
-        <td>हiनदi</td>
-        <td>hiन58</td>
-        <td>hiन58</td>
-        </tr>        
+        <tr v-for="ro in roz" :key="ro.id"> 
+            <td>{{ ro.id }}</td>
+            <td>{{ ro.os }}</td>
+            <td>{{ ro.lang }}</td>
+            <td>{{ ro.font }}</td>
+            <td><a :href="ro.insurl">install</a></td>
+        </tr>     
     </tbody>
     </table>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const roz = ref([
+  { id: 1, os: 'लiनux', lang: "हiनदi" , font: "hin58.ttf" , insurl: ""},
+])
+</script>
