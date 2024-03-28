@@ -61,6 +61,9 @@ function u_to_all_click() {
 				otekst.value = all_text;
 				ztrdir.value = "i_to_u8hin";
 }
+function i_to_small() {
+	itekst.value = itekst.value.toLowerCase();
+}
 function i_to_all_click() { 
 				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 				ztrdir.value = "i_to_u8hin"; doztr();
@@ -144,27 +147,44 @@ function doztr() {
             <select id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
               <option value="i_to_u8hin">i_to_हiनदi</option>
-              <option disabled>_________</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
+              <option value="i_to_all">i_to_all</option>
+              <option value="i_to_small">समaललcaसe</option>
+              <option value="u_to_all">u_to_all</option>
+              <option value="u_to_u8hin_to_i_click">u_u8hin_i</option>
+			  <option disabled>_________</option>
+              <option value="i_to_u8tmil">i_to_தமiல</option>
+              <option value="i_to_u8knrra">i_to_ಕನರರa</option>
+              <option value="i_to_u8pnz">i_to_ਪਨਜaਬi</option>
+              <option value="i_to_u8bngali">i_to_বনgaলi</option>
+              <option value="i_to_u8mlyalm">i_to_മലയaലമ</option>
+              <option value="i_to_u8odia">i_to_oଡia</option>
+              <option value="i_to_u8telugu">i_to_తeలugu</option>
+              <option value="i_to_u8guzrati">i_to_guજરaતi</option>
+			  <option disabled>_________</option>
+              <option value="u_to_u8bngali">u_to_বনgaলi</option>
+              <option value="u_to_u8pnz">u_to_ਪਨਜaਬi</option>
+              <option value="u_to_u8guzrati_click">u_to_guજરaતi</option>
+              <option value="u_to_u8odia">u_to_oଡia</option>
+              <option value="u_to_u8tmil">u_to_தமiல</option>
+              <option value="u_to_u8telugu">u_to_తeలugu</option>
+              <option value="u_to_u8knrra">u_to_ಕನರರa</option>
+              <option value="u_to_u8mlyalm">u_to_മലയaലമ</option>
             </select>
       </div>
       <div class="pcdiv">
-       <button @click="i_to_u8hin_click">i_to_हiनदi</button>
 	   <button @click="i_to_u8tmil_click">i_to_தமiல</button>
 	   <button @click="i_to_u8knrra_click">i_to_ಕನರರa</button>
 	   <button @click="i_to_u8pnz_click">i_to_ਪਨਜaਬi</button>
 	   <button @click="i_to_u8bngali_click">i_to_বনgaলi</button>
-	   <button @click="i_to_all_click">i_to_all</button>
 	   <button @click="i_to_u8hin_click">i_to_हiनदi</button>
 	   <button @click="i_to_u8mlyalm_click">i_to_മലയaലമ</button>
 	   <button @click="i_to_u8odia_click">i_to_oଡia</button>
 	   <button @click="i_to_u8telugu_click">i_to_తeలugu</button>
 	   <button @click="i_to_u8guzrati_click">i_to_guજરaતi</button>
       </div>
-      <div class="pcdiv">
-		<button @click="u_to_all_click">u_to_all</button>
-		<button @click="u_to_u8hin_click">u_to_हiनदi</button>
-		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
+      <div class="pcdiv">		
+		<button @click="u_to_u8hin_click">u_to_हiनदi</button>		
 		<button @click="u_to_u8bngali_click">u_to_বনgaলi</button>
 		<button @click="u_to_u8pnz_click">u_to_ਪਨਜaਬi</button>
 		<button @click="u_to_u8guzrati_click">u_to_guજરaતi</button>
@@ -174,6 +194,12 @@ function doztr() {
 		<button @click="u_to_u8knrra_click">u_to_ಕನರರa</button>
 		<button @click="u_to_u8mlyalm_click">u_to_മലയaലമ</button>
       </div>
+	  <div class="pcdiv">
+		<button @click="i_to_all_click">i_to_all</button>
+		<button @click="i_to_small">समaललcaसe</button>
+		<button @click="u_to_all_click">u_to_all</button>
+		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
+	  </div>
       <div>
             <p>{{ otekst }}</p>
       </div>
