@@ -201,7 +201,7 @@ function doztr() {
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
 	  </div>
       <div>
-            <p>{{ otekst }}</p>
+            <pre>{{ otekst }}</pre>
       </div>
   </div>
 </template>
