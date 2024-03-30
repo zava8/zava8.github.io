@@ -146,21 +146,21 @@ function doztr() {
       <div>
             <select id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
-              <option value="i_to_u8hin">i_to_हiनदi</option>
+              <option value="i_to_u8hin" title="">i_to_हiनदi</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
-              <option value="i_to_all">i_to_all</option>
+              <option value="i_to_all" title="">i_to_all</option>
               <option value="i_to_small">समaललcaसe</option>
               <option value="u_to_all">u_to_all</option>
               <option value="u_to_u8hin_to_i_click">u_u8hin_i</option>
 			  <option disabled>_________</option>
-              <option value="i_to_u8tmil">i_to_தமiல</option>
-              <option value="i_to_u8knrra">i_to_ಕನರರa</option>
-              <option value="i_to_u8pnz">i_to_ਪਨਜaਬi</option>
-              <option value="i_to_u8bngali">i_to_বনgaলi</option>
-              <option value="i_to_u8mlyalm">i_to_മലയaലമ</option>
-              <option value="i_to_u8odia">i_to_oଡia</option>
-              <option value="i_to_u8telugu">i_to_తeలugu</option>
-              <option value="i_to_u8guzrati">i_to_guજરaતi</option>
+              <option value="i_to_u8tmil" title="">i_to_தமiல</option>
+              <option value="i_to_u8knrra" title="">i_to_ಕನರರa</option>
+              <option value="i_to_u8pnz" title="">i_to_ਪਨਜaਬi</option>
+              <option value="i_to_u8bngali" title="">i_to_বনgaলi</option>
+              <option value="i_to_u8mlyalm" title="">i_to_മലയaലമ</option>
+              <option value="i_to_u8odia" title="">i_to_oଡia</option>
+              <option value="i_to_u8telugu" title="">i_to_తeలugu</option>
+              <option value="i_to_u8guzrati" title="">i_to_guજરaતi</option>
 			  <option disabled>_________</option>
               <option value="u_to_u8bngali">u_to_বনgaলi</option>
               <option value="u_to_u8pnz">u_to_ਪਨਜaਬi</option>
@@ -173,15 +173,15 @@ function doztr() {
             </select>
       </div>
       <div class="pcdiv">
-	   <button @click="i_to_u8tmil_click">i_to_தமiல</button>
-	   <button @click="i_to_u8knrra_click">i_to_ಕನರರa</button>
-	   <button @click="i_to_u8pnz_click">i_to_ਪਨਜaਬi</button>
-	   <button @click="i_to_u8bngali_click">i_to_বনgaলi</button>
-	   <button @click="i_to_u8hin_click">i_to_हiनदi</button>
-	   <button @click="i_to_u8mlyalm_click">i_to_മലയaലമ</button>
-	   <button @click="i_to_u8odia_click">i_to_oଡia</button>
-	   <button @click="i_to_u8telugu_click">i_to_తeలugu</button>
-	   <button @click="i_to_u8guzrati_click">i_to_guજરaતi</button>
+	   <button @click="i_to_u8tmil_click" title="ADHT bdf jzkq lmnr pst vwxy &#010;->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
+	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy -> ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_ಕನರರa</button>
+	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy -> ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨਜaਬi</button>
+	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy -> অদহত বডফ zজকk লমনর পসট vvxয">i_to_বনgaলi</button>
+	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy -> अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
+	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy -> അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയaലമ</button>
+	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy -> ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡia</button>
+	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy -> అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
+	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy -> અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
       </div>
       <div class="pcdiv">		
 		<button @click="u_to_u8hin_click">u_to_हiनदi</button>		
@@ -195,7 +195,7 @@ function doztr() {
 		<button @click="u_to_u8mlyalm_click">u_to_മലയaലമ</button>
       </div>
 	  <div class="pcdiv">
-		<button @click="i_to_all_click">i_to_all</button>
+		<button @click="i_to_all_click" title="">i_to_all</button>
 		<button @click="i_to_small">समaललcaसe</button>
 		<button @click="u_to_all_click">u_to_all</button>
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
