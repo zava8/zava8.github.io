@@ -28,9 +28,26 @@ import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
 
-
-
-const itekst = ref("0. ram Tere kiTne nam. 1. रaम तeरe कiतनe नaम. gलoबaल मoडeरन सchooल. 2. રaમ તeરe કiતનe નaમ. gલoબaલ મoડeરન સchooલ.")
+const itekst = ref(`ADHT bdf jzkq lmnr pst vwxy ->
+	1. i_to_தமiல :  அDஹத bdf zஜகk லமநர பஸட வvxய
+	2. i_to_ಕನರರa : ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ
+	3. i_to_ਪਨਜaਬi : ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ
+	4. i_to_বনgaলi : অদহত বডফ zজকk লমনর পসট vvxয
+	5. i_to_हiनदi : अदहत बडफ zजकk लमनर पसट वvxय
+	6. i_to_മലയaലമ : അദഹത ബഡഫ zജകk ലമനര പസt വvxയ
+	7. i_to_oଡia : ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ
+	8. i_to_తeలugu : అదహత బడఫ zజకk లమనర పసట వvxయ
+	9. i_to_guજરaતi : અદહત બડફ zજકk લમનર પસટ વvxય
+हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം ->
+	1. u_to_हiनदi : हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल
+	2. u_to_বনgaলi : বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল
+	3. u_to_ਪਨਜaਬi : guਰuਮuਕhi ਬaਨਲa ਹiਨਦi guਜਰaਤi oਡiਅa ਤਮiਲਲਲ ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ
+	4. u_to_guજરaતi : guજરaતi guરuમuકhi બaનલa હiનદi oડiઅa તમiલલલ તeiલugu કનનડ મલયaલલ
+	5. u_to_oଡia : oଡiଅa guଜରaତi guରuମuକhi ବaନଲa ହiନଦi ତମiଲଲଲ ତeiଲugu କନନଡ ମଲଯaଲଲ
+	6. u_to_தமiல : தਮiலலல odiஅa guஜரaதi guரuਮuகhi baநலa ஹiநDi தeiலugu கநநd ਮலயaலல
+	7. u_to_తeలugu : తeiలugu తమiలలల oడiఅa guజరaతi guరuమuకhi బaనలa హiనదi కననడ మలయaలల
+	8. u_to_ಕನರರa : ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ
+	9. u_to_മലയaലമ :  മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi`);
 const ztrdir = ref("")
 const otekst = ref("")
 const olc = ref(0)
@@ -173,30 +190,30 @@ function doztr() {
             </select>
       </div>
       <div class="pcdiv">
-	   <button @click="i_to_u8tmil_click" title="ADHT bdf jzkq lmnr pst vwxy &#010;->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
-	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy -> ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_ಕನರರa</button>
-	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy -> ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨਜaਬi</button>
-	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy -> অদহত বডফ zজকk লমনর পসট vvxয">i_to_বনgaলi</button>
-	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy -> अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
-	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy -> അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയaലമ</button>
-	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy -> ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡia</button>
-	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy -> అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
-	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy -> અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
+	   <button @click="i_to_u8tmil_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
+	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_ಕನರರa</button>
+	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨਜaਬi</button>
+	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বনgaলi</button>
+	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
+	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയaലമ</button>
+	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡia</button>
+	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
+	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
       </div>
       <div class="pcdiv">		
-		<button @click="u_to_u8hin_click">u_to_हiनदi</button>		
-		<button @click="u_to_u8bngali_click">u_to_বনgaলi</button>
-		<button @click="u_to_u8pnz_click">u_to_ਪਨਜaਬi</button>
-		<button @click="u_to_u8guzrati_click">u_to_guજરaતi</button>
-		<button @click="u_to_u8odia_click">u_to_oଡia</button>
-		<button @click="u_to_u8tmil_click">u_to_தமiல</button>
-		<button @click="u_to_u8telugu_click">u_to_తeలugu</button>
-		<button @click="u_to_u8knrra_click">u_to_ಕನರರa</button>
-		<button @click="u_to_u8mlyalm_click">u_to_മലയaലമ</button>
+		<button @click="u_to_u8hin_click" title="हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल">u_to_हiनदi</button>		
+		<button @click="u_to_u8bngali_click" title="বাংলা हिंदी ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল">u_to_বনgaলi</button>
+		<button @click="u_to_u8pnz_click" title="ਗੁਰੂਮੁਖੀ বাংলা हिंदी ગુજરાતી ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; guਰuਮuਕhi ਬaਨਲa ਹiਨਦi guਜਰaਤi oਡiਅa ਤਮiਲਲਲ ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ">u_to_ਪਨਜaਬi</button>
+		<button @click="u_to_u8guzrati_click" title="ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; guજરaતi guરuમuકhi બaનલa હiનદi oડiઅa તમiલલલ તeiલugu કનનડ મલયaલલ">u_to_guજરaતi</button>
+		<button @click="u_to_u8odia_click" title="ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; oଡiଅa guଜରaତi guରuମuକhi ବaନଲa ହiନଦi ତମiଲଲଲ ତeiଲugu କନନଡ ମଲଯaଲଲ">u_to_oଡia</button>
+		<button @click="u_to_u8tmil_click" title="தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी తెలుగు ಕನ್ನಡ മലയാളം->&#010; தਮiலலல odiஅa guஜரaதi guரuਮuகhi baநலa ஹiநDi தeiலugu கநநd ਮலயaலல">u_to_தமiல</button>
+		<button @click="u_to_u8telugu_click" title="తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी ಕನ್ನಡ മലയാളം->&#010; తeiలugu తమiలలల oడiఅa guజరaతi guరuమuకhi బaనలa హiనదi కననడ మలయaలల">u_to_తeలugu</button>
+		<button @click="u_to_u8knrra_click" title="ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी മലയാളം->&#010; ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ">u_to_ಕನರರa</button>
+		<button @click="u_to_u8mlyalm_click" title="മലയാളം ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी->&#010; മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi">u_to_മലയaലമ</button>
       </div>
 	  <div class="pcdiv">
 		<button @click="i_to_all_click" title="">i_to_all</button>
-		<button @click="i_to_small">समaललcaसe</button>
+		<button @click="i_to_small">ABC_to_abc</button>
 		<button @click="u_to_all_click">u_to_all</button>
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
 	  </div>
