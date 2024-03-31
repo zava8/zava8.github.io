@@ -81,6 +81,12 @@ function u_to_all_click() {
 function i_to_small() {
 	itekst.value = itekst.value.toLowerCase();
 }
+//function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
+//	itekst.value = itekst.value.replaceAll("ṟ", "r").replaceAll("ṇ", "n").replaceAll("ṉ", "n").replaceAll("ṭ", "t").replaceAll("ḷ", "l");
+//}
+function macron_to_abc() {
+    itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
+}
 function i_to_all_click() { 
 				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 				ztrdir.value = "i_to_u8hin"; doztr();
@@ -166,7 +172,8 @@ function doztr() {
               <option value="i_to_u8hin" title="">i_to_हiनदi</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
               <option value="i_to_all" title="">i_to_all</option>
-              <option value="i_to_small">समaललcaसe</option>
+              <option value="i_to_small">ABC_to_abc</option>
+              <option value="macron_to_abc">macron_to_abc</option>
               <option value="u_to_all">u_to_all</option>
               <option value="u_to_u8hin_to_i_click">u_u8hin_i</option>
 			  <option disabled>_________</option>
@@ -214,6 +221,7 @@ function doztr() {
 	  <div class="pcdiv">
 		<button @click="i_to_all_click" title="">i_to_all</button>
 		<button @click="i_to_small">ABC_to_abc</button>
+		<button @click="macron_to_abc">macron_to_abc</button>
 		<button @click="u_to_all_click">u_to_all</button>
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
 	  </div>
