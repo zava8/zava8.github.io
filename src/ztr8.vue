@@ -16,6 +16,7 @@ import { u_to_u8knrra } from './assets/ztr8/u_to_u8knrra.js' */
 ////////////////
 import { i_to_u8 } from './ztr8/i_to_u8.js'
 
+import { u_to_a } from './ztr8/u_to_a.js'
 import { u_to_u8hin } from './ztr8/u_to_u8hin.js'
 import { u_to_u8pnz } from './ztr8/u_to_u8pnz.js'
 import { u_to_u8guzrati } from './ztr8/u_to_u8guzrati.js'
@@ -127,6 +128,9 @@ function u_to_u8hin_to_i_click() {
 }
 ////////////
 function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); }
+function u_to_a_click() {
+	 ztrdir.value = "u_to_a"; doztr(); 
+}
 function u_to_u8bngali_click() { ztrdir.value = "u_to_u8bngali"; doztr(); }
 function u_to_u8pnz_click() { ztrdir.value = "u_to_u8pnz"; doztr(); }
 function u_to_u8guzrati_click() { ztrdir.value = "u_to_u8guzrati"; doztr(); }
@@ -135,7 +139,7 @@ function u_to_u8tmil_click() { ztrdir.value = "u_to_u8tmil"; doztr(); }
 function u_to_u8telugu_click() { ztrdir.value = "u_to_u8telugu"; doztr(); }
 function u_to_u8knrra_click() { ztrdir.value = "u_to_u8knrra"; doztr(); }
 function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; doztr(); }
-function doztr() {		
+function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);	
 		switch (ztrdir.value) {
 			case "i_to_u8hin": otekst.value = i_to_u8(itekst.value, 0); break;
 			case "i_to_u8bngali": otekst.value = i_to_u8(itekst.value,1); break;
@@ -149,6 +153,7 @@ function doztr() {
 //////////
 
 			case "u_to_u8hin": otekst.value = u_to_u8hin(itekst.value, 0); break;
+			case "u_to_a": otekst.value = u_to_a(itekst.value, 0); break;
 			case "u_to_u8bngali": otekst.value = u_to_u8bngali(itekst.value,0); break;					
 			case "u_to_u8pnz": otekst.value = u_to_u8pnz(itekst.value,0); break;
 			case "u_to_u8guzrati": otekst.value = u_to_u8guzrati(itekst.value,0); break;					
@@ -171,6 +176,7 @@ function doztr() {
               <option value="">select ztr</option>
               <option value="i_to_u8hin" title="">i_to_हiनदi</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
+              <option value="u_to_a">u_to_eng(kvzADHTN)</option>
               <option value="i_to_all" title="">i_to_all</option>
               <option value="i_to_small">ABC_to_abc</option>
               <option value="macron_to_abc">macron_to_abc</option>
@@ -220,10 +226,11 @@ function doztr() {
       </div>
 	  <div class="pcdiv">
 		<button @click="i_to_all_click" title="">i_to_all</button>
-		<button @click="i_to_small">ABC_to_abc</button>
-		<button @click="macron_to_abc">macron_to_abc</button>
 		<button @click="u_to_all_click">u_to_all</button>
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
+		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng(kvzADHTN)</button>
+		<button @click="i_to_small">ABC_to_abc</button>
+		<button @click="macron_to_abc">macron_to_abc</button>
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>
