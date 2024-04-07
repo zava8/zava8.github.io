@@ -1,4 +1,9 @@
 <template>
+    <a 
+      href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
+      target="blank">
+        फoनट डauनलoaड अoर iनसटaलल करनe कe लiयe gugल सheeट पर वiसiट करe.
+    </a>
     <table class="table">
     <thead class="thead-dark">
         <tr>
@@ -9,7 +14,7 @@
         <th scope="col">hao_टo_iनसटaलल</th>
         </tr>
     </thead>
-    <tbody>
+        <tbody>
         <tr v-for="ro in roz" :key="ro.id"> 
             <td>{{ ro.id }}</td>
             <td>{{ ro.os }}</td>
