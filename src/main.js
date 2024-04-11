@@ -6,6 +6,9 @@ import "bootstrap"
 import homeapp from './home.vue'
 createApp(homeapp).mount('#home')
 
+import ztr8app from './ztr8.vue'
+createApp(ztr8app).mount('#ztr8')
+
 import fontapp from './font.vue'
 createApp(fontapp).mount('#font')
 
@@ -17,9 +20,6 @@ createApp(kontactapp).mount('#kontact')
 
 import schoolapp from './school.vue'
 createApp(schoolapp).mount('#school')
-
-import ztr8app from './ztr8.vue'
-createApp(ztr8app).mount('#ztr8')
 
 import niyuzapp from './niyuz.vue'
 createApp(niyuzapp).mount('#niyuz')
