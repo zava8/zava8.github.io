@@ -3,6 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
+
 import homeapp from './home.vue'
 createApp(homeapp).mount('#home')
 
