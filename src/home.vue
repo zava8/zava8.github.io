@@ -4,30 +4,30 @@
 <template>
 <ol class="list-group">
     <li class="list-group-item">
-       <a href="https://github.com/zava8/kibord">linux ubuntu mint kibord</a>
+       <a href="https://github.com/zava8/kibord">लiनux uबuनटu मiनट कiबoरड</a>
     </li>
     <li class="list-group-item">
-       <a href="https://github.com/zava8/free/tree/master/font">daunlod fonts54/58</a>
+       <a href="https://github.com/zava8/free/tree/master/font">डauनलoड फoनटस54/58</a>
     </li>
     <li class="list-group-item">
        <a href="https://github.com/zava8/free/tree/master/apk">
-          Android keypad apk daunlod n install
+         अनडरoiड कeयपaड aपक डauनलoड न iनसटaलल
        </a>
     </li>
     <li class="list-group-item">
        <a href="https://github.com/zava8/free/tree/master/apk">
-          k88.apk Android vatch n ring finger keypad
+          k88.apk अनडरoiड वaटch न रiनg फiनgeर कeयपaड
        </a>
     </li>
     <li class="list-group-item">
-       <a href="https://addons.mozilla.org/en-US/firefox/addon/ztr/">firefox addon Ztr</a>
+       <a href="https://addons.mozilla.org/en-US/firefox/addon/ztr/">फiरeफox aडडoन जटर</a>
     </li>
-    <li class="list-group-item"><a href="https://facebook.com/ztrabc">fesbuk ztrabc</a></li>
+    <li class="list-group-item"><a href="https://facebook.com/ztrabc">फaceबooक ztrabc</a></li>
     <li class="list-group-item">
-       <a href="https://twitter.com/etphor">tvitter etphor 8+8=10=4x4</a>
+       <a href="https://twitter.com/etphor">टviटटeर eटपhoर 8+8=10=4x4</a>
     </li>
     <li class="list-group-item">
-       <a href="https://github.com/zava8/plong">8pinger_maths library</a>
+       <a href="https://github.com/zava8/plong">8 पhiनgeर_मaटhस लiबरaरय</a>
     </li>
   </ol>
 </template>
