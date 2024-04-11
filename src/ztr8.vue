@@ -232,6 +232,11 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="i_to_small">ABC_to_abc</button>
 		<button @click="i_to_caps">abc_to_ABC</button>
 		<button @click="macron_to_abc">macron_to_abc</button>
+		<a 
+      href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
+      target="blank">
+        googलe सheeट पageस
+    </a>
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>
