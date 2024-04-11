@@ -79,9 +79,8 @@ function u_to_all_click() {
 				otekst.value = all_text;
 				ztrdir.value = "i_to_u8hin";
 }
-function i_to_small() {
-	itekst.value = itekst.value.toLowerCase();
-}
+function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
+function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 //function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
 //	itekst.value = itekst.value.replaceAll("ṟ", "r").replaceAll("ṇ", "n").replaceAll("ṉ", "n").replaceAll("ṭ", "t").replaceAll("ḷ", "l");
 //}
@@ -179,6 +178,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
               <option value="u_to_a">u_to_eng(kvzADHTN)</option>
               <option value="i_to_all" title="">i_to_all</option>
               <option value="i_to_small">ABC_to_abc</option>
+              <option value="i_to_caps">abc_to_ABC</option>
               <option value="macron_to_abc">macron_to_abc</option>
               <option value="u_to_all">u_to_all</option>
               <option value="u_to_u8hin_to_i_click">u_u8hin_i</option>
@@ -230,6 +230,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
 		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng(kvzADHTN)</button>
 		<button @click="i_to_small">ABC_to_abc</button>
+		<button @click="i_to_caps">abc_to_ABC</button>
 		<button @click="macron_to_abc">macron_to_abc</button>
 	  </div>
       <div>
