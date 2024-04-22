@@ -80,8 +80,9 @@ function u_to_all_click() {
 				ztrdir.value = "i_to_u8hin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
-function jqw_to_zkv() { ew_to_yu(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
+function jqw_to_zkv() { ew_to_yu(); ow_to_ou(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
 function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew','yu'); }
+function ow_to_ou() { itekst.value = itekst.value.replaceAll('ow','ou'); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 //function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
 //	itekst.value = itekst.value.replaceAll("ṟ", "r").replaceAll("ṇ", "n").replaceAll("ṉ", "n").replaceAll("ṭ", "t").replaceAll("ḷ", "l");
@@ -89,28 +90,28 @@ function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 function macron_to_abc() {
     itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
 }
-function i_to_all_click() { 
-				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-				ztrdir.value = "i_to_u8hin"; doztr();
-				all_text += ('1. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8guzrati"; doztr();
-				all_text += ('2. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8pnz"; doztr();
-				all_text += ('3. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8bngali"; doztr();
-				all_text += ('4. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8odia"; doztr();
-				all_text += ('5. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8tmil"; doztr();
-				all_text += ('6. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8mlyalm"; doztr();
-				all_text += ('7. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8knrra"; doztr();
-				all_text += ('8. ' + otekst.value + "\n") ;
-				ztrdir.value = "i_to_u8telugu"; doztr();
-				all_text += ('9. ' + otekst.value + "\n") ;
-				otekst.value = all_text;
-				ztrdir.value = "i_to_u8hin";
+function i_to_all_click() { jqw_to_zkv();
+	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
+	ztrdir.value = "i_to_u8hin"; doztr();
+	all_text += ('1. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8guzrati"; doztr();
+	all_text += ('2. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8pnz"; doztr();
+	all_text += ('3. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8bngali"; doztr();
+	all_text += ('4. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8odia"; doztr();
+	all_text += ('5. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8tmil"; doztr();
+	all_text += ('6. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8mlyalm"; doztr();
+	all_text += ('7. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8knrra"; doztr();
+	all_text += ('8. ' + otekst.value + "\n") ;
+	ztrdir.value = "i_to_u8telugu"; doztr();
+	all_text += ('9. ' + otekst.value + "\n") ;
+	otekst.value = all_text;
+	ztrdir.value = "i_to_u8hin";
 }
 function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
