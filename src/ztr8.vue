@@ -80,8 +80,8 @@ function u_to_all_click() {
 				ztrdir.value = "i_to_u8hin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
-function jqw_to_zkv() { ew_to_yu(); ow_to_ou(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
-function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew','yu'); }
+function jqw_to_zkv() { ew_to_yu(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
+function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
 function ow_to_ou() { itekst.value = itekst.value.replaceAll('ow','ou'); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 //function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
