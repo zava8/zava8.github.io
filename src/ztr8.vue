@@ -81,6 +81,9 @@ function u_to_all_click() {
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jqw_to_zkv() { ew_to_yu(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
+function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').replaceAll('क','k').replaceAll('व','v'); }
+function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
+function n_to_null_output() {otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
 function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
 function ow_to_ou() { itekst.value = itekst.value.replaceAll('ow','ou'); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
@@ -154,7 +157,10 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 			case "i_to_u8mlyalm": otekst.value = i_to_u8(itekst.value,8); break;
 //////////
 
-			case "u_to_u8hin": otekst.value = u_to_u8hin(itekst.value, 0); break;
+			case "u_to_u8hin":
+				otekst.value = u_to_u8hin(itekst.value, 0);
+				n_to_null_output();
+				break;
 			case "u_to_a": otekst.value = u_to_a(itekst.value, 0); break;
 			case "u_to_u8bngali": otekst.value = u_to_u8bngali(itekst.value,0); break;					
 			case "u_to_u8pnz": otekst.value = u_to_u8pnz(itekst.value,0); break;
@@ -233,15 +239,19 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="u_to_u8mlyalm_click" title="മലയാളം ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी->&#010; മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi">u_to_മലയaലമ</button>
       </div>
 	  <div class="pcdiv">
-		<button @click="i_to_all_click" title="">i_to_all</button>
-		<button @click="u_to_all_click">u_to_all</button>
-		<button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
-		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng(kvzADHTN)</button>
-		<button @click="i_to_small">ABC_to_abc</button>
+		  <button @click="i_to_all_click" title="">i_to_all</button>
+		  <button @click="u_to_all_click">u_to_all</button>
+		  <button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
+		  <button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng(kvzADHTN)</button>
+		  <button @click="i_to_small">ABC_to_abc</button>
+	  </div>
+	  <div class="pcdiv">
 		<button @click="i_to_caps">abc_to_ABC</button>
 		<button @click="jqw_to_zkv">jqw_to_zkv</button>
+		<button @click="jqw_hin_to_zkv">जकव_to_zkv</button>
+		<button @click="n_to_null">n_to_null</button>
 		<button @click="ew_to_yu">ew_to_yu</button>
-		<button @click="macron_to_abc">மacரoந_டo_abc</button>		
+		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>
