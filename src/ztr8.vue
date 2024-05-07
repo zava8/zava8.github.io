@@ -85,6 +85,7 @@ function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').rep
 function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
 function n_to_null_output() {otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
 function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
+function x_to_z() { itekst.value = itekst.value.replaceAll(/(\b)x/gi,"$1z").replaceAll(/x/gi,"ks"); }
 function ow_to_ou() { itekst.value = itekst.value.replaceAll('ow','ou'); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 //function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
@@ -251,6 +252,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="jqw_hin_to_zkv">जकव_to_zkv</button>
 		<button @click="n_to_null">n_to_null</button>
 		<button @click="ew_to_yu">ew_to_yu</button>
+		<button @click="x_to_z">x_to_z</button>
 		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
 	  </div>
       <div>
