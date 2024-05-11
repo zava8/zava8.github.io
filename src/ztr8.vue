@@ -56,37 +56,70 @@ function itekst_on_input() { doztr() }
 function ztrdir_changed() { doztr() }
 // function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 //function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); } 
+function i_to_all_click() { jq_to_zk(); w_to_vzyuz();
+	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
+	ztrdir.value = "i_to_u8hin"; doztr();
+	all_text += ('1. ' + otekst.value + "\n#modern_hindi #hin58\n") ;
+	ztrdir.value = "i_to_u8guzrati"; doztr();
+	all_text += ('2. ' + otekst.value + "\n#modern_guzrati #guzrati58\n") ;
+	ztrdir.value = "i_to_u8pnz"; doztr();
+	all_text += ('3. ' + otekst.value + "\n#modern_gurumukhi #gurumukhi58\n") ;
+	ztrdir.value = "i_to_u8bngali"; doztr();
+	all_text += ('4. ' + otekst.value + "\n#modern_bangla #bangla58\n") ;
+	ztrdir.value = "i_to_u8odia"; doztr();
+	all_text += ('5. ' + otekst.value + "\n#modern_odia #odia58\n") ;
+	ztrdir.value = "i_to_u8tmil"; doztr();
+	all_text += ('6. ' + otekst.value + "\n#modern_tamil #tamil58\n") ;
+	ztrdir.value = "i_to_u8mlyalm"; doztr();
+	all_text += ('7. ' + otekst.value + "\n#modern_malayalam #malayalam58\n") ;
+	ztrdir.value = "i_to_u8knrra"; doztr();
+	all_text += ('8. ' + otekst.value + "\n#modern_kannada #kannada58\n") ;
+	ztrdir.value = "i_to_u8telugu"; doztr();
+	all_text += ('9. ' + otekst.value + "\n#modern_telugu #telugu58\n") ;
+	otekst.value = all_text;
+	ztrdir.value = "i_to_u8hin";
+}
 function u_to_all_click() {
 				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 				ztrdir.value = "u_to_u8hin"; doztr();
-				all_text += ('1. ' + otekst.value + "\n") ;
+				all_text += ('1. ' + otekst.value + "\n#modern_hindi #hin58\n") ;
 				ztrdir.value = "u_to_u8guzrati"; doztr();
-				all_text += ('2. ' + otekst.value + "\n") ;
+				all_text += ('2. ' + otekst.value + "\n#modern_guzrati #guzrati58\n") ;
 				ztrdir.value = "u_to_u8pnz"; doztr();
-				all_text += ('3. ' + otekst.value + "\n") ;
+				all_text += ('3. ' + otekst.value + "\n#modern_gurumukhi #gurumukhi58\n") ;
 				ztrdir.value = "u_to_u8bngali"; doztr();
-				all_text += ('4. ' + otekst.value + "\n") ;
+				all_text += ('4. ' + otekst.value + "\n#modern_bangla #bangla58\n") ;
 				ztrdir.value = "u_to_u8odia"; doztr();
-				all_text += ('5. ' + otekst.value + "\n") ;
+				all_text += ('5. ' + otekst.value + "\n#modern_odia #odia58\n") ;
 				ztrdir.value = "u_to_u8tmil"; doztr();
-				all_text += ('6. ' + otekst.value + "\n") ;
+				all_text += ('6. ' + otekst.value + "\n#modern_tamil #tamil58\n") ;
 				ztrdir.value = "u_to_u8mlyalm"; doztr();
-				all_text += ('7. ' + otekst.value + "\n") ;
+				all_text += ('7. ' + otekst.value + "\n#modern_malayalam #malayalam58\n") ;
 				ztrdir.value = "u_to_u8knrra"; doztr();
-				all_text += ('8. ' + otekst.value + "\n") ;
+				all_text += ('8. ' + otekst.value + "\n#modern_kannada #kannada58\n") ;
 				ztrdir.value = "u_to_u8telugu"; doztr();
-				all_text += ('9. ' + otekst.value + "\n") ;
+				all_text += ('9. ' + otekst.value + "\n#modern_telugu #telugu58\n") ;
 				otekst.value = all_text;
 				ztrdir.value = "i_to_u8hin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
-function jqw_to_zkv() { ew_to_yu(); itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k').replaceAll('w','v'); }
+function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
+function w_to_vzyuz() {
+	itekst.value = itekst.value.replaceAll(
+		//'yew','yuu').replaceAll(
+		'ews','yuz').replaceAll(
+		'ows','oz').replaceAll(
+		'aws','az').replaceAll(
+		/aw\b/g,'au').replaceAll(
+		/ow\b/g,'ou').replaceAll(
+		/ew/g,'yu').replaceAll(
+		'w','v');
+}
 function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').replaceAll('क','k').replaceAll('व','v'); }
 function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
 function n_to_null_output() {otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
-function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
-function x_to_z() { itekst.value = itekst.value.replaceAll(/(\b)x/gi,"$1z").replaceAll(/x/gi,"ks"); }
-function ow_to_ou() { itekst.value = itekst.value.replaceAll('ow','ou'); }
+//function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
+function x_to_z() { itekst.value = itekst.value.replaceAll(/\bx/gi,"z").replaceAll(/x/gi,"ks"); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 //function macron_to_abc() { // ḵ (ṯ, ḏ, ṟ, ṉ ṟṉṭḷṇ ṅ
 //	itekst.value = itekst.value.replaceAll("ṟ", "r").replaceAll("ṇ", "n").replaceAll("ṉ", "n").replaceAll("ṭ", "t").replaceAll("ḷ", "l");
@@ -94,29 +127,7 @@ function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
 function macron_to_abc() {
     itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
 }
-function i_to_all_click() { jqw_to_zkv();
-	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-	ztrdir.value = "i_to_u8hin"; doztr();
-	all_text += ('1. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8guzrati"; doztr();
-	all_text += ('2. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8pnz"; doztr();
-	all_text += ('3. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8bngali"; doztr();
-	all_text += ('4. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8odia"; doztr();
-	all_text += ('5. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8tmil"; doztr();
-	all_text += ('6. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8mlyalm"; doztr();
-	all_text += ('7. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8knrra"; doztr();
-	all_text += ('8. ' + otekst.value + "\n") ;
-	ztrdir.value = "i_to_u8telugu"; doztr();
-	all_text += ('9. ' + otekst.value + "\n") ;
-	otekst.value = all_text;
-	ztrdir.value = "i_to_u8hin";
-}
+
 function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
 function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; doztr(); }
@@ -186,12 +197,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
               <option value="i_to_u8hin" title="">i_to_हiनदi</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
               <option value="u_to_a">u_to_eng(kvzADHTN)</option>
-              <option value="i_to_all" title="">i_to_all</option>
-              <option value="i_to_small">ABC_to_abc</option>
-              <option value="i_to_caps">abc_to_ABC</option>
               <option value="macron_to_abc">macron_to_abc</option>
-              <option value="u_to_all">u_to_all</option>
-              <option value="u_to_u8hin_to_i_click">u_u8hin_i</option>
 			  <option disabled>_________</option>
               <option value="i_to_u8tmil" title="">i_to_தமiல</option>
               <option value="i_to_u8knrra" title="">i_to_ಕನರರa</option>
@@ -239,19 +245,19 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="u_to_u8knrra_click" title="ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी മലയാളം->&#010; ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ">u_to_ಕನರರa</button>
 		<button @click="u_to_u8mlyalm_click" title="മലയാളം ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी->&#010; മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi">u_to_മലയaലമ</button>
       </div>
-	  <div class="pcdiv">
+	  <div>
 		  <button @click="i_to_all_click" title="">i_to_all</button>
 		  <button @click="u_to_all_click">u_to_all</button>
 		  <button @click="u_to_u8hin_to_i_click">u_u8hin_i</button>
 		  <button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng(kvzADHTN)</button>
 		  <button @click="i_to_small">ABC_to_abc</button>
 	  </div>
-	  <div class="pcdiv">
+	  <div>
 		<button @click="i_to_caps">abc_to_ABC</button>
-		<button @click="jqw_to_zkv">jqw_to_zkv</button>
+		<button @click="jq_to_zk">jq_to_zk</button>
+		<button @click="w_to_vzyuz">w_to_vzyuz</button>
 		<button @click="jqw_hin_to_zkv">जकव_to_zkv</button>
 		<button @click="n_to_null">n_to_null</button>
-		<button @click="ew_to_yu">ew_to_yu</button>
 		<button @click="x_to_z">x_to_z</button>
 		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
 	  </div>
