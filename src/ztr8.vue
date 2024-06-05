@@ -29,16 +29,16 @@ import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
 
-const itekst = ref(`ADHT bdf jzkq lmnr pst vwxy ->
-	1. i_to_தமiல :  அDஹத bdf zஜகk லமநர பஸட வvxய
-	2. i_to_ಕನರರa : ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ
-	3. i_to_ਪਨਜaਬi : ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ
-	4. i_to_বনgaলi : অদহত বডফ zজকk লমনর পসট vvxয
-	5. i_to_हiनदi : अदहत बडफ zजकk लमनर पसट वvxय
-	6. i_to_മലയaലമ : അദഹത ബഡഫ zജകk ലമനര പസt വvxയ
-	7. i_to_oଡia : ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ
-	8. i_to_తeలugu : అదహత బడఫ zజకk లమనర పసట వvxయ
-	9. i_to_guજરaતi : અદહત બડફ zજકk લમનર પસટ વvxય
+const itekst = ref(` #8aiueohcg #4ADHT #3kvz fb.com/ztrabc kKqQ zZjJ vVwW nNx bdf pst yrlm ->
+	1. i_to_മലയaലമ : #8aiueohcg #4അദഹത #3kvz ഫബ.coമ/ztരaബc kkkk zzzz vvww നനx ബഡഫ പസt യരലമ
+	2. i_to_தமiல :  #8aiueohcg #4அDஹத #3kvz fb.coம/zடரabc kkkk zzzz vvww நநx bdf பஸட யரலம
+	3. i_to_తeలugu : #8aiueohcg #4అదహత #3kvz ఫబ.coమ/zటరaబc kkkk zzzz vvww ననx బడఫ పసట యరలమ
+	4. i_to_ಕನರರa : #8aiueohcg #4ಅದಹತ #3kvz ಫಬ.coಮ/zಟರaಬc kkkk zzzz vvww ನನx ಬಡಫ ಪಸಟ ಯರಲಮ
+	5. i_to_guજરaતi : #8aiueohcg #4અદહત #3kvz ફબ.coમ/zટરaબc kkkk zzzz vvww નનx બડફ પસટ યરલમ
+	6. i_to_हiनदi : #8aiueohcg #4अदहत #3kvz फब.coम/zटरaबc kkkk zzzz vvww ननx cgkz/बडपसट+h(बh..) फयरलम
+	7. i_to_ਪਨਜaਬi : #8aiueohcg #4ਅਦਹਤ #3kvz ਫਬ.coਮ/zਟਰaਬc kkkk zzzz vvww ਨਨx ਬਡਫ ਪਸਟ ਯਰਲਮ
+	8. i_to_বনgaলi : #8aiueohcg #4অদহত #3kvz ফব.coম/zটরaবc kkkk zzzz vvww ননx বডফ পসট যরলম
+	9. i_to_oଡia : #8aiueohcg #4ଅଦହତ #3kvz ଫବ.coମ/zଟରaବc kkkk zzzz vvww ନନx ବଡଫ ପସଟ ଯରଲମ
 हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം ->
 	1. u_to_हiनदi : हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल
 	2. u_to_বনgaলi : বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল
@@ -56,7 +56,7 @@ function itekst_on_input() { doztr() }
 function ztrdir_changed() { doztr() }
 // function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 //function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); } 
-function i_to_all_click() { jq_to_zk(); w_to_vzyuz();
+function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 	ztrdir.value = "i_to_u8hin"; doztr();
 	all_text += ('1. ' + otekst.value + "\n#modern_hindi #hin5\n") ;
@@ -224,15 +224,15 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
     </a>
       </div>
       <div class="pcdiv">
+	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയaലമ</button>
 	   <button @click="i_to_u8tmil_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
+	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
 	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_ಕನರರa</button>
+	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
+	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
 	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨਜaਬi</button>
 	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বনgaলi</button>
-	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
-	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയaലമ</button>
 	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡia</button>
-	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
-	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
       </div>
       <div class="pcdiv">		
 		<button @click="u_to_u8hin_click" title="हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल">u_to_हiनदi</button>		

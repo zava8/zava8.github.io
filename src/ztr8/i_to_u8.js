@@ -1,10 +1,17 @@
-const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'c',G : 'g',
+/* const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'c',G : 'g',
 	A : 'अ', k : 'क', K : 'क', q : 'k', Q : 'k',  z : 'ज', j : 'z', Z : 'ज', J : 'z',
 	t : 'ट', d : 'ड', T : 'त', D : 'द', n : 'न', N : 'न', p : 'प', P : 'प', F: 'फ', f: 'फ',
 	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
  	l : 'ल', L : 'ल', v : 'व', V : 'व', w : 'v', W : 'v', S : 'स', s : 'स', H : 'ह',	
+} */
+const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'c',G : 'g',
+	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', N : 'न',
+	k : 'k', K : 'k', q : 'k', Q : 'k',  z : 'z', j : 'z', Z : 'z', J : 'z',
+	v : 'v', V : 'v', w : 'w', W : 'w',
+	t : 'ट', d : 'ड',  p : 'प', P : 'प', F: 'फ', f: 'फ',
+	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
+ 	l : 'ल', L : 'ल',  S : 'स', s : 'स', 	
 }
-
 export function i_to_u8(input , arg_oli) {
   const inputLength = input.length;
   // alert("in i_to_u8 input is " + input + " and inputLength is : "+inputLength);
