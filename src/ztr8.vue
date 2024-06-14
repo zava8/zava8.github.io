@@ -59,23 +59,23 @@ function ztrdir_changed() { doztr() }
 function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 	ztrdir.value = "i_to_u8hin"; doztr();
-	all_text += ('1. ' + otekst.value + "\n#modern_hindi #hin5\n") ;
+	all_text += ('1. ' + otekst.value + "\n#modern_hindi #hin5 hin5.ttf font\n") ;
 	ztrdir.value = "i_to_u8guzrati"; doztr();
-	all_text += ('2. ' + otekst.value + "\n#modern_guzrati #guzrati5\n") ;
+	all_text += ('2. ' + otekst.value + "\n#modern_guzrati #guzrati5 guzrati5.ttf font\n") ;
 	ztrdir.value = "i_to_u8pnz"; doztr();
-	all_text += ('3. ' + otekst.value + "\n#modern_gurumukhi #gurumukhi5\n") ;
+	all_text += ('3. ' + otekst.value + "\n#modern_gurumukhi #gurumukhi5 gurumukhi5.ttf font\n") ;
 	ztrdir.value = "i_to_u8bngali"; doztr();
-	all_text += ('4. ' + otekst.value + "\n#modern_bangla #bangla5\n") ;
+	all_text += ('4. ' + otekst.value + "\n#modern_bangla #bangla5 bangla5.ttf font\n") ;
 	ztrdir.value = "i_to_u8odia"; doztr();
-	all_text += ('5. ' + otekst.value + "\n#modern_odia #odia5\n") ;
+	all_text += ('5. ' + otekst.value + "\n#modern_odia #odia5 odia5.ttf font\n") ;
 	ztrdir.value = "i_to_u8tmil"; doztr();
-	all_text += ('6. ' + otekst.value + "\n#modern_tamil #tamil5\n") ;
+	all_text += ('6. ' + otekst.value + "\n#modern_tamil #tamil5 tamil5.ttf font\n") ;
 	ztrdir.value = "i_to_u8mlyalm"; doztr();
-	all_text += ('7. ' + otekst.value + "\n#modern_malayalam #malayalam5\n") ;
+	all_text += ('7. ' + otekst.value + "\n#modern_malayalam #malayalam5 malayalam5.ttf font\n") ;
 	ztrdir.value = "i_to_u8knrra"; doztr();
-	all_text += ('8. ' + otekst.value + "\n#modern_kannada #kannada5\n") ;
+	all_text += ('8. ' + otekst.value + "\n#modern_kannada #kannada5 kannada5.ttf font\n") ;
 	ztrdir.value = "i_to_u8telugu"; doztr();
-	all_text += ('9. ' + otekst.value + "\n#modern_telugu #telugu5\n") ;
+	all_text += ('9. ' + otekst.value + "\n#modern_telugu #telugu5 telugu5.ttf font\n") ;
 	otekst.value = all_text;
 	ztrdir.value = "i_to_u8hin";
 }
@@ -220,7 +220,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 			<a 
       href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
       target="blank">
-        googलe पageस
+        font keyboard etc
     </a>
       </div>
       <div class="pcdiv">
