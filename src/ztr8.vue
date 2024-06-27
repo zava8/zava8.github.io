@@ -28,27 +28,26 @@ import { u_to_u8telugu } from './ztr8/u_to_u8telugu.js'
 import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
-
-const itekst = ref(` #8aiueohcg #4ADHT #3kvz fb.com/ztrabc kKqQ zZjJ vVwW nNx bdf pst yrlm ->
-	1. i_to_മലയaലമ : #8aiueohcg #4അദഹത #3kvz ഫബ.coമ/ztരaബc kkkk zzzz vvww നനx ബഡഫ പസt യരലമ
-	2. i_to_தமiல :  #8aiueohcg #4அDஹத #3kvz fb.coம/zடரabc kkkk zzzz vvww நநx bdf பஸட யரலம
+const itekst = ref(`#8aiueohcg #4ADHT #3kvz fb.com/ztrabc kKqQ zZjJ vVwW nNx bdf pst yrlm ->
+	1. i_to_हiनदi : #8aiueohcg #4अदहत #3kvz फब.coम/zटरaबc kkkk zzzz vvww ननx बडफ पसट यरलम
+	2. i_to_বনgaলi : #8aiueohcg #4অদহত #3kvz ফব.coম/zটরaবc kkkk zzzz vvww ননx বডফ পসট যরলম
 	3. i_to_తeలugu : #8aiueohcg #4అదహత #3kvz ఫబ.coమ/zటరaబc kkkk zzzz vvww ననx బడఫ పసట యరలమ
 	4. i_to_ಕನರರa : #8aiueohcg #4ಅದಹತ #3kvz ಫಬ.coಮ/zಟರaಬc kkkk zzzz vvww ನನx ಬಡಫ ಪಸಟ ಯರಲಮ
-	5. i_to_guજરaતi : #8aiueohcg #4અદહત #3kvz ફબ.coમ/zટરaબc kkkk zzzz vvww નનx બડફ પસટ યરલમ
-	6. i_to_हiनदi : #8aiueohcg #4अदहत #3kvz फब.coम/zटरaबc kkkk zzzz vvww ननx cgkz/बडपसट+h(बh..) फयरलम
-	7. i_to_ਪਨਜaਬi : #8aiueohcg #4ਅਦਹਤ #3kvz ਫਬ.coਮ/zਟਰaਬc kkkk zzzz vvww ਨਨx ਬਡਫ ਪਸਟ ਯਰਲਮ
-	8. i_to_বনgaলi : #8aiueohcg #4অদহত #3kvz ফব.coম/zটরaবc kkkk zzzz vvww ননx বডফ পসট যরলম
-	9. i_to_oଡia : #8aiueohcg #4ଅଦହତ #3kvz ଫବ.coମ/zଟରaବc kkkk zzzz vvww ନନx ବଡଫ ପସଟ ଯରଲମ
-हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം ->
-	1. u_to_हiनदi : हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल
-	2. u_to_বনgaলi : বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল
-	3. u_to_ਪਨਜaਬi : guਰuਮuਕhi ਬaਨਲa ਹiਨਦi guਜਰaਤi oਡiਅa ਤਮiਲਲਲ ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ
-	4. u_to_guજરaતi : guજરaતi guરuમuકhi બaનલa હiનદi oડiઅa તમiલલલ તeiલugu કનનડ મલયaલલ
-	5. u_to_oଡia : oଡiଅa guଜରaତi guରuମuକhi ବaନଲa ହiନଦi ତମiଲଲଲ ତeiଲugu କନନଡ ମଲଯaଲଲ
-	6. u_to_தமiல : தਮiலலல odiஅa guஜரaதi guரuਮuகhi baநலa ஹiநDi தeiலugu கநநd ਮலயaலல
-	7. u_to_తeలugu : తeiలugu తమiలలల oడiఅa guజరaతi guరuమuకhi బaనలa హiనదi కననడ మలయaలల
-	8. u_to_ಕನರರa : ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ
-	9. u_to_മലയaലമ :  മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi`);
+	5. i_to_മലയaലമ  : #8aiueohcg #4അദഹത #3kvz ഫബ.coമ/ztരaബc kkkk zzzz vvww നനx ബഡഫ പസt യരലമ
+	6. i_to_தமiல : #8aiueohcg #4அDஹத #3kvz fb.coம/zடரabc kkkk zzzz vvww நநx bdf பஸட யரலம
+	7. i_to_oଡia: #8aiueohcg #4ଅଦହତ #3kvz ଫବ.coମ/zଟରaବc kkkk zzzz vvww ନନx ବଡଫ ପସଟ ଯରଲମ
+	8. i_to_ਪਨਜaਬi: #8aiueohcg #4ਅਦਹਤ #3kvz ਫਬ.coਮ/zਟਰaਬc kkkk zzzz vvww ਨਨx ਬਡਫ ਪਸਟ ਯਰਲਮ
+	9. i_to_guજરaતi : #8aiueohcg #4અદહત #3kvz ફબ.coમ/zટરaબc kkkk zzzz vvww નનx બડફ પસટ યરલમ
+हिंदी বাংলা తెలుగు ಕನ್ನಡ മലയാളം தமிழ் ଓଡିଆ ਗੁਰੂਮੁਖੀ ગુજરાતી->
+	1. u_to_हiनदi : हiनदi बaनलa तeiलugu kननड मलयaलल तमiललल oडiअa guरuमukhi guzरaतi
+	2. u_to_বনgaলi : হiনদi বaনলa তeiলugu কননড মলযaলল তমiললল oডiঅa guরuমuকhi guজরaতi
+	3. u_to_తeలugu : హiనదi బaనలa తeiలugu కననడ మలయaలల తమiలలల oడiఅa guరuమuకhi guజరaతi
+	4. u_to_ಕನರರa : ಹiನದi ಬaನಲa ತeiಲugu ಕನನಡ ಮಲಯaಲಲ ತಮiಲಲಲ oಡiಅa guರuಮuಕhi guಜರaತi
+	5. u_to_മലയaലമ : ഹiനദi ബaനലa തeiലugu കനനഡ മലയaലല തമiലലല oഡiഅa guരuമuകhi guജരaതi
+	6. u_to_தமiல : ஹiநDi baநலa தeiலugu கநநd ਮலயaலல தਮiலலல odiஅa guரuਮuகhi guஜரaதi
+	7. u_to_oଡia : ହiନଦi ବaନଲa ତeiଲugu କନନଡ ମଲଯaଲଲ ତମiଲଲଲ oଡiଅa guରuମuକhi guଜରaତi
+	8. u_to_ਪਨਜaਬi : ਹiਨਦi ਬaਨਲa ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ ਤਮiਲਲਲ oਡiਅa guਰuਮuਕhi guਜਰaਤi
+	9. u_to_guજરaતi : હiનદi બaનલa તeiલugu કનનડ મલયaલલ તમiલલલ oડiઅa guરuમuકhi guજરaતi`);
 const ztrdir = ref("")
 const otekst = ref("")
 const olc = ref(0)
@@ -60,22 +59,22 @@ function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 	ztrdir.value = "i_to_u8hin"; doztr();
 	all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-	ztrdir.value = "i_to_u8guzrati"; doztr();
-	all_text += ('2. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font ->  guzrati5.ttf\n") ;
-	ztrdir.value = "i_to_u8pnz"; doztr();
-	all_text += ('3. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
 	ztrdir.value = "i_to_u8bngali"; doztr();
-	all_text += ('4. ' + otekst.value + "\n#bengali #bangla5 zava8.github.io -> #font -> bangla5.ttf\n") ;
-	ztrdir.value = "i_to_u8odia"; doztr();
-	all_text += ('5. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
+	all_text += ('2. ' + otekst.value + "\n#bengali #bangla5 zava8.github.io -> #font -> bangla5.ttf\n") ;
+	ztrdir.value = "i_to_u8telugu"; doztr();
+	all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
+	ztrdir.value = "i_to_u8knrra"; doztr();
+	all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
+	ztrdir.value = "i_to_u8mlyalm"; doztr();
+	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
 	ztrdir.value = "i_to_u8tmil"; doztr();
 	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-	ztrdir.value = "i_to_u8mlyalm"; doztr();
-	all_text += ('7. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-	ztrdir.value = "i_to_u8knrra"; doztr();
-	all_text += ('8. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-	ztrdir.value = "i_to_u8telugu"; doztr();
-	all_text += ('9. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
+	ztrdir.value = "i_to_u8odia"; doztr();
+	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
+	ztrdir.value = "i_to_u8pnz"; doztr();
+	all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
+	ztrdir.value = "i_to_u8guzrati"; doztr();
+	all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font ->  guzrati5.ttf\n") ;
 	otekst.value = all_text;
 	ztrdir.value = "i_to_u8hin";
 }
@@ -83,22 +82,22 @@ function u_to_all_click() {
 				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 				ztrdir.value = "u_to_u8hin"; doztr();
 				all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-				ztrdir.value = "u_to_u8guzrati"; doztr();
-				all_text += ('2. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
-				ztrdir.value = "u_to_u8pnz"; doztr();
-				all_text += ('3. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
 				ztrdir.value = "u_to_u8bngali"; doztr();
-				all_text += ('4. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
-				ztrdir.value = "u_to_u8odia"; doztr();
-				all_text += ('5. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
+				all_text += ('2. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
+				ztrdir.value = "u_to_u8telugu"; doztr();
+				all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
+				ztrdir.value = "u_to_u8knrra"; doztr();
+				all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
+				ztrdir.value = "u_to_u8mlyalm"; doztr();
+				all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
 				ztrdir.value = "u_to_u8tmil"; doztr();
 				all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-				ztrdir.value = "u_to_u8mlyalm"; doztr();
-				all_text += ('7. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-				ztrdir.value = "u_to_u8knrra"; doztr();
-				all_text += ('8. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-				ztrdir.value = "u_to_u8telugu"; doztr();
-				all_text += ('9. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
+				ztrdir.value = "u_to_u8odia"; doztr();
+				all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
+				ztrdir.value = "u_to_u8pnz"; doztr();
+				all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
+				ztrdir.value = "u_to_u8guzrati"; doztr();
+				all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
 				otekst.value = all_text;
 				ztrdir.value = "i_to_u8hin";
 }
@@ -168,7 +167,6 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 			case "i_to_u8knrra": otekst.value = i_to_u8(itekst.value,7); break;
 			case "i_to_u8mlyalm": otekst.value = i_to_u8(itekst.value,8); break;
 //////////
-
 			case "u_to_u8hin":
 				otekst.value = u_to_u8hin(itekst.value, 0);
 				n_to_null_output();
@@ -219,8 +217,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
             </select>
 			<a 
       href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
-      target="blank">
-        font keyboard etc
+      target="blank">font
     </a>
       </div>
       <div class="pcdiv">
