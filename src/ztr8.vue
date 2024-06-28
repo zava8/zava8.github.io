@@ -141,6 +141,7 @@ function u_to_u8hin_to_i_click() {
   ztrdir.value = "u_to_u8hin"; doztr();
   itekst.value = otekst.value;
   ztrdir.value = "i_to_u8hin"; doztr();
+  itekst.value = otekst.value;
 }
 ////////////
 function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); }
