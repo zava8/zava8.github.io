@@ -80,6 +80,8 @@ function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 }
 function u_to_all_click() {
 				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
+				ztrdir.value = "u_to_a"; doztr();
+				all_text += ('0. ' + otekst.value + "\n#english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
 				ztrdir.value = "u_to_u8hin"; doztr();
 				all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
 				ztrdir.value = "u_to_u8bngali"; doztr();
