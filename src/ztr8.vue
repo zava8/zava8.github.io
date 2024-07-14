@@ -55,6 +55,8 @@ function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
 	ztrdir.value = "i_to_u8tmil"; doztr();
 	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
+	ztrdir.value = "i_to_u8sinh"; doztr();
+	all_text += ('6a. ' + otekst.value + "\n#sinhala #sinhala5 zava8.github.io -> #font -> sinhala5.ttf\n") ;
 	ztrdir.value = "i_to_u8odia"; doztr();
 	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
 	ztrdir.value = "i_to_u8pnz"; doztr();
