@@ -1,20 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-////////////////
-/* import { i_to_u8 } from './assets/ztr8/i_to_u8.js'
-
-import { u_to_u8hin } from './assets/ztr8/u_to_u8hin.js'
-import { u_to_u8pnz } from './assets/ztr8/u_to_u8pnz.js'
-import { u_to_u8guzrati } from './assets/ztr8/u_to_u8guzrati.js'
-import { u_to_u8bngali } from './assets/ztr8/u_to_u8bngali.js'
-import { u_to_u8odia } from './assets/ztr8/u_to_u8odia.js'
-
-import { u_to_u8tmil } from './assets/ztr8/u_to_u8tmil.js'
-import { u_to_u8telugu } from './assets/ztr8/u_to_u8telugu.js'
-import { u_to_u8mlyalm } from './assets/ztr8/u_to_u8mlyalm.js'
-import { u_to_u8knrra } from './assets/ztr8/u_to_u8knrra.js' */
-////////////////
 import { i_to_u8 } from './ztr8/i_to_u8.js'
+import { i_to_u8sinh } from './ztr8/i_to_u8sinh.js'
 
 import { u_to_a } from './ztr8/u_to_a.js'
 import { u_to_u8hin } from './ztr8/u_to_u8hin.js'
@@ -53,7 +40,6 @@ const otekst = ref("")
 const olc = ref(0)
 function itekst_on_input() { doztr() }
 function ztrdir_changed() { doztr() }
-// function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 //function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); } 
 function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
@@ -129,6 +115,7 @@ function macron_to_abc() {
     itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
 }
 
+function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; doztr(); }
 function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
 function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
 function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; doztr(); }
@@ -160,6 +147,8 @@ function u_to_u8knrra_click() { ztrdir.value = "u_to_u8knrra"; doztr(); }
 function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; doztr(); }
 function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);	
 		switch (ztrdir.value) {
+			case "i_to_u8sinh": otekst.value = i_to_u8sinh(itekst.value); break;
+////////////			
 			case "i_to_u8hin": otekst.value = i_to_u8(itekst.value, 0); break;
 			case "i_to_u8bngali": otekst.value = i_to_u8(itekst.value,1); break;
 			case "i_to_u8pnz": otekst.value = i_to_u8(itekst.value,2); break;
@@ -201,6 +190,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
               <option value="macron_to_abc">macron_to_abc</option>
 			  <option disabled>_________</option>
               <option value="i_to_u8tmil" title="">i_to_தமiல</option>
+              <option value="i_to_u8sinh" title="">i_to_හiනහaලa</option>
               <option value="i_to_u8knrra" title="">i_to_ಕನರರa</option>
               <option value="i_to_u8pnz" title="">i_to_ਪਨਜaਬi</option>
               <option value="i_to_u8bngali" title="">i_to_বনgaলi</option>
@@ -230,6 +220,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_ಕನರರa</button>
 	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guજરaતi</button>
 	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
+	   <button @click="i_to_u8sinh_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; අදහත බඩඵ zzkk ලමනර පසට vwxය">i_to_හiනහaලa</button>
 	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨਜaਬi</button>
 	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বনgaলi</button>
 	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡia</button>
