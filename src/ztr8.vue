@@ -212,7 +212,11 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
             </select>
 			<a 
       href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
-      target="blank">font
+      target="blank">1.font
+    </a>
+			<a 
+      href="https://drive.google.com/drive/folders/1GZutiA6penz2NUY7qlC3FlPhkOQQg5pa?usp=sharing"
+      target="blank">2.gb
     </a>
       </div>
       <div class="pcdiv">
