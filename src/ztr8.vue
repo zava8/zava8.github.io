@@ -216,7 +216,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
     </a>
 			<a 
       href="https://drive.google.com/drive/folders/1GZutiA6penz2NUY7qlC3FlPhkOQQg5pa?usp=sharing"
-      target="blank">2.gb
+      target="blank">2.fbse
     </a>
       </div>
       <div class="pcdiv">
