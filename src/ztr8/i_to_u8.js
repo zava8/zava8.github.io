@@ -1,5 +1,5 @@
-const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'c',G : 'g',
-	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', N : 'न',
+const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g',
+	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', N : 'ṅ',
 	k : 'k', K : 'k', q : 'k', Q : 'k',  z : 'z', j : 'z', Z : 'z', J : 'z',
 	v : 'v', V : 'v', w : 'w', W : 'w',
 	t : 'ट', d : 'ड',  p : 'प', P : 'प', F: 'फ', f: 'फ',

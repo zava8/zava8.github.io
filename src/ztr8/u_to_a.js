@@ -1,8 +1,8 @@
 const u_to_a_dict = {
   all_phoniks_list: [
-    'N', // 	ऀ	900	2304		inverted candrabindu
-    'N', // 	ँ	901	2305		anunasika(candrabindu)
-    'N', // 	ं	902	2306	anuswara	anusvara bindu
+    'ṅ', // 	ऀ	900	2304		inverted candrabindu
+    'ṅ', // 	ँ	901	2305		anunasika(candrabindu)
+    'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
     'A', // 	ः	903	2307		visarga
     'Ae', // 	ऄ	904	2308		short a ,  e in awadh
     'A', // 	अ	905	2309	vovls
@@ -25,12 +25,12 @@ const u_to_a_dict = {
     'kh', // 	ख	916	2326
     'g', // 	ग	917	2327
     'gh', // 	घ	918	2328
-    'Ng', // 	ङ	919	2329
-    'c', // 	च	91A	2330
-    'ch', // 	छ	91B	2331
+    'ṅg', // 	ङ	919	2329
+    'ꞇ', // 	च	91A	2330
+    'ꞇh', // 	छ	91B	2331
     'z', // 	ज	91C	2332
     'zh', // 	झ	91D	2333
-    'nय', // 	ञ	91E	2334		nya
+    'n', // 	ञ	91E	2334		nya
     't', // 	ट	91F	2335
     'th', // 	ठ	920	2336
     'd', // 	ड	921	2337
@@ -41,7 +41,7 @@ const u_to_a_dict = {
     'D', // 	द	926	2342
     'Dh', // 	ध	927	2343
     'n', // 	न	928	2344
-    'nnA', // 	ऩ	929	2345		nnna
+    'n', // 	ऩ	929	2345		nnna
     'p', // 	प	92A	2346
     'f', // 	फ	92B	2347
     'b', // 	ब	92C	2348
