@@ -1,4 +1,4 @@
-const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g',
+const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g',a:'α',
 	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', N : 'ṅ',
 	k : 'k', K : 'k', q : 'k', Q : 'k',  z : 'z', j : 'z', Z : 'z', J : 'z',
 	v : 'v', V : 'v', w : 'w', W : 'w',
