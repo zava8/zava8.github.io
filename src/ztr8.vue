@@ -93,6 +93,11 @@ function u_to_all_click() {
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
+function c_to_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
+function a_to_a() { itekst.value = itekst.value.replaceAll('α','a'); }
+function n_to_n() { itekst.value = itekst.value.replaceAll('ṅ','n'); }
+function ac_to_ac() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c'); }
+function acn_to_acn() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c').replaceAll('ṅ','n'); }
 function w_to_vzyuz() {
 	itekst.value = itekst.value.replaceAll(
 		//'yew','yuu').replaceAll(
@@ -252,6 +257,11 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 	  <div>
 		<button @click="i_to_caps">abc_to_ABC</button>
 		<button @click="jq_to_zk">jq_to_zk</button>
+		<button @click="c_to_c">ꞇ_to_c</button>
+		<button @click="a_to_a">α_to_a</button>
+		<button @click="n_to_n">ṅ_to_n</button>
+		<button @click="ac_to_ac">αꞇ_to_ac</button>
+		<button @click="acn_to_acn">αꞇṅ_to_acn</button>
 		<button @click="w_to_vzyuz">w_to_vzyuz</button>
 		<button @click="jqw_hin_to_zkv">जकव_to_zkv</button>
 		<button @click="n_to_null">n_to_null</button>
