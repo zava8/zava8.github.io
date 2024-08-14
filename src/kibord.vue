@@ -1,4 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+</script>
 <template>
+	<img src="/src/img/kpd/8flg.png" alt="india flag"><hr>
+	<img src="/src/img/kpd/zioing.jpg" alt="ing zio"><hr>
     <table class="table">
     <thead class="thead-dark">
         <tr>

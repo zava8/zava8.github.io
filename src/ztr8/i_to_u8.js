@@ -1,11 +1,11 @@
 const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g',a:'α',
 	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', N : 'ṅ',
-	k : 'k', K : 'k', q : 'k', Q : 'k',  z : 'z', j : 'z', Z : 'z', J : 'z',
+	k : 'k', K : 'k', q : 'ƙ', Q : 'ƙ',  z : 'z', j : 'ź', Z : 'z', J : 'ź',
 	v : 'v', V : 'v', w : 'ⱱ', W : 'ⱱ',
 	t : 'ट', d : 'ड',  p : 'प', P : 'प', F: 'फ', f: 'फ',
 	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
  	l : 'ल', L : 'ल',  S : 'स', s : 'स', 	
-}
+} //  ź ƙ
 export function i_to_u8(input , arg_oli) {
   const inputLength = input.length;
   // alert("in i_to_u8 input is " + input + " and inputLength is : "+inputLength);
