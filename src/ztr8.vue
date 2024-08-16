@@ -222,7 +222,11 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 			<a 
       href="https://drive.google.com/drive/folders/1GZutiA6penz2NUY7qlC3FlPhkOQQg5pa?usp=sharing"
       target="blank">2.fbse
-    </a>
+    </a>    
+    <a href="https://vk.com/zava810" target="blank">vk</a>
+    <a href="https://t.me/zava810" target="blank">टeलegरαम</a>
+    <a href="https://x.com/etphor" target="blank">x</a>
+    <a href="https://fb.com/ztrabc" target="blank">फaꞇeबook</a>    
       </div>
       <div class="pcdiv">
 	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയαലമ</button>

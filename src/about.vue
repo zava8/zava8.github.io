@@ -24,10 +24,13 @@
     </li>
     <li class="list-group-item"><a href="https://facebook.com/ztrabc">fesbuk ztrabc</a></li>
     <li class="list-group-item">
-       <a href="https://twitter.com/etphor">tvitter etphor 8+8=10=4x4</a>
+       <a href="https://twitter.com/etphor">twitter etphor 8+8=10=4x4</a>
     </li>
     <li class="list-group-item">
-       <a href="https://github.com/zava8/plong">8pinger_maths library</a>
+       <a href="https://github.com/zava8/plong">8finger_maThs library</a>
+    </li>
+    <li class="list-group-item">
+       <a href="https://t.me/zava810">t.me/zava810 8+8=10=4x4</a>
     </li>
   </ol>
 </template>
