@@ -93,8 +93,20 @@ function u_to_all_click() {
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
+function n_to_N() { itekst.value = itekst.value.replaceAll(
+										/ng/ig,'ṅg').replaceAll(
+										/nk/ig,'ṅk').replaceAll(
+										/nc([^a-zA-Z])/ig,"ṅc$1"); }
+function a_to_aa() { itekst.value = itekst.value.replaceAll(
+										/([cꞇdft])ar\b/ig,"$1αr").replaceAll(
+										/nk/ig,'ṅk').replaceAll(
+										/nc([^a-zA-Z])/ig,"ṅc$1"); }
+function H_to_H() { itekst.value = itekst.value.replaceAll('H','ɦ'); }
+function D_to_D() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
+function T_to_T() { itekst.value = itekst.value.replaceAll('T','τ'); }
 function c_to_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
 function a_to_a() { itekst.value = itekst.value.replaceAll('α','a'); }
+function a_to_A() { itekst.value = itekst.value.replaceAll('a','A'); }
 function n_to_n() { itekst.value = itekst.value.replaceAll('ṅ','n'); }
 function ac_to_ac() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c'); }
 function acn_to_acn() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c').replaceAll('ṅ','n'); }
@@ -261,16 +273,28 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 	  </div>
 	  <div>
 		<button @click="jq_to_zk">jq_to_zk</button>
-		<button @click="c_to_c">ꞇ_to_c</button>
-		<button @click="a_to_a">α_to_a</button>
-		<button @click="n_to_n">ṅ_to_n</button>
-		<button @click="ac_to_ac">αꞇ_to_ac</button>
-		<button @click="acn_to_acn">αꞇṅ_to_acn</button>
 		<button @click="w_to_vzyuz">w_to_vzyuz</button>
 		<button @click="jqw_hin_to_zkv">जकव_to_zkv</button>
 		<button @click="n_to_null">n_to_null</button>
 		<button @click="x_to_z">x_to_z</button>
 		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
+	  </div>
+      <div>
+		English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):  
+		<button @click="a_to_aa">a_to_α</button>
+		<button @click="n_to_N">n_to_ṅ</button>
+		<button @click="H_to_H">H_to_ɦ</button>
+		<button @click="T_to_T">T_to_τ</button>
+		<button @click="D_to_D">D_to_ꟈ</button>
+	  </div>
+      <div>
+		iṅglish_to_English:
+		<button @click="c_to_c">ꞇ_to_c</button>
+		<button @click="a_to_a">α_to_a</button>
+		<button @click="a_to_A">a_to_A</button>
+		<button @click="n_to_n">ṅ_to_n</button>
+		<button @click="ac_to_ac">αꞇ_to_ac</button>
+		<button @click="acn_to_acn">αꞇṅ_to_acn</button>
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>
