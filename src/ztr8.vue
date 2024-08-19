@@ -93,23 +93,43 @@ function u_to_all_click() {
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
-function n_to_N() { itekst.value = itekst.value.replaceAll(
+
+// ////////uniꞇode_to_iṅglish (AHNDT->aɦṅꟈτ)
+function A_to_a() { itekst.value = itekst.value.replaceAll('A','a'); }
+function H_to_hh() { itekst.value = itekst.value.replaceAll('H','ɦ'); }
+function N_to_nn() { itekst.value = itekst.value.replaceAll('N','ṅ'); }
+function D_to_dd() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
+function T_to_tt() { itekst.value = itekst.value.replaceAll('T','τ'); }
+
+// ////////English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):
+function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
+										/([cꞇdft])ar\b/ig,"$1αr").replaceAll(
+										/las([skmt])/ig,'lαs$1'); }
+function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
 										/ng/ig,'ṅg').replaceAll(
 										/nk/ig,'ṅk').replaceAll(
 										/nc([^a-zA-Z])/ig,"ṅc$1"); }
-function a_to_aa() { itekst.value = itekst.value.replaceAll(
-										/([cꞇdft])ar\b/ig,"$1αr").replaceAll(
-										/nk/ig,'ṅk').replaceAll(
-										/nc([^a-zA-Z])/ig,"ṅc$1"); }
-function H_to_H() { itekst.value = itekst.value.replaceAll('H','ɦ'); }
-function D_to_D() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
-function T_to_T() { itekst.value = itekst.value.replaceAll('T','τ'); }
-function c_to_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
-function a_to_a() { itekst.value = itekst.value.replaceAll('α','a'); }
+function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
+function Ww_to_vv() { itekst.value = itekst.value.replaceAll(/[w]/ig,'ⱱ'); }
+function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
+function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
+function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
+function Eng_to_ing() {
+	Aa_to_aa(); Nn_to_nn(); Hh_to_hh();
+	Ww_to_vv(); Jj_to_zz(); Qq_to_kk();Cc_to_cc();
+}								
+// ////////iṅglish_to_English below
+
+function ww_to_w() { itekst.value = itekst.value.replaceAll('ⱱ','w'); }
+function cc_to_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
+function aa_to_a() { itekst.value = itekst.value.replaceAll('α','a'); }
 function a_to_A() { itekst.value = itekst.value.replaceAll('a','A'); }
-function n_to_n() { itekst.value = itekst.value.replaceAll('ṅ','n'); }
-function ac_to_ac() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c'); }
-function acn_to_acn() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c').replaceAll('ṅ','n'); }
+function nn_to_n() { itekst.value = itekst.value.replaceAll('ṅ','n'); }
+function aacc_to_ac() { itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c'); }
+function acnw_to_acnw()
+{ itekst.value = itekst.value.replaceAll('α','a').replaceAll('ꞇ','c').replaceAll('ṅ','n').replaceAll('ⱱ','w'); }
+// ////////iṅglish_to_English above
+
 function w_to_vzyuz() {
 	itekst.value = itekst.value.replaceAll(
 		//'yew','yuu').replaceAll(
@@ -145,7 +165,7 @@ function i_to_u8odia_click() { ztrdir.value = "i_to_u8odia"; doztr(); }
 function i_to_u8telugu_click() { ztrdir.value = "i_to_u8telugu"; doztr(); }
 function i_to_u8guzrati_click() { ztrdir.value = "i_to_u8guzrati"; doztr(); }
 ////////////
-function u_to_u8hin_to_i_click() {
+function u_to_u8hin_to_i_click() {	
   ztrdir.value = "u_to_u8hin"; doztr();
   itekst.value = otekst.value;
   ztrdir.value = "i_to_u8hin"; doztr();
@@ -267,7 +287,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 	  <div>
 		  <button @click="i_to_all_click" title="">i_to_all</button>
 		  <button @click="u_to_all_click">u_to_all</button>
-		  <button @click="u_to_u8hin_to_i_click">u_to_हiन</button>
+		  <button @click="u_to_u8hin_to_i_click">ui_to_हiन</button>
 		  <button @click="i_to_small">ABC_to_abc</button>
 		  <button @click="i_to_caps">abc_to_ABC</button>
 	  </div>
@@ -280,21 +300,33 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
 	  </div>
       <div>
-		English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):  
-		<button @click="a_to_aa">a_to_α</button>
-		<button @click="n_to_N">n_to_ṅ</button>
-		<button @click="H_to_H">H_to_ɦ</button>
-		<button @click="T_to_T">T_to_τ</button>
-		<button @click="D_to_D">D_to_ꟈ</button>
+		uniꞇode_to_iṅglish (AHNDT->aɦṅꟈτ):<br/>
+		<button @click="A_to_a">A_to_a</button>
+		<button @click="H_to_hh">H_to_ɦ</button>
+		<button @click="N_to_nn">N_to_ṅ</button>
+		<button @click="D_to_dd">D_to_ꟈ</button>
+		<button @click="T_to_tt">T_to_τ</button>
 	  </div>
       <div>
-		iṅglish_to_English:
-		<button @click="c_to_c">ꞇ_to_c</button>
-		<button @click="a_to_a">α_to_a</button>
+		English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):<br/>
+		<button @click="Aa_to_aa">Aa_to_α</button>
+		<button @click="Nn_to_nn">Nn_to_ṅ</button>
+		<button @click="Hh_to_hh">Hh_to_ɦ</button>
+		<button @click="Ww_to_vv">Ww_to_ⱱ</button>
+		<button @click="Jj_to_zz">Jj_to_ź</button>
+		<button @click="Qq_to_kk">Qq_to_ƙ</button>
+		<button @click="Cc_to_cc">Cc_to_ꞇ</button>
+		<button @click="Eng_to_ing">Eng_to_iṅg</button>
+	  </div>
+      <div>
+		iṅglish_to_English:<br/>
+		<button @click="cc_to_c">ꞇ_to_c</button>
+		<button @click="aa_to_a">α_to_a</button>
 		<button @click="a_to_A">a_to_A</button>
-		<button @click="n_to_n">ṅ_to_n</button>
-		<button @click="ac_to_ac">αꞇ_to_ac</button>
-		<button @click="acn_to_acn">αꞇṅ_to_acn</button>
+		<button @click="nn_to_n">ṅ_to_n</button>
+		<button @click="ww_to_w">ⱱ_to_w</button>
+		<button @click="aacc_to_ac">αꞇ_to_ac</button>
+		<button @click="acnw_to_acnw">αꞇṅⱱ_to_acnw</button>
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>
