@@ -109,15 +109,15 @@ function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
 										/era([\b\s])/ig,"erα$1").replaceAll(
 										/([cdft])ar([\b\s])/ig,"$1αr$2").replaceAll(
 										/las([skmt])/ig,'lαs$1'); }
-// NC nugget king finger ginger pencil zinc sync	income	 
-// concur once
+// NC nk NK nugget king finger ginger pencil zinc sync 	 
+// concur once income NC nC Nc nc lunch function
+// announce uncommon incide 
+// 1. /(^a-z)N/g,"$1n" 2./([nN])([^gkc])/g,"n$2"
 function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
-										/(^a-z)N/g,"$1n").replaceAll(
-										/nk/g,'ṅk').replaceAll(
-										/([nN])([^gkc])/g,"n$2").replaceAll(
+										/([a-zA-Z])nk/g,"$1ṅk").replaceAll(
 										/ing/g,"iṅg").replaceAll(
 										/giṅge/g,'ginge').replaceAll(
-										/([^e])nc([^hueio])/g,"$1ṅc$2"); }
+										/([aiouyAIOU])nc([^hueio])/g,"$1ṅc$2"); }
 function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
 function Ww_to_vv() { itekst.value = itekst.value.replaceAll(/[w]/ig,'ⱱ'); }
 function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
@@ -166,7 +166,7 @@ function macron_to_abc() {
 }
 
 function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; doztr(); }
-function i_to_u8hin_click() { ztrdir.value = "i_to_u8hin"; doztr(); }
+function i_to_u8hin_click() { Eng_to_ing(); ztrdir.value = "i_to_u8hin"; doztr(); }
 function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
 function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; doztr(); }
 function i_to_u8bngali_click() { ztrdir.value = "i_to_u8bngali"; doztr(); }
@@ -176,10 +176,10 @@ function i_to_u8odia_click() { ztrdir.value = "i_to_u8odia"; doztr(); }
 function i_to_u8telugu_click() { ztrdir.value = "i_to_u8telugu"; doztr(); }
 function i_to_u8guzrati_click() { ztrdir.value = "i_to_u8guzrati"; doztr(); }
 ////////////
-function u_to_u8hin_to_i_click() {	
-  ztrdir.value = "u_to_u8hin"; doztr();
-  itekst.value = otekst.value;
+function ui_to_hin_click() {	
   ztrdir.value = "i_to_u8hin"; doztr();
+  itekst.value = otekst.value;
+  ztrdir.value = "u_to_u8hin"; doztr();
   itekst.value = otekst.value;
 }
 ////////////
@@ -293,12 +293,12 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="u_to_u8telugu_click" title="తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी ಕನ್ನಡ മലയാളം->&#010; తeiలugu తమiలలల oడiఅa guజరaతi guరuమuకhi బaనలa హiనదi కననడ మలయaలల">u_to_తeలugu</button>
 		<button @click="u_to_u8knrra_click" title="ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी മലയാളം->&#010; ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ">u_to_kನರರα</button>
 		<button @click="u_to_u8mlyalm_click" title="മലയാളം ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी->&#010; മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi">u_to_മലയαലമ</button>
-		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_eng</button>
+		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_iṅg</button>
       </div>
 	  <div>
 		  <button @click="i_to_all_click" title="">i_to_all</button>
 		  <button @click="u_to_all_click">u_to_all</button>
-		  <button @click="u_to_u8hin_to_i_click">ui_to_हiन</button>
+		  <button @click="ui_to_hin_click">ui_to_हiन</button>
 		  <button @click="i_to_small">ABC_to_abc</button>
 		  <button @click="i_to_caps">abc_to_ABC</button>
 	  </div>
@@ -311,7 +311,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="macron_to_abc">மacரoந_டo_abc</button>	  
 	  </div>
       <div>
-		uniꞇode_to_iṅglish (AHNDT->aɦṅꟈτ):<br/>
+		uniꞇode_to_iṅglish (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt):<br/>
 		<button @click="A_to_a">A_to_a</button>
 		<button @click="H_to_hh">H_to_ɦ</button>
 		<button @click="N_to_nn">N_to_ṅ</button>
@@ -319,7 +319,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="T_to_tt">T_to_τ</button>
 	  </div>
       <div>
-		English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):<br/>
+		English_to_iṅglish(AaDHNT c wjq -> aαꟈɦṅτ ꞇ ⱱźƙ):<br/>
 		<button @click="Aa_to_aa">Aa_to_α</button>
 		<button @click="Nn_to_nn">Nn_to_ṅ</button>
 		<button @click="Hh_to_hh">Hh_to_ɦ</button>
