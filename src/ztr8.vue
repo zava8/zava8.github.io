@@ -112,11 +112,16 @@ function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
 // NC nk NK nugget king finger ginger pencil zinc sync 	 
 // concur once income NC nC Nc nc lunch function
 // announce uncommon incide 
+// orange sponge lounge plunge
 // 1. /(^a-z)N/g,"$1n" 2./([nN])([^gkc])/g,"n$2"
 function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
 										/([a-zA-Z])nk/g,"$1ṅk").replaceAll(
 										/ing/g,"iṅg").replaceAll(
-										/giṅge/g,'ginge').replaceAll(
+										/giṅge/g,"ginge").replaceAll(
+										/([a-zA-Z])ng/g,"$1ṅg").replaceAll(
+										/eṅg([eti])/g,"eng$1").replaceAll(
+										/ṅge([^a-zA-Z])/g,"nge$1").replaceAll(
+										/oung/g,'ouṅg').replaceAll(
 										/([aiouyAIOU])nc([^hueio])/g,"$1ṅc$2"); }
 function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
 function Ww_to_vv() { itekst.value = itekst.value.replaceAll(/[w]/ig,'ⱱ'); }
