@@ -96,19 +96,36 @@ function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll
 
 // ////////uniꞇode_to_iṅglish (AHNDT->aɦṅꟈτ)
 function A_to_a() { itekst.value = itekst.value.replaceAll('A','a'); }
+function A_to_ahin() { itekst.value = itekst.value.replaceAll('A','अ'); }
 function H_to_hh() { itekst.value = itekst.value.replaceAll('H','ɦ'); }
 function N_to_nn() { itekst.value = itekst.value.replaceAll('N','ṅ'); }
 function D_to_dd() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
 function T_to_tt() { itekst.value = itekst.value.replaceAll('T','τ'); }
 
 // ////////English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ):
+// // all hall tall ball  
+// shall allege tally // stall
+// called valley // gallery gallons
+//
+//
+//are //care //are // 
 function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
+										/([^hueio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
+										/([eio\s])ar/ig,"$1अr").replaceAll(
+										/\bare\b/ig,"αre").replaceAll(
+										/are/ig,"अre").replaceAll(
+										/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
+										///////
+										/([^beiohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
+										/bar([^oiuer])/ig,"bαr$1").replaceAll(
+										///////
+										/era([\b\s])/ig,"erα$1").replaceAll(
+										/([bcdfɦ\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
 										/ava/ig,"αvα").replaceAll(
 										/([^\b\soe])ard/ig,"$1αrd").replaceAll(
 										/([ag])raph/ig,"$1rαph").replaceAll(
-										/era([\b\s])/ig,"erα$1").replaceAll(
-										/([cdft])ar([\b\s])/ig,"$1αr$2").replaceAll(
-										/las([skmt])/ig,'lαs$1'); }
+										/las([skmt])/ig,'lαs$1').replaceAll(
+										/अ/g,'a'); }
 // NC nk NK nugget king finger ginger pencil zinc sync 	 
 // concur once income NC nC Nc nc lunch function
 // announce uncommon incide 
@@ -129,10 +146,12 @@ function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
 function Eng_to_ing() {
-	Aa_to_aa(); Nn_to_nn(); Hh_to_hh();
-	Ww_to_vv(); Jj_to_zz(); Qq_to_kk();Cc_to_cc();
-	D_to_dd(); T_to_tt();
+	Hh_to_hh(); Nn_to_nn(); Aa_to_aa(); 
+	Ww_to_vv();
 	itekst.value = itekst.value.toLowerCase();
+	Jj_to_zz(); Qq_to_kk();
+	D_to_dd(); T_to_tt();
+	Cc_to_cc();
 }								
 // ////////iṅglish_to_English below
 
@@ -318,6 +337,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
       <div>
 		uniꞇode_to_iṅglish (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt):<br/>
 		<button @click="A_to_a">A_to_a</button>
+		<button @click="A_to_ahin">A_to_अ</button>
 		<button @click="H_to_hh">H_to_ɦ</button>
 		<button @click="N_to_nn">N_to_ṅ</button>
 		<button @click="D_to_dd">D_to_ꟈ</button>
