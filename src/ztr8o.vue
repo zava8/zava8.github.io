@@ -151,30 +151,15 @@ function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
 										/ṅge([^a-zA-Z])/g,"nge$1").replaceAll(
 										/oung/g,'ouṅg').replaceAll(
 										/([aiouyAIOU])nc([^hueio])/g,"$1ṅc$2"); }
-function Ww_to_vv() { itekst.value = itekst.value.replaceAll(
-										/wel/ig,"ⱱel").replaceAll(
-										/wo/ig,"ⱱo").replaceAll(
-										/wa/ig,"ⱱa").replaceAll(
-										/aw([^efknr\s])/ig,"aⱱ$1").replaceAll(
-										/\baw/ig,"aⱱ").replaceAll(
-										/([^aiueoyh])w/ig,"$1ⱱ").replaceAll(
-										/\bw/ig,"ⱱ").replaceAll(
-//reverts										
-										/ⱱho/ig,"who").replaceAll(
-										/ⱱr/ig,"wr").replaceAll(
-										/sⱱer/ig,"swer").replaceAll(
-										/([a-z])aⱱ/ig,"$1aw").replaceAll(
-										/aⱱ([efknr])/ig,"aw$1").replaceAll(
-										/\btⱱo/ig,"two").replaceAll(
-										/w([aueo])i/ig,"ⱱ$1i"); }
 function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
+function Ww_to_vv() { itekst.value = itekst.value.replaceAll(/[w]/ig,'ⱱ'); }
 function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
 function Eng_to_ing() {
 	special_aa();
 	Hh_to_hh(); Nn_to_nn(); Aa_to_aa(); 
-	Ww_to_vv();
+	//Ww_to_vv();
 	itekst.value = itekst.value.toLowerCase();
 	Jj_to_zz(); Qq_to_kk();
 	D_to_dd(); T_to_tt();
