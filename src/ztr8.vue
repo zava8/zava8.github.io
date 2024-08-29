@@ -156,9 +156,9 @@ function Ww_to_vv() { itekst.value = itekst.value.replaceAll(
 	/who/ig,"ẃho").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
 	/w\b/ig,"ẃ").replaceAll(
 	/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
-	/\baw([^efknr])/ig,"aⱱ$1").replaceAll(
-	/aw([efknr])/ig,"aẃ$1").replaceAll(
-	/([a-z])aw/ig,"$1aẃ").replaceAll(
+	/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
+	/aw([efknr])/ig,"αẃ$1").replaceAll(
+	/([a-z])aw/ig,"$1αẃ").replaceAll(
 	/([eo])w/ig,"$1ẃ").replaceAll(
 	/ẃ/ig,"w"
 );}
@@ -167,9 +167,10 @@ function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
 function Eng_to_ing() {
-	special_aa();
-	Hh_to_hh(); Aa_to_aa(); Nn_to_nn(); 
-	Ww_to_vv();
+	Ww_to_vv();	
+	Hh_to_hh();
+	special_aa(); Aa_to_aa();
+	Nn_to_nn(); 
 	itekst.value = itekst.value.toLowerCase();
 	Jj_to_zz(); Qq_to_kk();
 	D_to_dd(); T_to_tt();
