@@ -153,7 +153,7 @@ function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
 										/oung/g,'ouṅg').replaceAll(
 										/([aiouyAIOU])nc([^hueio])/g,"$1ṅc$2"); }
 function Ww_to_vv() { itekst.value = itekst.value.replaceAll(
-	/who/ig,"ẃho").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
+	/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
 	/w\b/ig,"ẃ").replaceAll(
 	/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
 	/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
