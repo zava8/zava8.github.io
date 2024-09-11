@@ -141,40 +141,48 @@ function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
 // NC nk NK nugget king finger ginger pencil zinc sync 	 
 // concur once income NC nC Nc nc lunch function
 // announce uncommon incide 
-// orange sponge lounge plunge
+// orange sponge lounge plunge ñ
 // 1. /(^a-z)N/g,"$1n" 2./([nN])([^gkc])/g,"n$2"
-function Nn_to_nn() { itekst.value = itekst.value.replaceAll(
-										/([a-zA-Z])nk/g,"$1ṅk").replaceAll(
-										/ing/g,"iṅg").replaceAll(
-										/giṅge/g,"ginge").replaceAll(
-										/([a-zA-Z])ng/g,"$1ṅg").replaceAll(
-										/eṅg([eti])/g,"eng$1").replaceAll(
-										/ṅge([^a-zA-Z])/g,"nge$1").replaceAll(
-										/oung/g,'ouṅg').replaceAll(
-										/([aiouyAIOU])nc([^hueio])/g,"$1ṅc$2"); }
-function Ww_to_vv() { itekst.value = itekst.value.replaceAll(
-	/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
-	/w\b/ig,"ẃ").replaceAll(
-	/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
-	/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
-	/aw([efknr])/ig,"αẃ$1").replaceAll(
-	/([a-z])aw/ig,"$1αẃ").replaceAll(
-	/([eo])w/ig,"$1ẃ").replaceAll(
-	/ẃ/ig,"w"
-);}
+function Nn_to_nn() {
+	itekst.value = itekst.value.replaceAll(/N/g,"n").replaceAll(
+		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
+		/([a-z])nk/ig,"$1ṅk").replaceAll(/oung/ig,"ouṅg").replaceAll(
+		/ginge/ig,"giñge").replaceAll(/([ht])inge/ig,"$1iñge").replaceAll(/([fyc])ring/ig,"$1riñg").replaceAll(
+		/engin/ig,"eñgin").replaceAll(/ngth/ig,"ñgth").replaceAll(
+		/\bt[ai]ng[ei]/ig,"t$1ñg$2").replaceAll(/\bangi/ig,"añgi").replaceAll(
+		/inge/ig,"iñge").replaceAll(/ing/ig,"iṅg").replaceAll(
+		/nge\b/ig,"ñge").replaceAll(
+		/ngel/ig,"ñgel").replaceAll(/([dr])ang([ei])/ig,"$1añg$2").replaceAll(
+		/([lv])eng/ig,"$1eñg").replaceAll(/chang([ei])/ig,"chañg$1").replaceAll(/sseng/ig,"sseñg").replaceAll(
+		/nger/ig,"ṅger").replaceAll(
+		/([a-z])ng/ig,"$1ṅg").replaceAll(
+		/([aiouy])nc([^hueio])/g,"$1ṅc$2").replaceAll(
+		/ṅ/g,"N").replaceAll(/ñ/g,"n");
+}
+function Ww_to_vv() {
+	itekst.value = itekst.value.replaceAll(/W/g,"w").replaceAll(
+		/away/ig,"àⱱày").replaceAll(/war([ey])/ig,"ⱱàr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
+		/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
+		/w\b/ig,"ẃ").replaceAll(
+		/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
+		/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
+		/aw([efknr])/ig,"αẃ$1").replaceAll(
+		/([a-z])aw/ig,"$1αẃ").replaceAll(
+		/([eo])w/ig,"$1ẃ").replaceAll(
+		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
+}
 function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
 function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
 function Eng_to_ing() {
+	itekst.value = itekst.value.toLowerCase();
 	Ww_to_vv();	
 	Hh_to_hh();
 	special_aa(); Aa_to_aa();
 	Nn_to_nn(); 
-	itekst.value = itekst.value.toLowerCase();
-	Jj_to_zz(); Qq_to_kk();
+	Jj_to_zz(); Qq_to_kk(); Cc_to_cc();
 	D_to_dd(); T_to_tt();
-	Cc_to_cc();
 }								
 // ////////iṅglish_to_English below
 
