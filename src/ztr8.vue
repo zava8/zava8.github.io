@@ -149,7 +149,8 @@ function Nn_to_nn() {
 		/([a-z])nk/ig,"$1ṅk").replaceAll(/oung/ig,"ouṅg").replaceAll(
 		/ginge/ig,"giñge").replaceAll(/([ht])inge/ig,"$1iñge").replaceAll(/([fyc])ring/ig,"$1riñg").replaceAll(
 		/engin/ig,"eñgin").replaceAll(/ngth/ig,"ñgth").replaceAll(
-		/\bt[ai]ng[ei]/ig,"t$1ñg$2").replaceAll(/\bangi/ig,"añgi").replaceAll(
+		/ange([^dr])/ig,"añge$1").replaceAll(
+		/\bt([ai])ng([ei])/ig,"t$1ñg$2").replaceAll(/\bangi/ig,"añgi").replaceAll(
 		/inge/ig,"iñge").replaceAll(/ing/ig,"iṅg").replaceAll(
 		/nge\b/ig,"ñge").replaceAll(
 		/ngel/ig,"ñgel").replaceAll(/([dr])ang([ei])/ig,"$1añg$2").replaceAll(
