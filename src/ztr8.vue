@@ -157,6 +157,7 @@ function Nn_to_nn() {
 		/([lv])eng/ig,"$1eñg").replaceAll(/chang([ei])/ig,"chañg$1").replaceAll(/sseng/ig,"sseñg").replaceAll(
 		/nger/ig,"ṅger").replaceAll(
 		/([a-z])ng/ig,"$1ṅg").replaceAll(
+		/sync/g,"syṅc").replaceAll(
 		/([aiouy])nc([^hueio])/g,"$1ṅc$2").replaceAll(
 		/ṅ/g,"N").replaceAll(/ñ/g,"n");
 }
