@@ -102,47 +102,37 @@ function N_to_nn() { itekst.value = itekst.value.replaceAll('N','ṅ'); }
 function D_to_dd() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
 function T_to_tt() { itekst.value = itekst.value.replaceAll('T','τ'); }
 
-// ////////English(AaDHNT c wjq)_to_iṅglish(Aαꟈɦṅτ ꞇ ⱱźƙ): à
-// // all hall tall ball  
-// shall allege tally // stall
-// called valley // gallery gallons
-//
-//
-//are //care //are // 
-function special_aa() { itekst.value = itekst.value.replaceAll(
-										/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
-										/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
-										/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-										/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
-										/ia([ck])/ig,"iα$1"); }
-function Aa_to_aa() { itekst.value = itekst.value.replaceAll(
-////// start a
-										/\ba/ig,"à").replaceAll(
-										/ai\b/g,"αi").replaceAll(
-										/uar([bce-su-z])/ig,"uàr$1").replaceAll(
-////// end a aX										
-										/([a-z])a\b/ig,"$1α").replaceAll(
-										/a([w])\b/ig,"α$1").replaceAll(
-										/\ba([ntsmd])\b/ig,"à$1").replaceAll(
-										/ar([aiey])/ig,"àr$1").replaceAll(
-										/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
-										/([eio\s])ar/ig,"$1àr").replaceAll(
-										/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
-										///////
-										/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
-										/bar([^oiuer])/ig,"bαr$1").replaceAll(
-										///////
-										/era([\b\s])/ig,"erα$1").replaceAll(
-										/([bcdfɦ\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
-										/ava/ig,"αvα").replaceAll(
-										/([^\b\soe])ard/ig,"$1αrd").replaceAll(
-										/([ag])raph/ig,"$1rαph").replaceAll(
-										/las([skmt])/ig,'lαs$1'); }
-// NC nk NK nugget king finger ginger pencil zinc sync 	 
-// concur once income NC nC Nc nc lunch function
-// announce uncommon incide 
-// orange sponge lounge plunge ñ
-// 1. /(^a-z)N/g,"$1n" 2./([nN])([^gkc])/g,"n$2"
+// àα
+function Aa_to_aa() {
+	itekst.value = itekst.value.replaceAll(
+	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
+	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
+	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
+	/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
+	/ia([ck])/ig,"iα$1").replaceAll(
+	/\ba/ig,"à").replaceAll(
+	/ai\b/g,"αi").replaceAll(
+	/uar([bce-su-z])/ig,"uàr$1").replaceAll(
+	/([a-z])a\b/ig,"$1α").replaceAll(
+	/a([w])\b/ig,"α$1").replaceAll(
+	/\ba([ntsmd])\b/ig,"à$1").replaceAll(
+	/ar([aiey])/ig,"àr$1").replaceAll(
+	/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
+	/([eio\s])ar/ig,"$1àr").replaceAll(
+	/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
+	///////
+	/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
+	/bar([^oiuer])/ig,"bαr$1").replaceAll(
+	///////
+	/era([\b\s])/ig,"erα$1").replaceAll(
+	/([bcdfɦ\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
+	/ava/ig,"αvα").replaceAll(
+	/([^\b\soe])ard/ig,"$1αrd").replaceAll(
+	/([ag])raph/ig,"$1rαph").replaceAll(
+	/las([skmt])/ig,'lαs$1');
+}
+
+// ñṅ
 function Nn_to_nn() {
 	itekst.value = itekst.value.replaceAll(/N/g,"n").replaceAll(
 		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
@@ -181,16 +171,21 @@ function Ww_to_vv() {
 		/([eo])w/ig,"$1ẃ").replaceAll(
 		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
 }
-function Hh_to_hh() { itekst.value = itekst.value.replaceAll( /([^kgcjztdpbs])h/g,"$1ɦ"); }
+function Hh_to_hh() {
+	itekst.value = itekst.value.replaceAll(
+		/H/g,"h").replaceAll(
+		/\bh/g,"H").replaceAll(
+		/([^kgcjztdpbsw])h/ig,"$1H");
+}
 function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
 function Eng_to_ing() {
-	itekst.value = itekst.value.toLowerCase();
-	Ww_to_vv();	
+	// itekst.value = itekst.value.toLowerCase();
 	Hh_to_hh();
-	special_aa(); Aa_to_aa();
 	Nn_to_nn(); 
+	Ww_to_vv();	
+	Aa_to_aa();
 	Jj_to_zz(); Qq_to_kk(); Cc_to_cc();
 	D_to_dd(); T_to_tt();
 }								
