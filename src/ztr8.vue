@@ -157,9 +157,17 @@ function Nn_to_nn() {
 		/([lv])eng/ig,"$1eñg").replaceAll(/chang([ei])/ig,"chañg$1").replaceAll(/sseng/ig,"sseñg").replaceAll(
 		/nger/ig,"ṅger").replaceAll(
 		/([a-z])ng/ig,"$1ṅg").replaceAll(
-		/sync/g,"syṅc").replaceAll(
-		/([aiouy])nc([^hueio])/g,"$1ṅc$2").replaceAll(
-		/ṅ/g,"N").replaceAll(/ñ/g,"n");
+		/sync/ig,"syṅc").replaceAll(/anchor/ig,"aṅchor").replaceAll(/linco/ig,"liṅco").replaceAll(
+		/sincl/ig,"siṅcl").replaceAll(
+		/\buncle(s?)\b/ig,"uṅcle$1").replaceAll(/menco/ig,"meṅco").replaceAll(/([iu])nct/ig,"$1ṅct").replaceAll(
+		/nc([hyei])/ig,"ñc$1").replaceAll(
+		/inc([^hueioay])/ig,"iṅc$1").replaceAll(
+		/inc([aeiou])/ig,"iñc$1").replaceAll(
+		/([a-z])unc([^hyei])/ig,"$1uṅc$2").replaceAll(
+		/enc([^eiyh])/ig,"eñc$1").replaceAll(
+		/([ao])nc([^hyei])/ig,"$1ṅc$2").replaceAll(
+		/ṅ/g,"N").replaceAll(/ñ/g,"n"
+		);
 }
 function Ww_to_vv() {
 	itekst.value = itekst.value.replaceAll(/W/g,"w").replaceAll(
