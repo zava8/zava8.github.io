@@ -177,17 +177,22 @@ function Hh_to_hh() {
 		/\bh/g,"H").replaceAll(
 		/([^kgcjztdpbsw])h/ig,"$1H");
 }
-function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/[j]/ig,'ź'); }
-function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/[q]/ig,'ƙ'); }									
-function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/[c]/ig,'ꞇ'); }									
+function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/j/ig,'ź'); }
+function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/q/ig,'ƙ'); }									
+function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/c/ig,'ꞇ'); }									
 function Eng_to_ing() {
-	// itekst.value = itekst.value.toLowerCase();
 	Hh_to_hh();
 	Nn_to_nn(); 
 	Ww_to_vv();	
 	Aa_to_aa();
 	Jj_to_zz(); Qq_to_kk(); Cc_to_cc();
-	D_to_dd(); T_to_tt();
+	itekst.value = itekst.value.replaceAll(
+		/à/g,'a').replaceAll(
+		/H/g,'ɦ').replaceAll(
+		/N/g,'ṅ').replaceAll(
+		/W/g,'ⱱ');
+	itekst.value = itekst.value.toLowerCase();
+	// D_to_dd(); T_to_tt();
 }								
 // ////////iṅglish_to_English below
 
