@@ -67,29 +67,30 @@ function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	ztrdir.value = "i_to_u8hin";
 }
 function u_to_all_click() {
-				let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-				ztrdir.value = "u_to_a"; doztr();
-				all_text += ('0. ' + otekst.value + "\n#english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
-				ztrdir.value = "u_to_u8hin"; doztr();
-				all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-				ztrdir.value = "u_to_u8bngali"; doztr();
-				all_text += ('2. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
-				ztrdir.value = "u_to_u8telugu"; doztr();
-				all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
-				ztrdir.value = "u_to_u8knrra"; doztr();
-				all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-				ztrdir.value = "u_to_u8mlyalm"; doztr();
-				all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-				ztrdir.value = "u_to_u8tmil"; doztr();
-				all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-				ztrdir.value = "u_to_u8odia"; doztr();
-				all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
-				ztrdir.value = "u_to_u8pnz"; doztr();
-				all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
-				ztrdir.value = "u_to_u8guzrati"; doztr();
-				all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
-				otekst.value = all_text;
-				ztrdir.value = "i_to_u8hin";
+	ztrdir.value = "i_to_u8hin"; doztr(); itekst.value = otekst.value;
+	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
+	ztrdir.value = "u_to_a"; doztr();
+	all_text += ('0. ' + otekst.value + "\n#english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
+	ztrdir.value = "u_to_u8hin"; doztr();
+	all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
+	ztrdir.value = "u_to_u8bngali"; doztr();
+	all_text += ('2. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
+	ztrdir.value = "u_to_u8telugu"; doztr();
+	all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
+	ztrdir.value = "u_to_u8knrra"; doztr();
+	all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
+	ztrdir.value = "u_to_u8mlyalm"; doztr();
+	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
+	ztrdir.value = "u_to_u8tmil"; doztr();
+	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
+	ztrdir.value = "u_to_u8odia"; doztr();
+	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
+	ztrdir.value = "u_to_u8pnz"; doztr();
+	all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
+	ztrdir.value = "u_to_u8guzrati"; doztr();
+	all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
+	otekst.value = all_text;
+	ztrdir.value = "i_to_u8hin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
@@ -230,8 +231,11 @@ function macron_to_abc() {
     itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
 }
 
+function i_to_u8hin_click() {
+	//Eng_to_ing();
+	ztrdir.value = "i_to_u8hin"; doztr();
+}
 function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; doztr(); }
-function i_to_u8hin_click() { Eng_to_ing(); ztrdir.value = "i_to_u8hin"; doztr(); }
 function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
 function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; doztr(); }
 function i_to_u8bngali_click() { ztrdir.value = "i_to_u8bngali"; doztr(); }
@@ -264,7 +268,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		switch (ztrdir.value) {
 			case "i_to_u8sinh": otekst.value = i_to_u8sinh(itekst.value); break;
 ////////////			
-			case "i_to_u8hin": otekst.value = i_to_u8(itekst.value, 0); break;
+			case "i_to_u8hin": Eng_to_ing(); otekst.value = i_to_u8(itekst.value, 0); break;
 			case "i_to_u8bngali": otekst.value = i_to_u8(itekst.value,1); break;
 			case "i_to_u8pnz": otekst.value = i_to_u8(itekst.value,2); break;
 			case "i_to_u8guzrati": otekst.value = i_to_u8(itekst.value,3); break;
@@ -362,7 +366,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
       </div>
 	  <div>
 		  <button @click="i_to_all_click" title="">i_to_all</button>
-		  <button @click="u_to_all_click">u_to_all</button>
+		  <button @click="u_to_all_click" class="bggreen">u_to_all</button>
 		  <button @click="ui_to_hin_click">ui_to_हiन</button>
 		  <button @click="i_to_small">ABC_to_abc</button>
 		  <button @click="i_to_caps">abc_to_ABC</button>
@@ -423,6 +427,9 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
     font-size: 16px;
     resize: none;
   }
+ .bggreen {
+	background-color: #0f0;
+ }
 @media screen and (max-width: 600px) {
   .pcdiv {
     visibility: hidden;
