@@ -174,7 +174,7 @@ function Eng_to_ing() {
 		/N/g,'ṅ').replaceAll(
 		/W/g,'ⱱ');
 	itekst.value = itekst.value.toLowerCase();
-	// D_to_dd(); T_to_tt();
+	D_to_dd(); T_to_tt();
 }								
 // ////////iṅglish_to_English below
 
