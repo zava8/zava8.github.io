@@ -51,9 +51,9 @@ function u_to_all_click() {
 	ztrdir.value = "i_to_u8hin"; doztr(); itekst.value = otekst.value;
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
 	ztrdir.value = "u_to_a"; doztr();
-	all_text += ('0. ' + otekst.value + "\n#english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
+	all_text += ('0. ' + otekst.value + "\n(AaDHNT c wjq -> aαꟈɦṅτ ꞇ ⱱźƙ) #english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
 	ztrdir.value = "u_to_u8hin"; doztr();
-	all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
+	all_text += ('1. ' + otekst.value + "\n (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt) #hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
 	ztrdir.value = "u_to_u8bngali"; doztr();
 	all_text += ('2. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
 	ztrdir.value = "u_to_u8telugu"; doztr();
