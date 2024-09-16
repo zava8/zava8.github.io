@@ -15,26 +15,7 @@ import { u_to_u8telugu } from './ztr8/u_to_u8telugu.js'
 import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
-const itekst = ref(`#8aiueohcg #4ADHT #3kvz fb.com/ztrabc kKqQ zZjJ vVwW nNx bdf pst yrlm ->
-	1. i_to_हiनदi : #8aiueohcg #4अदहत #3kvz फब.coम/zटरaबc kkkk zzzz vvww ननx बडफ पसट यरलम
-	2. i_to_বনgaলi : #8aiueohcg #4অদহত #3kvz ফব.coম/zটরaবc kkkk zzzz vvww ননx বডফ পসট যরলম
-	3. i_to_తeలugu : #8aiueohcg #4అదహత #3kvz ఫబ.coమ/zటరaబc kkkk zzzz vvww ననx బడఫ పసట యరలమ
-	4. i_to_ಕನರರa : #8aiueohcg #4ಅದಹತ #3kvz ಫಬ.coಮ/zಟರaಬc kkkk zzzz vvww ನನx ಬಡಫ ಪಸಟ ಯರಲಮ
-	5. i_to_മലയaലമ  : #8aiueohcg #4അദഹത #3kvz ഫബ.coമ/ztരaബc kkkk zzzz vvww നനx ബഡഫ പസt യരലമ
-	6. i_to_தமiல : #8aiueohcg #4அDஹத #3kvz fb.coம/zடரabc kkkk zzzz vvww நநx bdf பஸட யரலம
-	7. i_to_oଡia: #8aiueohcg #4ଅଦହତ #3kvz ଫବ.coମ/zଟରaବc kkkk zzzz vvww ନନx ବଡଫ ପସଟ ଯରଲମ
-	8. i_to_ਪਨਜaਬi: #8aiueohcg #4ਅਦਹਤ #3kvz ਫਬ.coਮ/zਟਰaਬc kkkk zzzz vvww ਨਨx ਬਡਫ ਪਸਟ ਯਰਲਮ
-	9. i_to_guજરaતi : #8aiueohcg #4અદહત #3kvz ફબ.coમ/zટરaબc kkkk zzzz vvww નનx બડફ પસટ યરલમ
-हिंदी বাংলা తెలుగు ಕನ್ನಡ മലയാളം தமிழ் ଓଡିଆ ਗੁਰੂਮੁਖੀ ગુજરાતી->
-	1. u_to_हiनदi : हiनदi बaनलa तeiलugu kननड मलयaलल तमiललल oडiअa guरuमukhi guzरaतi
-	2. u_to_বনgaলi : হiনদi বaনলa তeiলugu কননড মলযaলল তমiললল oডiঅa guরuমuকhi guজরaতi
-	3. u_to_తeలugu : హiనదi బaనలa తeiలugu కననడ మలయaలల తమiలలల oడiఅa guరuమuకhi guజరaతi
-	4. u_to_ಕನರರa : ಹiನದi ಬaನಲa ತeiಲugu ಕನನಡ ಮಲಯaಲಲ ತಮiಲಲಲ oಡiಅa guರuಮuಕhi guಜರaತi
-	5. u_to_മലയaലമ : ഹiനദi ബaനലa തeiലugu കനനഡ മലയaലല തമiലലല oഡiഅa guരuമuകhi guജരaതi
-	6. u_to_தமiல : ஹiநDi baநலa தeiலugu கநநd ਮலயaலல தਮiலலல odiஅa guரuਮuகhi guஜரaதi
-	7. u_to_oଡia : ହiନଦi ବaନଲa ତeiଲugu କନନଡ ମଲଯaଲଲ ତମiଲଲଲ oଡiଅa guରuମuକhi guଜରaତi
-	8. u_to_ਪਨਜaਬi : ਹiਨਦi ਬaਨਲa ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ ਤਮiਲਲਲ oਡiਅa guਰuਮuਕhi guਜਰaਤi
-	9. u_to_guજરaતi : હiનદi બaનલa તeiલugu કનનડ મલયaલલ તમiલલલ oડiઅa guરuમuકhi guજરaતi`);
+const itekst = ref("");
 const ztrdir = ref("")
 const otekst = ref("")
 const olc = ref(0)
