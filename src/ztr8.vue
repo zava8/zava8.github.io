@@ -172,9 +172,10 @@ function Eng_to_ing() {
 		/à/g,'a').replaceAll(
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		/W/g,'ⱱ');
+		/W/g,'ⱱ').replace(/ज्ञ/g, 'gy');
 	itekst.value = itekst.value.toLowerCase();
 	D_to_dd(); T_to_tt();
+	//itekst.value = itekst.value.replace(/ज्ञ/g, 'gy');
 }								
 // ////////iṅglish_to_English below
 
@@ -259,7 +260,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 			case "i_to_u8knrra": otekst.value = i_to_u8(itekst.value,7); break;
 			case "i_to_u8mlyalm": otekst.value = i_to_u8(itekst.value,8); break;
 //////////
-			case "u_to_u8hin":
+			case "u_to_u8hin":				
 				otekst.value = u_to_u8hin(itekst.value, 0);
 				n_to_null_output();
 				break;

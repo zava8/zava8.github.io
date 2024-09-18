@@ -3,24 +3,24 @@ const u_to_u8hin_dict = {
     'ṅ', // 	ऀ	900	2304		inverted candrabindu
     'ṅ', // 	ँ	901	2305		anunasika(candrabindu)
     'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
-    'अ', // 	ः	903	2307		visarga
-    'अe', // 	ऄ	904	2308		short a ,  e in awadh
-    'अ', // 	अ	905	2309	vovls
-    'अα', // 	आ	906	2310	vovls
+    'a', // 	ः	903	2307		visarga
+    'ae', // 	ऄ	904	2308		short a ,  e in awadh
+    'a', // 	अ	905	2309	vovls
+    'aα', // 	आ	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
     'u', // 	उ	909	2313	vovls
     'u', // 	ऊ	90A	2314	vovls
     'रi', // 	ऋ	90B	2315	vovls
     'लi', // 	ऌ	90C	2316	vovls
-    'अ', // 	ऍ	90D	2317	no	candra e
+    'a', // 	ऍ	90D	2317	no	candra e
     'e', // 	ऎ	90E	2318	no	short e
     'e', // 	ए	90F	2319	vovls
     'e', // 	ऐ	910	2320	vovls
-    'अα', // 	ऑ	911	2321		candra o
+    'aα', // 	ऑ	911	2321		candra o
     'o', // 	ऒ	912	2322		short o
     'o', // 	ओ	913	2323
-    'अo', // 	औ	914	2324
+    'ao', // 	औ	914	2324
     'k', //'क', // 	क	915	2325
     'kh', //'कh', // 	ख	916	2326
     'g', // 	ग	917	2327
@@ -38,8 +38,8 @@ const u_to_u8hin_dict = {
     'न', // 	ण	923	2339		nna
     'त', // 	त	924	2340
     'तh', // 	थ	925	2341
-    'द', // 	द	926	2342
-    'दh', // 	ध	927	2343
+    'ꟈ', // 	द	926	2342
+    'ꟈh', // 	ध	927	2343
     'न', // 	न	928	2344
     'न', // 	ऩ	929	2345		nnna
     'प', // 	प	92A	2346
@@ -57,7 +57,7 @@ const u_to_u8hin_dict = {
     'सh', // 	श	936	2358
     'सh', // 	ष	937	2359
     'स', // 	स	938	2360
-    'ह', // 	ह	939	2361
+    'ɦ', // 	ह	939	2361
     'oe', // 	ऺ	93A	2362		oe
     'ui', // 	ऻ	93B	2363		ooe
     '', // 	़	93C	2364		nukta for extending the alphabet to new letters
@@ -79,7 +79,7 @@ const u_to_u8hin_dict = {
     'o', // 	ौ	94C	2380	vvs
     '', // 	्	94D	2381	virama	VIRAMA halant suppresses inherent vowel
     '', // 	ॎ	94E	2382		prishthamatra e , combines with e to form ai, with aa to form o,and with o to form au
-    'अo', // 	ॏ	94F	2383		aw
+    'ao', // 	ॏ	94F	2383		aw
     'oम', // 	ॐ	950	2384
     '', // 	॑	951	2385		stress sign udatta, vedic tone svarita
     '', // 	॒	952	2386		anudatta
@@ -114,12 +114,12 @@ const u_to_u8hin_dict = {
     '9', // 	९	96F	2415
     '_', // 	॰	970	2416		abbreviation sign
     '__', // 	ॱ	971	2417		high spacing dot
-    'अ', // 	ॲ	972	2418		A
-    'अo', // 	ॳ	973	2419		o
-    'अe', // 	ॴ	974	2420		oe
-    'अo', // 	ॵ	975	2421		ao
-    'अi', // 	ॶ	976	2422		ui
-    'अui', // 	ॷ	977	2423		uui
+    'a', // 	ॲ	972	2418		A
+    'ao', // 	ॳ	973	2419		o
+    'ae', // 	ॴ	974	2420		oe
+    'ao', // 	ॵ	975	2421		ao
+    'ai', // 	ॶ	976	2422		ui
+    'aui', // 	ॷ	977	2423		uui
     'ड', // 	ॸ	978	2424		d
     'z', // 'ज', // 	ॹ	979	2425		z
     'य', // 	ॺ	97A	2426		y
@@ -186,10 +186,10 @@ export function u_to_u8hin (input,isa8) {
           prev_lang_code>0x11 && prev_lang_code<0x1B &&
           is_in_it(u_to_u8hin_dict.hard_consonants_modulo_list, prev_char_modulo)
         ) {
-           if(isa8) output += 'j'; else output += 'ह';
+           if(isa8) output += 'j'; else output += 'ɦ';
           }
         else {
-          if(isa8) output += 'j'; else output += 'ह';
+          if(isa8) output += 'j'; else output += 'ɦ';
          }
       }
       else if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
@@ -201,7 +201,7 @@ export function u_to_u8hin (input,isa8) {
       else if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //'kAi'
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {
-          if(isa8) output += 'q'; else output += 'अ';
+          if(isa8) output += 'q'; else output += 'a';
          }
         output += u_to_u8hin_dict.all_phoniks_list[curr_char_modulo];
       }
