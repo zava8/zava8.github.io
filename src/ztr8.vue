@@ -86,7 +86,7 @@ function T_to_tt() { itekst.value = itekst.value.replaceAll('T','τ'); }
 
 // àα
 function Aa_to_aa() {
-	itekst.value = itekst.value.replaceAll(
+	itekst.value = itekst.value.replaceAll(/A/g,"a").replaceAll(
 	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
 	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
 	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
@@ -173,9 +173,8 @@ function Eng_to_ing() {
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		/W/g,'ⱱ').replace(/ज्ञ/g, 'gy');
-	itekst.value = itekst.value.toLowerCase();
-	D_to_dd(); T_to_tt();
-	//itekst.value = itekst.value.replace(/ज्ञ/g, 'gy');
+	//itekst.value = itekst.value.toLowerCase();
+	//D_to_dd(); T_to_tt();
 }								
 // ////////iṅglish_to_English below
 
