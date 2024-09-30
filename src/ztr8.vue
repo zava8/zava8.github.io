@@ -201,7 +201,10 @@ function w_to_vzyuz() {
 }
 function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').replaceAll('क','k').replaceAll('व','v'); }
 function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
-function n_to_null_output() {otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
+function n_to_null_output() {
+	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
+	otekst.value = otekst.value.replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
+}
 //function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
 function x_to_z() { itekst.value = itekst.value.replaceAll(/\bx/gi,"z").replaceAll(/x/gi,"ks"); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }

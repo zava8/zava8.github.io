@@ -1,7 +1,7 @@
 const u_to_u8hin_dict = {
   all_phoniks_list: [
-    'ṅ', // 	ऀ	900	2304		inverted candrabindu
-    'ṅ', // 	ँ	901	2305		anunasika(candrabindu)
+    '', // 	ऀ	900	2304		inverted candrabindu
+    '', // 	ँ	901	2305		anunasika(candrabindu)
     'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
     'a', // 	ः	903	2307		visarga
     'ae', // 	ऄ	904	2308		short a ,  e in awadh
@@ -195,7 +195,7 @@ export function u_to_u8hin (input,isa8) {
       else if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
         if( nekst_lang_code>0x11 && nekst_lang_code<0x1B && 2 < nekst_char_modulo )
         {
-          output += 'न';
+          output += 'ṅ';
         }
       }
       else if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //'kAi'
