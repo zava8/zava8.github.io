@@ -172,7 +172,7 @@ function Eng_to_ing() {
 		/à/g,'a').replaceAll(
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		/W/g,'ⱱ').replace(/ज्ञ/g, 'gy');
+		/W/g,'ⱱ').replaceAll('ज्ञ', 'gy').replaceAll('क्ष', 'sh');
 	//itekst.value = itekst.value.toLowerCase();
 	//D_to_dd(); T_to_tt();
 }								
