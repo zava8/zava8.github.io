@@ -203,7 +203,7 @@ function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').rep
 function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
 function n_to_null_output() {
 	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
-	otekst.value = otekst.value.replaceAll(/ṅ(\s)/g,"$1").replaceAll('ṅ.',".");
+	otekst.value = otekst.value.replaceAll(/ṅ(\s)/g,"$1").replaceAll('ṅ.',".").replaceAll(/ṅ([^kg])/g,"m$1");
 }
 //function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
 function x_to_z() { itekst.value = itekst.value.replaceAll(/\bx/gi,"z").replaceAll(/x/gi,"ks"); }
