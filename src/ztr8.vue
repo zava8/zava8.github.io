@@ -254,6 +254,11 @@ function u_to_u8knrra_click() { ztrdir.value = "u_to_u8knrra"; doztr(); }
 function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; doztr(); }
 function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);	
 		switch (ztrdir.value) {
+			case "u_to_a":
+				otekst.value = u_to_a(itekst.value, 0);
+				n_to_null_output();
+				break;
+////////////			
 			case "i_to_u8sinh": otekst.value = i_to_u8sinh(itekst.value); break;
 ////////////			
 			case "i_to_u8hin": Eng_to_ing(); otekst.value = i_to_u8(itekst.value, 0); break;
@@ -268,10 +273,6 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 //////////
 			case "u_to_u8hin":				
 				otekst.value = u_to_u8hin(itekst.value, 0);
-				break;
-			case "u_to_a":
-				otekst.value = u_to_a(itekst.value, 0);
-				n_to_null_output();
 				break;
 			case "u_to_u8bngali": otekst.value = u_to_u8bngali(itekst.value,0); break;					
 			case "u_to_u8pnz": otekst.value = u_to_u8pnz(itekst.value,0); break;
