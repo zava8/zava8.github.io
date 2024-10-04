@@ -15,12 +15,14 @@ import { u_to_u8telugu } from './ztr8/u_to_u8telugu.js'
 import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
-const itekst = ref("");
-const ztrdir = ref("")
-const otekst = ref("")
-const olc = ref(0)
-function itekst_on_input() { doztr() }
-function ztrdir_changed() { doztr() }
+import * as ztrahnw from './ztr8/ztrahnw.js'
+////////////////
+const itekst = ref(""); const itekstobz = { str: itekst } ;
+const ztrdir = ref("");
+const otekst = ref("");
+const olc = ref(0);
+function itekst_on_input() { doztr(); }
+function ztrdir_changed() { doztr(); }
 //function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); } 
 function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
@@ -83,99 +85,10 @@ function H_to_hh() { itekst.value = itekst.value.replaceAll('H','ɦ'); }
 function N_to_nn() { itekst.value = itekst.value.replaceAll('N','ṅ'); }
 function D_to_dd() { itekst.value = itekst.value.replaceAll('D','ꟈ'); }
 function T_to_tt() { itekst.value = itekst.value.replaceAll('T','τ'); }
-
-// àα
-function Aa_to_aa() {
-	itekst.value = itekst.value.replaceAll(/A/g,"a").replaceAll(
-	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
-	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
-	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ia([ck])/ig,"iα$1").replaceAll(
-	/\ba/ig,"à").replaceAll(
-	/ai\b/g,"αi").replaceAll(
-	/uar([bce-su-z])/ig,"uàr$1").replaceAll(
-	/([a-z])a\b/ig,"$1α").replaceAll(
-	/a([w])\b/ig,"α$1").replaceAll(
-	/\ba([ntsmd])\b/ig,"à$1").replaceAll(
-	/ar([aiey])/ig,"àr$1").replaceAll(
-	/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
-	/([eio\s])ar/ig,"$1àr").replaceAll(
-	/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
-	///////
-	/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
-	/bar([^oiuer])/ig,"bαr$1").replaceAll(
-	///////
-	/era([\b\s])/ig,"erα$1").replaceAll(
-	/([bcdfɦ\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
-	/ava/ig,"αvα").replaceAll(
-	/([^\b\soe])ard/ig,"$1αrd").replaceAll(
-	/([ag])raph/ig,"$1rαph").replaceAll(
-	/las([skmt])/ig,'lαs$1');
-}
-
-// ñṅ
-function Nn_to_nn() {
-	itekst.value = itekst.value.replaceAll(/N/g,"n").replaceAll(
-		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
-		/([a-z])nk/ig,"$1ṅk").replaceAll(/oung/ig,"ouṅg").replaceAll(
-		/ginge/ig,"giñge").replaceAll(/([ht])inge/ig,"$1iñge").replaceAll(/([fyc])ring/ig,"$1riñg").replaceAll(
-		/engin/ig,"eñgin").replaceAll(/ngth/ig,"ñgth").replaceAll(
-		/ange([^dr])/ig,"añge$1").replaceAll(
-		/\bt([ai])ng([ei])/ig,"t$1ñg$2").replaceAll(/\bangi/ig,"añgi").replaceAll(
-		/inge/ig,"iñge").replaceAll(/ing/ig,"iṅg").replaceAll(
-		/nge\b/ig,"ñge").replaceAll(
-		/ngel/ig,"ñgel").replaceAll(/([dr])ang([ei])/ig,"$1añg$2").replaceAll(
-		/([lv])eng/ig,"$1eñg").replaceAll(/chang([ei])/ig,"chañg$1").replaceAll(/sseng/ig,"sseñg").replaceAll(
-		/nger/ig,"ṅger").replaceAll(
-		/([a-z])ng/ig,"$1ṅg").replaceAll(
-		/sync/ig,"syṅc").replaceAll(/anchor/ig,"aṅchor").replaceAll(/linco/ig,"liṅco").replaceAll(
-		/sincl/ig,"siṅcl").replaceAll(
-		/\buncle(s?)\b/ig,"uṅcle$1").replaceAll(/menco/ig,"meṅco").replaceAll(/([iu])nct/ig,"$1ṅct").replaceAll(
-		/nc([hyei])/ig,"ñc$1").replaceAll(
-		/inc([^hueioay])/ig,"iṅc$1").replaceAll(
-		/inc([aeiou])/ig,"iñc$1").replaceAll(
-		/([a-z])unc([^hyei])/ig,"$1uṅc$2").replaceAll(
-		/enc([^eiyh])/ig,"eñc$1").replaceAll(
-		/([ao])nc([^hyei])/ig,"$1ṅc$2").replaceAll(
-		/ṅ/g,"N").replaceAll(/ñ/g,"n"
-		);
-}
-function Ww_to_vv() {
-	itekst.value = itekst.value.replaceAll(/W/g,"w").replaceAll(
-		/away/ig,"àⱱày").replaceAll(/war([ey])/ig,"ⱱàr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
-		/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
-		/w\b/ig,"ẃ").replaceAll(
-		/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
-		/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
-		/aw([efknr])/ig,"αẃ$1").replaceAll(
-		/([a-z])aw/ig,"$1αẃ").replaceAll(
-		/([eo])w/ig,"$1ẃ").replaceAll(
-		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
-}
-function Hh_to_hh() {
-	itekst.value = itekst.value.replaceAll(
-		/H/g,"h").replaceAll(
-		/\bh/g,"H").replaceAll(
-		/([^kgcjztdpbsw])h/ig,"$1H");
-}
 function Jj_to_zz() { itekst.value = itekst.value.replaceAll(/j/ig,'ź'); }
 function Qq_to_kk() { itekst.value = itekst.value.replaceAll(/q/ig,'ƙ'); }									
 function Cc_to_cc() { itekst.value = itekst.value.replaceAll(/c/ig,'ꞇ'); }									
-function Eng_to_ing() {
-	Hh_to_hh();
-	Nn_to_nn(); 
-	Ww_to_vv();	
-	Aa_to_aa();
-	Jj_to_zz(); Qq_to_kk(); Cc_to_cc();
-	itekst.value = itekst.value.replaceAll(
-		/à/g,'a').replaceAll(
-		/H/g,'ɦ').replaceAll(
-		/N/g,'ṅ').replaceAll(
-		/W/g,'ⱱ').replaceAll('ज्ञ', 'gy');
-	//itekst.value = itekst.value.toLowerCase();
-	//D_to_dd(); T_to_tt();
-}								
+		
 // ////////iṅglish_to_English below
 
 function ww_to_w() { itekst.value = itekst.value.replaceAll('ⱱ','w'); }
@@ -220,7 +133,6 @@ function macron_to_abc() {
 }
 
 function i_to_u8hin_click() {
-	//Eng_to_ing();
 	ztrdir.value = "i_to_u8hin"; doztr();
 }
 function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; doztr(); }
@@ -261,7 +173,7 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 ////////////			
 			case "i_to_u8sinh": otekst.value = i_to_u8sinh(itekst.value); break;
 ////////////			
-			case "i_to_u8hin": Eng_to_ing(); otekst.value = i_to_u8(itekst.value, 0); break;
+			case "i_to_u8hin": ztrahnw.Eng_to_ing(itekstobz); otekst.value = i_to_u8(itekst.value, 0); break;
 			case "i_to_u8bngali": otekst.value = i_to_u8(itekst.value,1); break;
 			case "i_to_u8pnz": otekst.value = i_to_u8(itekst.value,2); break;
 			case "i_to_u8guzrati": otekst.value = i_to_u8(itekst.value,3); break;
@@ -350,7 +262,6 @@ function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);
 		<button @click="Jj_to_zz">Jj_to_ź</button>
 		<button @click="Qq_to_kk">Qq_to_ƙ</button>
 		<button @click="Cc_to_cc">Cc_to_ꞇ</button>
-		<button @click="Eng_to_ing">Eng_to_iṅg</button>
 	  </div>
       <div>
 		iṅglish_to_English:<br/>
