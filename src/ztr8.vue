@@ -16,64 +16,66 @@ import { u_to_u8mlyalm } from './ztr8/u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './ztr8/u_to_u8knrra.js'
 ////////////////
 import * as ztrahnw from './ztr8/ztrahnw.js'
+import * as duztr from './ztr8/duztr.js'
 ////////////////
-const itekst = ref(""); const itekstobz = { str: itekst } ;
-const ztrdir = ref("");
+const itekst = ref("");
 const otekst = ref("");
+const ztrdir = ref("");
 const olc = ref(0);
-function itekst_on_input() { doztr(); }
-function ztrdir_changed() { doztr(); }
-//function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); } 
+const ioz = { i: itekst , o: otekst , z: ztrdir } ;
+function itekst_on_input() { duztr.doztr(ioz); }
+function ztrdir_changed() { duztr.doztr(ioz); }
+//function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; duztr.doztr(ioz); } 
 function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-	ztrdir.value = "i_to_u8hin"; doztr();
+	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
 	all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-	ztrdir.value = "i_to_u8bngali"; doztr();
+	ztrdir.value = "i_to_u8bngali"; duztr.doztr(ioz);
 	all_text += ('2. ' + otekst.value + "\n#bengali #bangla5 zava8.github.io -> #font -> bangla5.ttf\n") ;
-	ztrdir.value = "i_to_u8telugu"; doztr();
+	ztrdir.value = "i_to_u8telugu"; duztr.doztr(ioz);
 	all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
-	ztrdir.value = "i_to_u8knrra"; doztr();
+	ztrdir.value = "i_to_u8knrra"; duztr.doztr(ioz);
 	all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-	ztrdir.value = "i_to_u8mlyalm"; doztr();
+	ztrdir.value = "i_to_u8mlyalm"; duztr.doztr(ioz);
 	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-	ztrdir.value = "i_to_u8tmil"; doztr();
+	ztrdir.value = "i_to_u8tmil"; duztr.doztr(ioz);
 	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-	ztrdir.value = "i_to_u8sinh"; doztr();
+	ztrdir.value = "i_to_u8sinh"; duztr.doztr(ioz);
 	all_text += ('6a. ' + otekst.value + "\n#sinhala #sinhala5 zava8.github.io -> #font -> sinhala5.ttf\n") ;
-	ztrdir.value = "i_to_u8odia"; doztr();
+	ztrdir.value = "i_to_u8odia"; duztr.doztr(ioz);
 	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
-	ztrdir.value = "i_to_u8pnz"; doztr();
+	ztrdir.value = "i_to_u8pnz"; duztr.doztr(ioz);
 	all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
-	ztrdir.value = "i_to_u8guzrati"; doztr();
+	ztrdir.value = "i_to_u8guzrati"; duztr.doztr(ioz);
 	all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font ->  guzrati5.ttf\n") ;
 	otekst.value = all_text;
 	ztrdir.value = "i_to_u8hin";
 }
 function u_to_all_click() {
-	ztrdir.value = "i_to_u8hin"; doztr(); itekst.value = otekst.value;
+	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz); itekst.value = otekst.value;
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-	ztrdir.value = "u_to_a"; doztr();
+	ztrdir.value = "u_to_a"; duztr.doztr(ioz);
 	all_text += ('0. ' + otekst.value + "\n(AaDHNT c wjq -> aαꟈɦṅτ ꞇ ⱱźƙ) #english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
-	ztrdir.value = "i_to_u8hin"; doztr();
+	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
 	all_text += ('1. ' + otekst.value + "\n (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt) #hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-	ztrdir.value = "i_to_u8bngali"; doztr();
+	ztrdir.value = "i_to_u8bngali"; duztr.doztr(ioz);
 	all_text += ('2. ' + otekst.value + "\n#bengali #bengali5 zava8.github.io -> #font -> bengali5.ttf\n") ;
-	ztrdir.value = "i_to_u8telugu"; doztr();
+	ztrdir.value = "i_to_u8telugu"; duztr.doztr(ioz);
 	all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
-	ztrdir.value = "i_to_u8knrra"; doztr();
+	ztrdir.value = "i_to_u8knrra"; duztr.doztr(ioz);
 	all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-	ztrdir.value = "i_to_u8mlyalm"; doztr();
+	ztrdir.value = "i_to_u8mlyalm"; duztr.doztr(ioz);
 	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-	ztrdir.value = "i_to_u8tmil"; doztr();
+	ztrdir.value = "i_to_u8tmil"; duztr.doztr(ioz);
 	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-	ztrdir.value = "i_to_u8odia"; doztr();
+	ztrdir.value = "i_to_u8odia"; duztr.doztr(ioz);
 	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
-	ztrdir.value = "i_to_u8pnz"; doztr();
+	ztrdir.value = "i_to_u8pnz"; duztr.doztr(ioz);
 	all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
-	ztrdir.value = "i_to_u8guzrati"; doztr();
+	ztrdir.value = "i_to_u8guzrati"; duztr.doztr(ioz);
 	all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
 	otekst.value = all_text;
-	ztrdir.value = "i_to_u8hin";
+	//ztrdir.value = "i_to_u8hin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
@@ -114,14 +116,6 @@ function w_to_vzyuz() {
 }
 function jqw_hin_to_zkv() {itekst.value = itekst.value.replaceAll('ज','z').replaceAll('क','k').replaceAll('व','v'); }
 function n_to_null() {itekst.value = itekst.value.replaceAll('eiन.','ei.').replaceAll('N ',' '); }
-function n_to_null_output() {
-	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
-	itekst.value = otekst.value = otekst.value.replaceAll(
-		"ṅ.",".").replaceAll(
-		"ṅv","mv").replaceAll(
-		"ṅ([।\"])","$1").replaceAll(
-		/ṅ(\s)/g,"$1");
-}
 //function ew_to_yu() { itekst.value = itekst.value.replaceAll('ew ','yu '); }
 function x_to_z() { itekst.value = itekst.value.replaceAll(/\bx/gi,"z").replaceAll(/x/gi,"ks"); }
 function i_to_caps() { itekst.value = itekst.value.toUpperCase(); }
@@ -133,69 +127,37 @@ function macron_to_abc() {
 }
 
 function i_to_u8hin_click() {
-	ztrdir.value = "i_to_u8hin"; doztr();
+	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
 }
-function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; doztr(); }
-function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; doztr(); }
-function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; doztr(); }
-function i_to_u8bngali_click() { ztrdir.value = "i_to_u8bngali"; doztr(); }
-function i_to_u8knrra_click() { ztrdir.value = "i_to_u8knrra"; doztr(); }
-function i_to_u8mlyalm_click() { ztrdir.value = "i_to_u8mlyalm"; doztr(); }
-function i_to_u8odia_click() { ztrdir.value = "i_to_u8odia"; doztr(); }
-function i_to_u8telugu_click() { ztrdir.value = "i_to_u8telugu"; doztr(); }
-function i_to_u8guzrati_click() { ztrdir.value = "i_to_u8guzrati"; doztr(); }
+function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; duztr.doztr(ioz); }
+function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; duztr.doztr(ioz); }
+function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; duztr.doztr(ioz); }
+function i_to_u8bngali_click() { ztrdir.value = "i_to_u8bngali"; duztr.doztr(ioz); }
+function i_to_u8knrra_click() { ztrdir.value = "i_to_u8knrra"; duztr.doztr(ioz); }
+function i_to_u8mlyalm_click() { ztrdir.value = "i_to_u8mlyalm"; duztr.doztr(ioz); }
+function i_to_u8odia_click() { ztrdir.value = "i_to_u8odia"; duztr.doztr(ioz); }
+function i_to_u8telugu_click() { ztrdir.value = "i_to_u8telugu"; duztr.doztr(ioz); }
+function i_to_u8guzrati_click() { ztrdir.value = "i_to_u8guzrati"; duztr.doztr(ioz); }
 ////////////
 function ui_to_hin_click() {	
-  ztrdir.value = "i_to_u8hin"; doztr();
+  ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
   itekst.value = otekst.value;
-  ztrdir.value = "u_to_u8hin"; doztr();
+  ztrdir.value = "u_to_u8hin"; duztr.doztr(ioz);
   itekst.value = otekst.value;
 }
 ////////////
-function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; doztr(); }
+function u_to_u8hin_click() { ztrdir.value = "u_to_u8hin"; duztr.doztr(ioz); }
 function u_to_a_click() {
-	 ztrdir.value = "u_to_a"; doztr(); 
+	 ztrdir.value = "u_to_a"; duztr.doztr(ioz); 
 }
-function u_to_u8bngali_click() { ztrdir.value = "u_to_u8bngali"; doztr(); }
-function u_to_u8pnz_click() { ztrdir.value = "u_to_u8pnz"; doztr(); }
-function u_to_u8guzrati_click() { ztrdir.value = "u_to_u8guzrati"; doztr(); }
-function u_to_u8odia_click() { ztrdir.value = "u_to_u8odia"; doztr(); }
-function u_to_u8tmil_click() { ztrdir.value = "u_to_u8tmil"; doztr(); }
-function u_to_u8telugu_click() { ztrdir.value = "u_to_u8telugu"; doztr(); }
-function u_to_u8knrra_click() { ztrdir.value = "u_to_u8knrra"; doztr(); }
-function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; doztr(); }
-function doztr() {	//alert("doztr ztrdir.value is : "+ztrdir.value);	
-		switch (ztrdir.value) {
-			case "u_to_a":
-				otekst.value = u_to_a(itekst.value, 0);
-				n_to_null_output();
-				break;
-////////////			
-			case "i_to_u8sinh": otekst.value = i_to_u8sinh(itekst.value); break;
-////////////			
-			case "i_to_u8hin": ztrahnw.Eng_to_ing(itekstobz); otekst.value = i_to_u8(itekst.value, 0); break;
-			case "i_to_u8bngali": otekst.value = i_to_u8(itekst.value,1); break;
-			case "i_to_u8pnz": otekst.value = i_to_u8(itekst.value,2); break;
-			case "i_to_u8guzrati": otekst.value = i_to_u8(itekst.value,3); break;
-			case "i_to_u8odia": otekst.value = i_to_u8(itekst.value,4); break;
-			case "i_to_u8tmil": otekst.value = i_to_u8(itekst.value,5); break;
-			case "i_to_u8telugu": otekst.value = i_to_u8(itekst.value,6); break;
-			case "i_to_u8knrra": otekst.value = i_to_u8(itekst.value,7); break;
-			case "i_to_u8mlyalm": otekst.value = i_to_u8(itekst.value,8); break;
-//////////
-			case "u_to_u8hin":				
-				otekst.value = u_to_u8hin(itekst.value, 0);
-				break;
-			case "u_to_u8bngali": otekst.value = u_to_u8bngali(itekst.value,0); break;					
-			case "u_to_u8pnz": otekst.value = u_to_u8pnz(itekst.value,0); break;
-			case "u_to_u8guzrati": otekst.value = u_to_u8guzrati(itekst.value,0); break;					
-			case "u_to_u8odia": otekst.value = u_to_u8odia(itekst.value,0); break;					
-			case "u_to_u8tmil": otekst.value = u_to_u8tmil(itekst.value,0); break;					
-			case "u_to_u8telugu": otekst.value = u_to_u8telugu(itekst.value,0); break;					
-			case "u_to_u8knrra": otekst.value = u_to_u8knrra(itekst.value,0); break;					
-			case "u_to_u8mlyalm": otekst.value = u_to_u8mlyalm(itekst.value,0); break;
-		}
-} 
+function u_to_u8bngali_click() { ztrdir.value = "u_to_u8bngali"; duztr.doztr(ioz); }
+function u_to_u8pnz_click() { ztrdir.value = "u_to_u8pnz"; duztr.doztr(ioz); }
+function u_to_u8guzrati_click() { ztrdir.value = "u_to_u8guzrati"; duztr.doztr(ioz); }
+function u_to_u8odia_click() { ztrdir.value = "u_to_u8odia"; duztr.doztr(ioz); }
+function u_to_u8tmil_click() { ztrdir.value = "u_to_u8tmil"; duztr.doztr(ioz); }
+function u_to_u8telugu_click() { ztrdir.value = "u_to_u8telugu"; duztr.doztr(ioz); }
+function u_to_u8knrra_click() { ztrdir.value = "u_to_u8knrra"; duztr.doztr(ioz); }
+function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; duztr.doztr(ioz); }
 </script>
 
 <template>

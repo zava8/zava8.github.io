@@ -1,5 +1,5 @@
 // ñṅ
-export const Nn_to_nn = function  (argstrobz){ argstrobz.str.value = argstrobz.str.value.replaceAll(
+export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/N/g,"n").replaceAll(
 		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
 		/([a-z])nk/ig,"$1ṅk").replaceAll(/oung/ig,"ouṅg").replaceAll(
@@ -26,7 +26,7 @@ export const Nn_to_nn = function  (argstrobz){ argstrobz.str.value = argstrobz.s
 		);
 }
 // àα
-export const Aa_to_aa = function (argstrobz){ argstrobz.str.value = argstrobz.str.value.replaceAll(
+export const Aa_to_aa = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 	/A/g,"a").replaceAll(
 	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
 	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
@@ -55,7 +55,7 @@ export const Aa_to_aa = function (argstrobz){ argstrobz.str.value = argstrobz.st
 	/las([skmt])/ig,'lαs$1');
 }
 
-export const Ww_to_vv = function (argstrobz){ argstrobz.str.value = argstrobz.str.value.replaceAll(
+export const Ww_to_vv = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/W/g,"w").replaceAll(
 		/away/ig,"àⱱày").replaceAll(/war([ey])/ig,"ⱱàr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
 		/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
@@ -67,20 +67,20 @@ export const Ww_to_vv = function (argstrobz){ argstrobz.str.value = argstrobz.st
 		/([eo])w/ig,"$1ẃ").replaceAll(
 		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
 }
-export const Hh_to_hh = function (argstrobz){ argstrobz.str.value = argstrobz.str.value.replaceAll(
+export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
 		/\bh/g,"H").replaceAll(
 		/([^kgcjztdpbsw])h/ig,"$1H");
 }
-export const Eng_to_ing = function (itekstobz) {
-	Hh_to_hh(itekstobz);
-	Nn_to_nn(itekstobz); 
-	Ww_to_vv(itekstobz);	
-	Aa_to_aa(itekstobz);
-	itekstobz.str.value = itekstobz.str.value.replaceAll(/j/ig,'ź');
-	itekstobz.str.value = itekstobz.str.value.replaceAll(/q/ig,'ƙ');
-	itekstobz.str.value = itekstobz.str.value.replaceAll(/c/ig,'ꞇ');
-	itekstobz.str.value = itekstobz.str.value.replaceAll(
+export const Eng_to_ing = function (ioz) {
+	Hh_to_hh(ioz);
+	Nn_to_nn(ioz); 
+	Ww_to_vv(ioz);	
+	Aa_to_aa(ioz);
+	ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
+	ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
+	ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
+	ioz.i.value = ioz.i.value.replaceAll(
 		/à/g,'a').replaceAll(
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
