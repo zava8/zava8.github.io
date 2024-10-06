@@ -12,6 +12,10 @@ const i_to_ilhin_dict = {
 const i_to_ilsinh_dict = { 
 	t : 'ට', d : 'ඩ',  p : 'ප', b : 'බ', s : 'ස', y : 'ය', r : 'ර', l : 'ල', m : 'ම', n : 'න', f: 'ඵ'
 }
+//const ahin = ['ट', 'ड','प','ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'] ;
+const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
+"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
+"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ"] ;
 export function i_to_il(ioz , arg_oli) {
   const inputLength = ioz.i.value.length;
   // alert("in i_to_il ioz.i.value is " + ioz.i.value + " and inputLength is : "+inputLength);
@@ -58,7 +62,9 @@ export function i_to_il_all(ioz) {
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
-	if(curr_char in i_to_ilhin_dict) { 
+	//if(curr_char in i_to_ilhin_dict) { 
+	if("tdpbsyrlmnf".includes(curr_char)) { 
+	//if("tdpbsyrlmnf".indexOf(curr_char) > -1) { 
 		let oc = i_to_ilhin_dict[curr_char];
 		let occ = oc.charCodeAt();
 		for (let i = 0; i < 9; i++) {
