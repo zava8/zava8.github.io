@@ -1,4 +1,4 @@
-import { i_to_u8 } from './i_to_u8.js'
+import { i_to_il } from './i_to_il.js'
 import { i_to_u8sinh } from './i_to_u8sinh.js'
 
 import { u_to_i } from './u_to_i.js'
@@ -37,15 +37,15 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 ////////////			
 			case "i_to_u8sinh": ioz.o.value = i_to_u8sinh(ioz.i.value); break;
 ////////////			
-			case "i_to_u8hin": ioz.o.value = i_to_u8(ioz.i.value, 0); break;
-			case "i_to_u8bngali": ioz.o.value = i_to_u8(ioz.i.value,1); break;
-			case "i_to_u8pnz": ioz.o.value = i_to_u8(ioz.i.value,2); break;
-			case "i_to_u8guzrati": ioz.o.value = i_to_u8(ioz.i.value,3); break;
-			case "i_to_u8odia": ioz.o.value = i_to_u8(ioz.i.value,4); break;
-			case "i_to_u8tmil": ioz.o.value = i_to_u8(ioz.i.value,5); break;
-			case "i_to_u8telugu": ioz.o.value = i_to_u8(ioz.i.value,6); break;
-			case "i_to_u8knrra": ioz.o.value = i_to_u8(ioz.i.value,7); break;
-			case "i_to_u8mlyalm": ioz.o.value = i_to_u8(ioz.i.value,8); break;
+			case "i_to_u8hin": ioz.o.value = i_to_il(ioz.i.value, 0); break;
+			case "i_to_u8bngali": ioz.o.value = i_to_il(ioz.i.value,1); break;
+			case "i_to_u8pnz": ioz.o.value = i_to_il(ioz.i.value,2); break;
+			case "i_to_u8guzrati": ioz.o.value = i_to_il(ioz.i.value,3); break;
+			case "i_to_u8odia": ioz.o.value = i_to_il(ioz.i.value,4); break;
+			case "i_to_u8tmil": ioz.o.value = i_to_il(ioz.i.value,5); break;
+			case "i_to_u8telugu": ioz.o.value = i_to_il(ioz.i.value,6); break;
+			case "i_to_u8knrra": ioz.o.value = i_to_il(ioz.i.value,7); break;
+			case "i_to_u8mlyalm": ioz.o.value = i_to_il(ioz.i.value,8); break;
 //////////
 			case "u_to_u8hin":				
 				ioz.o.value = u_to_u8hin(ioz.i.value, 0);

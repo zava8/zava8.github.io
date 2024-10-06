@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import { ue_to_in } from './ztr8/ue_to_in.js'
-import { i_to_u8 } from './ztr8/i_to_u8.js'
+import { ue_to_il } from './ztr8/ue_to_il.js'
+import { i_to_il } from './ztr8/i_to_il.js'
 import { i_to_u8sinh } from './ztr8/i_to_u8sinh.js'
 
 import { u_to_i } from './ztr8/u_to_i.js'
@@ -140,7 +140,7 @@ function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; duztr.doztr(ioz
           <textarea id="ita" v-on:input="itekst_on_input" v-model="itekst" cols=80 rows=8></textarea>
       </div>
       <div>
-		  <button @click="ue_to_in(ioz)" class="bggreen">ue_to_in</button>
+		  <button @click="ue_to_il(ioz)" class="bggreen">ue_to_il</button>
 			<a 
 				href="https://docs.google.com/spreadsheets/d/1yZCQ7s5q3Trs82y1Jz7IxdqQsS9LJArsu_kgZmm4HPk/edit?usp=sharing"
 				target="blank">1.font

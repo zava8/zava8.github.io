@@ -1,6 +1,6 @@
 import * as duztr from './duztr.js'
-//export const ue_to_in = function  (ioz) {
-export function ue_to_in(ioz) {
+//export const ue_to_il = function  (ioz) {
+export function ue_to_il(ioz) {
 	ioz.z.value = "e_to_i"; duztr.doztr(ioz); ioz.i.value = ioz.o.value;
 	let all_text = ''; // ('1. ' + ioz.i.value + "\n") ;
 	ioz.z.value = "u_to_i"; duztr.doztr(ioz);

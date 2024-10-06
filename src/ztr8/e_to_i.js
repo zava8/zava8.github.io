@@ -85,5 +85,6 @@ export const e_to_i = function (ioz) {
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		/W/g,'ⱱ').replaceAll('ज्ञ', 'gy');
+	ioz.i.value = ioz.i.value.toLowerCase();
 	ioz.o.value = ioz.i.value ;
 }		

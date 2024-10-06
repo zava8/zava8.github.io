@@ -1,14 +1,17 @@
-const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g', // a:'α',
+/*const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g', // a:'α',
 	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', // N : 'ṅ',
 	k : 'k', K : 'k', q : 'ƙ', Q : 'ƙ',  z : 'z', j : 'ź', Z : 'z', J : 'ź',
 	v : 'v', V : 'v', W : 'ⱱ', // w : 'ⱱ',
 	t : 'ट', d : 'ड',  p : 'प', P : 'प', F: 'फ', f: 'फ',
 	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
  	l : 'ल', L : 'ल',  S : 'स', s : 'स', 	
-} //  ź ƙ
-export function i_to_u8(input , arg_oli) {
+} */
+const i_to_u8hin_dict = {
+	t : 'ट', d : 'ड',  p : 'प', b : 'ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'
+}
+export function i_to_il(input , arg_oli) {
   const inputLength = input.length;
-  // alert("in i_to_u8 input is " + input + " and inputLength is : "+inputLength);
+  // alert("in i_to_il input is " + input + " and inputLength is : "+inputLength);
   let indeks = 0; let output = ''; let curr_char = ''; let nekst_char = '';
   curr_char = input[indeks];  
   while (indeks < inputLength) {
@@ -55,7 +58,7 @@ export function i_to_u8(input , arg_oli) {
   return output;
 }
 
-// export default i_to_u8
+// export default i_to_il
 // (अ)|(क)|(ज)|(ट)|(ड)|(त)|(द)|(न)|(प)|(फ)|(ब)|(म)|(य)|(र)|(ल)|(व)|(स)|(ह)
 //(?1অ)(?2ক)(?3জ)(?4ট)(?5ড)(?6ত)(?7দ)(?8ন)(?9প)(?10ব)(?11ম)(?12য)(?13র)(?14ল)(?15v)(?16স)(?17হ)(?18)
 //mlyalm
