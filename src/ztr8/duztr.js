@@ -31,7 +31,7 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 				e_to_i.e_to_i(ioz);
 				break;
 			case "u_to_i":
-				ioz.o.value = u_to_i(ioz.i.value, 0);
+				u_to_i(ioz);
 				n_to_null_output(ioz);
 				break;
 ////////////			
