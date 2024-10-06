@@ -1,4 +1,4 @@
-import { i_to_il } from './i_to_il.js'
+import { i_to_il , i_to_il_all } from './i_to_il.js'
 import { i_to_ilsinh } from './i_to_ilsinh.js'
 
 import { u_to_i } from './u_to_i.js'
@@ -34,6 +34,11 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 				u_to_i(ioz);
 				n_to_null_output(ioz);
 				break;
+////////////			
+			case "i_to_il_all":
+				//alert("doztr::i_to_il_all");
+				i_to_il_all(ioz);
+			break;
 ////////////			
 			case "i_to_ilsinh": ioz.o.value = i_to_ilsinh(ioz.i.value); break;
 ////////////			

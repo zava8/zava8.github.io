@@ -5,6 +5,10 @@ export function ue_to_il(ioz) {
 	let all_text = ''; // ('1. ' + ioz.i.value + "\n") ;
 	ioz.z.value = "u_to_i"; duztr.doztr(ioz);
 	all_text += ('0. ' + ioz.o.value + "\n(AaDHNT c wjq -> aαꟈɦṅτ ꞇ ⱱźƙ) #english #ing5 zava8.github.io -> #font -> ing5.ttf\n") ;
+
+	ioz.z.value = "i_to_il_all"; duztr.doztr(ioz);
+	all_text += (ioz.o.value + "\n") ;
+/*
 	ioz.z.value = "i_to_ilhin"; duztr.doztr(ioz);
 	all_text += ('1. ' + ioz.o.value + "\n (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt) #hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
 	ioz.z.value = "i_to_ilbngali"; duztr.doztr(ioz);
@@ -23,5 +27,6 @@ export function ue_to_il(ioz) {
 	all_text += ('8. ' + ioz.o.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
 	ioz.z.value = "i_to_ilguzrati"; duztr.doztr(ioz);
 	all_text += ('9. ' + ioz.o.value + "\n#guzrati #guzrati5 zava8.github.io -> #font -> guzrati5.ttf\n") ;
+*/
 	ioz.o.value = all_text;
 }

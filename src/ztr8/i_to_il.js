@@ -52,6 +52,53 @@ export function i_to_il(ioz , arg_oli) {
   //return ioz.o.value;
 }
 
+export function i_to_il_all(ioz) {
+  const inputLength = ioz.i.value.length;
+  //alert("in i_to_il_all inputLength is : "+inputLength);
+  ioz.o.value = ''; const oarr = Array(9).fill("");
+  let indeks = 0; let curr_char = ''; let nekst_char = '';
+  curr_char = ioz.i.value[indeks];  
+  while (indeks < inputLength) { //alert("61 curr_char is" +curr_char);
+	if(curr_char in i_to_ilhin_dict) { 
+		let oc = i_to_ilhin_dict[curr_char];
+		let occ = oc.charCodeAt();
+		for (let i = 0; i < 9; i++) {
+			switch(i) {				
+				case 5: // tmil
+					switch(curr_char) {
+						case 'd': oarr[5] += 'd' ; break ;
+						case 'b': oarr[5] += 'b' ; break ;
+						case 'f': oarr[5] += 'f' ; break ;
+						default: oarr[5] += String.fromCharCode(occ + 128*5);
+					} 
+				break;
+				case 8: // mlyalm t=t
+					switch(curr_char) {
+						case 't': oarr[8] += 't' ; break ;
+						default: oarr[8] += String.fromCharCode(occ + 128*8);
+					}
+				break;
+				default:
+					oarr[i] += String.fromCharCode(occ + 128*i);
+			}
+		}
+	}
+	else { //alert("86 curr_char is" +curr_char);
+		for (let i = 0; i < 9; i++) {
+			oarr[i] += curr_char;
+		}
+	}
+    indeks++ ;
+	curr_char = ioz.i.value[indeks];
+	//alert("93 curr_char is" +curr_char);
+  }
+  ioz.o.value =
+		oarr[0] + "\n" + oarr[1] + "\n" + oarr[2] + "\n" +
+		oarr[3] + "\n" + oarr[4] + "\n" + oarr[5] + "\n" +
+		oarr[6] + "\n" + oarr[7] + "\n" + oarr[8] + "\n"
+	;
+}
+
 // export default i_to_il
 // (अ)|(क)|(ज)|(ट)|(ड)|(त)|(द)|(न)|(प)|(फ)|(ब)|(म)|(य)|(र)|(ल)|(व)|(स)|(ह)
 //(?1অ)(?2ক)(?3জ)(?4ট)(?5ড)(?6ত)(?7দ)(?8ন)(?9প)(?10ব)(?11ম)(?12য)(?13র)(?14ল)(?15v)(?16স)(?17হ)(?18)
