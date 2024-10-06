@@ -23,17 +23,7 @@ export function i_to_il(ioz , arg_oli) {
 		let oc = i_to_ilhin_dict[curr_char];
 		let occ = oc.charCodeAt();
 		if(occ > 128) {
-			switch(arg_oli) {
-				case 1: // bngali v=v
-					if(
-					('v'==curr_char)||('V'==curr_char)||
-					('w'==curr_char)||('W'==curr_char)
-					)
-						{ ioz.o.value += 'v' ; }
-					else {
-						ioz.o.value += String.fromCharCode(occ + 128);
-					}
-				break;
+			switch(arg_oli) {				
 				case 5: // tmil
 					switch(curr_char) {
 						case 'd': ioz.o.value += 'd' ; break ;
