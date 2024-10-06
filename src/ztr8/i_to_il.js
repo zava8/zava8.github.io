@@ -9,11 +9,12 @@
 const i_to_u8hin_dict = {
 	t : 'ट', d : 'ड',  p : 'प', b : 'ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'
 }
-export function i_to_il(input , arg_oli) {
-  const inputLength = input.length;
-  // alert("in i_to_il input is " + input + " and inputLength is : "+inputLength);
-  let indeks = 0; let output = ''; let curr_char = ''; let nekst_char = '';
-  curr_char = input[indeks];  
+export function i_to_il(ioz , arg_oli) {
+  const inputLength = ioz.i.value.length;
+  // alert("in i_to_il ioz.i.value is " + ioz.i.value + " and inputLength is : "+inputLength);
+  ioz.o.value = ''; 
+  let indeks = 0; let curr_char = ''; let nekst_char = '';
+  curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
 	if(curr_char in i_to_u8hin_dict) {
 		let oc = i_to_u8hin_dict[curr_char];
@@ -25,37 +26,37 @@ export function i_to_il(input , arg_oli) {
 					('v'==curr_char)||('V'==curr_char)||
 					('w'==curr_char)||('W'==curr_char)
 					)
-						{ output += 'v' ; }
+						{ ioz.o.value += 'v' ; }
 					else {
-						output += String.fromCharCode(occ + 128);
+						ioz.o.value += String.fromCharCode(occ + 128);
 					}
 				break;
 				case 5: // tmil
 					switch(curr_char) {
-						case 'd': output += 'd' ; break ;
-						case 'D': output += 'D' ; break ;
-						case 'B': case 'b': output += 'b' ; break ;
-						case 'F': case 'f': output += 'f' ; break ;
-						default: output += String.fromCharCode(occ + 128*5);
+						case 'd': ioz.o.value += 'd' ; break ;
+						case 'D': ioz.o.value += 'D' ; break ;
+						case 'B': case 'b': ioz.o.value += 'b' ; break ;
+						case 'F': case 'f': ioz.o.value += 'f' ; break ;
+						default: ioz.o.value += String.fromCharCode(occ + 128*5);
 					} 
 				break;
 				case 8: // mlyalm t=t
 					switch(curr_char) {
-						case 't': output += 't' ; break ;
-						default: output += String.fromCharCode(occ + 128*8);
+						case 't': ioz.o.value += 't' ; break ;
+						default: ioz.o.value += String.fromCharCode(occ + 128*8);
 					}
 				break;
 			    default:
-					output += String.fromCharCode(occ + 128*arg_oli);
+					ioz.o.value += String.fromCharCode(occ + 128*arg_oli);
 			}
 		}
-		else { output += oc; }
+		else { ioz.o.value += oc; }
 	}
-	else {output += curr_char;}
+	else {ioz.o.value += curr_char;}
     indeks++ ;
-	curr_char = input[indeks];
+	curr_char = ioz.i.value[indeks];
   }
-  return output;
+  //return ioz.o.value;
 }
 
 // export default i_to_il
@@ -73,7 +74,7 @@ export function i_to_il(input , arg_oli) {
 //(?1A)(?2k)(?3z)(?4t)(?5d)(?6T)(?7D)(?8n)(?9p)(?10f)(?11b)(?12m)(?13y)(?14r)(?15L)(?16v)(?17s)(?18H)
 //(?19)(?20)(?21)(?22)(?23)(?24)(?25)(?26)(?27)(?28)(?29)
 
-// curr_char = input[indeks];
+// curr_char = ioz.i.value[indeks];
 // curr_char_code = curr_char.charCodeAt();
 // curr_lang_code = (curr_char_code/0x80)>>0 ;
 // curr_char_modulo = curr_char_code % 0x80 ;

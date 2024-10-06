@@ -37,15 +37,15 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 ////////////			
 			case "i_to_u8sinh": ioz.o.value = i_to_u8sinh(ioz.i.value); break;
 ////////////			
-			case "i_to_u8hin": ioz.o.value = i_to_il(ioz.i.value, 0); break;
-			case "i_to_u8bngali": ioz.o.value = i_to_il(ioz.i.value,1); break;
-			case "i_to_u8pnz": ioz.o.value = i_to_il(ioz.i.value,2); break;
-			case "i_to_u8guzrati": ioz.o.value = i_to_il(ioz.i.value,3); break;
-			case "i_to_u8odia": ioz.o.value = i_to_il(ioz.i.value,4); break;
-			case "i_to_u8tmil": ioz.o.value = i_to_il(ioz.i.value,5); break;
-			case "i_to_u8telugu": ioz.o.value = i_to_il(ioz.i.value,6); break;
-			case "i_to_u8knrra": ioz.o.value = i_to_il(ioz.i.value,7); break;
-			case "i_to_u8mlyalm": ioz.o.value = i_to_il(ioz.i.value,8); break;
+			case "i_to_u8hin": i_to_il(ioz, 0); break;
+			case "i_to_u8bngali": i_to_il(ioz,1); break;
+			case "i_to_u8pnz": i_to_il(ioz,2); break;
+			case "i_to_u8guzrati": i_to_il(ioz,3); break;
+			case "i_to_u8odia": i_to_il(ioz,4); break;
+			case "i_to_u8tmil": i_to_il(ioz,5); break;
+			case "i_to_u8telugu": i_to_il(ioz,6); break;
+			case "i_to_u8knrra": i_to_il(ioz,7); break;
+			case "i_to_u8mlyalm": i_to_il(ioz,8); break;
 //////////
 			case "u_to_u8hin":				
 				ioz.o.value = u_to_u8hin(ioz.i.value, 0);

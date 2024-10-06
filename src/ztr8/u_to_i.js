@@ -185,5 +185,4 @@ export function u_to_i (ioz) {
     } // end oph indik lang iph
     else { ioz.o.value += curr_char; indeks++ ; }
   }
-  // return ioz.o.value;
 }
