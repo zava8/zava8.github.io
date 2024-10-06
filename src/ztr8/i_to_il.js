@@ -1,4 +1,4 @@
-/*const i_to_u8hin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g', // a:'α',
+/*const i_to_ilhin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g', // a:'α',
 	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', // N : 'ṅ',
 	k : 'k', K : 'k', q : 'ƙ', Q : 'ƙ',  z : 'z', j : 'ź', Z : 'z', J : 'ź',
 	v : 'v', V : 'v', W : 'ⱱ', // w : 'ⱱ',
@@ -6,8 +6,11 @@
 	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
  	l : 'ल', L : 'ल',  S : 'स', s : 'स', 	
 } */
-const i_to_u8hin_dict = {
+const i_to_ilhin_dict = {
 	t : 'ट', d : 'ड',  p : 'प', b : 'ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'
+}
+const i_to_ilsinh_dict = { 
+	t : 'ට', d : 'ඩ',  p : 'ප', b : 'බ', s : 'ස', y : 'ය', r : 'ර', l : 'ල', m : 'ම', n : 'න', f: 'ඵ'
 }
 export function i_to_il(ioz , arg_oli) {
   const inputLength = ioz.i.value.length;
@@ -16,8 +19,8 @@ export function i_to_il(ioz , arg_oli) {
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
-	if(curr_char in i_to_u8hin_dict) {
-		let oc = i_to_u8hin_dict[curr_char];
+	if(curr_char in i_to_ilhin_dict) {
+		let oc = i_to_ilhin_dict[curr_char];
 		let occ = oc.charCodeAt();
 		if(occ > 128) {
 			switch(arg_oli) {

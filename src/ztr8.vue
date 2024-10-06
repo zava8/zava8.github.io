@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { ue_to_il } from './ztr8/ue_to_il.js'
 import { i_to_il } from './ztr8/i_to_il.js'
-import { i_to_u8sinh } from './ztr8/i_to_u8sinh.js'
+import { i_to_ilsinh } from './ztr8/i_to_ilsinh.js'
 
 import { u_to_i } from './ztr8/u_to_i.js'
 import { u_to_u8hin } from './ztr8/u_to_u8hin.js'
@@ -28,28 +28,28 @@ function itekst_on_input() { duztr.doztr(ioz); }
 function ztrdir_changed() { duztr.doztr(ioz); }
 function i_to_all_click() { //jq_to_zk(); w_to_vzyuz();
 	let all_text = ''; // ('1. ' + itekst.value + "\n") ;
-	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilhin"; duztr.doztr(ioz);
 	all_text += ('1. ' + otekst.value + "\n#hindi #hin5 zava8.github.io -> #font -> hin5.ttf\n") ;
-	ztrdir.value = "i_to_u8bngali"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilbngali"; duztr.doztr(ioz);
 	all_text += ('2. ' + otekst.value + "\n#bengali #bangla5 zava8.github.io -> #font -> bangla5.ttf\n") ;
-	ztrdir.value = "i_to_u8telugu"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_iltelugu"; duztr.doztr(ioz);
 	all_text += ('3. ' + otekst.value + "\n#telugu #telugu5 zava8.github.io -> #font -> telugu5.ttf\n") ;
-	ztrdir.value = "i_to_u8knrra"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilknrra"; duztr.doztr(ioz);
 	all_text += ('4. ' + otekst.value + "\n#kannada #kannada5 zava8.github.io -> #font -> kannada5.ttf\n") ;
-	ztrdir.value = "i_to_u8mlyalm"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilmlyalm"; duztr.doztr(ioz);
 	all_text += ('5. ' + otekst.value + "\n#malayalam #malayalam5 zava8.github.io -> #font -> malayalam5.ttf\n") ;
-	ztrdir.value = "i_to_u8tmil"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_iltmil"; duztr.doztr(ioz);
 	all_text += ('6. ' + otekst.value + "\n#tamil #tamil5 zava8.github.io -> #font -> tamil5.ttf\n") ;
-	ztrdir.value = "i_to_u8sinh"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilsinh"; duztr.doztr(ioz);
 	all_text += ('6a. ' + otekst.value + "\n#sinhala #sinhala5 zava8.github.io -> #font -> sinhala5.ttf\n") ;
-	ztrdir.value = "i_to_u8odia"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilodia"; duztr.doztr(ioz);
 	all_text += ('7. ' + otekst.value + "\n#odia #odia5 zava8.github.io -> #font -> odia5.ttf\n") ;
-	ztrdir.value = "i_to_u8pnz"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilpnz"; duztr.doztr(ioz);
 	all_text += ('8. ' + otekst.value + "\n#pnzabi #pnzabi5 zava8.github.io -> #font -> pnzabi5.ttf\n") ;
-	ztrdir.value = "i_to_u8guzrati"; duztr.doztr(ioz);
+	ztrdir.value = "i_to_ilguzrati"; duztr.doztr(ioz);
 	all_text += ('9. ' + otekst.value + "\n#guzrati #guzrati5 zava8.github.io -> #font ->  guzrati5.ttf\n") ;
 	otekst.value = all_text;
-	ztrdir.value = "i_to_u8hin";
+	ztrdir.value = "i_to_ilhin";
 }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
@@ -100,21 +100,21 @@ function macron_to_abc() {
     itekst.value = itekst.value.replace(/ṟ/g, 'r').replace(/ṅ/g, 'n').replace(/ṇ/g, 'n').replace(/ṉ/g, 'n').replace(/ṭ/g, 't').replace(/ḷ/g, 'l');
 }
 
-function i_to_u8hin_click() {
-	ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
+function i_to_ilhin_click() {
+	ztrdir.value = "i_to_ilhin"; duztr.doztr(ioz);
 }
-function i_to_u8sinh_click() { ztrdir.value = "i_to_u8sinh"; duztr.doztr(ioz); }
-function i_to_u8tmil_click() { ztrdir.value = "i_to_u8tmil"; duztr.doztr(ioz); }
-function i_to_u8pnz_click() { ztrdir.value = "i_to_u8pnz"; duztr.doztr(ioz); }
-function i_to_u8bngali_click() { ztrdir.value = "i_to_u8bngali"; duztr.doztr(ioz); }
-function i_to_u8knrra_click() { ztrdir.value = "i_to_u8knrra"; duztr.doztr(ioz); }
-function i_to_u8mlyalm_click() { ztrdir.value = "i_to_u8mlyalm"; duztr.doztr(ioz); }
-function i_to_u8odia_click() { ztrdir.value = "i_to_u8odia"; duztr.doztr(ioz); }
-function i_to_u8telugu_click() { ztrdir.value = "i_to_u8telugu"; duztr.doztr(ioz); }
-function i_to_u8guzrati_click() { ztrdir.value = "i_to_u8guzrati"; duztr.doztr(ioz); }
+function i_to_ilsinh_click() { ztrdir.value = "i_to_ilsinh"; duztr.doztr(ioz); }
+function i_to_iltmil_click() { ztrdir.value = "i_to_iltmil"; duztr.doztr(ioz); }
+function i_to_ilpnz_click() { ztrdir.value = "i_to_ilpnz"; duztr.doztr(ioz); }
+function i_to_ilbngali_click() { ztrdir.value = "i_to_ilbngali"; duztr.doztr(ioz); }
+function i_to_ilknrra_click() { ztrdir.value = "i_to_ilknrra"; duztr.doztr(ioz); }
+function i_to_ilmlyalm_click() { ztrdir.value = "i_to_ilmlyalm"; duztr.doztr(ioz); }
+function i_to_ilodia_click() { ztrdir.value = "i_to_ilodia"; duztr.doztr(ioz); }
+function i_to_iltelugu_click() { ztrdir.value = "i_to_iltelugu"; duztr.doztr(ioz); }
+function i_to_ilguzrati_click() { ztrdir.value = "i_to_ilguzrati"; duztr.doztr(ioz); }
 ////////////
 function ui_to_hin_click() {	
-  ztrdir.value = "i_to_u8hin"; duztr.doztr(ioz);
+  ztrdir.value = "i_to_ilhin"; duztr.doztr(ioz);
   itekst.value = otekst.value;
   ztrdir.value = "u_to_u8hin"; duztr.doztr(ioz);
   itekst.value = otekst.value;
@@ -155,20 +155,20 @@ function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; duztr.doztr(ioz
 			<a href="https://fb.com/ztrabc" target="blank">फaꞇeबook</a>    
             <select class="hidan" id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
-              <option value="i_to_u8hin" title="">i_to_हiनदi</option>
+              <option value="i_to_ilhin" title="">i_to_हiनदi</option>
               <option value="u_to_u8hin">u_to_हiनदi</option>
               <option value="u_to_a">u_to_eng(kvzADHTN)</option>
               <option value="macron_to_abc">macron_to_abc</option>
 			  <option disabled>_________</option>
-              <option value="i_to_u8tmil" title="">i_to_தமiல</option>
-              <option value="i_to_u8sinh" title="">i_to_හiනහaලa</option>
-              <option value="i_to_u8knrra" title="">i_to_ಕನರರa</option>
-              <option value="i_to_u8pnz" title="">i_to_ਪਨਜaਬi</option>
-              <option value="i_to_u8bngali" title="">i_to_বনgaলi</option>
-              <option value="i_to_u8mlyalm" title="">i_to_മലയaലമ</option>
-              <option value="i_to_u8odia" title="">i_to_oଡia</option>
-              <option value="i_to_u8telugu" title="">i_to_తeలugu</option>
-              <option value="i_to_u8guzrati" title="">i_to_guજરaતi</option>
+              <option value="i_to_iltmil" title="">i_to_தமiல</option>
+              <option value="i_to_ilsinh" title="">i_to_හiනහaලa</option>
+              <option value="i_to_ilknrra" title="">i_to_ಕನರರa</option>
+              <option value="i_to_ilpnz" title="">i_to_ਪਨਜaਬi</option>
+              <option value="i_to_ilbngali" title="">i_to_বনgaলi</option>
+              <option value="i_to_ilmlyalm" title="">i_to_മലയaലമ</option>
+              <option value="i_to_ilodia" title="">i_to_oଡia</option>
+              <option value="i_to_iltelugu" title="">i_to_తeలugu</option>
+              <option value="i_to_ilguzrati" title="">i_to_guજરaતi</option>
 			  <option disabled>_________</option>
               <option value="u_to_u8bngali">u_to_বনgaলi</option>
               <option value="u_to_u8pnz">u_to_ਪਨਜaਬi</option>
@@ -213,16 +213,16 @@ function u_to_u8mlyalm_click() { ztrdir.value = "u_to_u8mlyalm"; duztr.doztr(ioz
             <pre>{{ otekst }}</pre>
       </div>
             <div class="hidan">
-	   <button @click="i_to_u8mlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയαലമ</button>
-	   <button @click="i_to_u8tmil_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
-	   <button @click="i_to_u8telugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
-	   <button @click="i_to_u8knrra_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_kನರರα</button>
-	   <button @click="i_to_u8guzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guzરαતi</button>
-	   <button @click="i_to_u8hin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
-	   <button @click="i_to_u8sinh_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; අදහත බඩඵ zzkk ලමනර පසට vwxය">i_to_හiනhαලα</button>
-	   <button @click="i_to_u8pnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨzαਬi</button>
-	   <button @click="i_to_u8bngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বṅgαলi</button>
-	   <button @click="i_to_u8odia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡiα</button>
+	   <button @click="i_to_ilmlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയαലമ</button>
+	   <button @click="i_to_iltmil_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
+	   <button @click="i_to_iltelugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
+	   <button @click="i_to_ilknrra_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ಅದಹತ ಬಡಫ zಜಕk ಲಮನರ ಪಸಟ ವvxಯ">i_to_kನರರα</button>
+	   <button @click="i_to_ilguzrati_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; અદહત બડફ zજકk લમનર પસટ વvxય">i_to_guzરαતi</button>
+	   <button @click="i_to_ilhin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
+	   <button @click="i_to_ilsinh_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; අදහත බඩඵ zzkk ලමනර පසට vwxය">i_to_හiනhαලα</button>
+	   <button @click="i_to_ilpnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨzαਬi</button>
+	   <button @click="i_to_ilbngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বṅgαলi</button>
+	   <button @click="i_to_ilodia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡiα</button>
       </div>
       <div class="hidan">		
 		<button @click="u_to_u8hin_click" title="हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल">u_to_हiनदi</button>		

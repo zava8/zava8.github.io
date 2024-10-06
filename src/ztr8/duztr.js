@@ -1,5 +1,5 @@
 import { i_to_il } from './i_to_il.js'
-import { i_to_u8sinh } from './i_to_u8sinh.js'
+import { i_to_ilsinh } from './i_to_ilsinh.js'
 
 import { u_to_i } from './u_to_i.js'
 import { u_to_u8hin } from './u_to_u8hin.js'
@@ -35,17 +35,17 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 				n_to_null_output(ioz);
 				break;
 ////////////			
-			case "i_to_u8sinh": ioz.o.value = i_to_u8sinh(ioz.i.value); break;
+			case "i_to_ilsinh": ioz.o.value = i_to_ilsinh(ioz.i.value); break;
 ////////////			
-			case "i_to_u8hin": i_to_il(ioz, 0); break;
-			case "i_to_u8bngali": i_to_il(ioz,1); break;
-			case "i_to_u8pnz": i_to_il(ioz,2); break;
-			case "i_to_u8guzrati": i_to_il(ioz,3); break;
-			case "i_to_u8odia": i_to_il(ioz,4); break;
-			case "i_to_u8tmil": i_to_il(ioz,5); break;
-			case "i_to_u8telugu": i_to_il(ioz,6); break;
-			case "i_to_u8knrra": i_to_il(ioz,7); break;
-			case "i_to_u8mlyalm": i_to_il(ioz,8); break;
+			case "i_to_ilhin": i_to_il(ioz, 0); break;
+			case "i_to_ilbngali": i_to_il(ioz,1); break;
+			case "i_to_ilpnz": i_to_il(ioz,2); break;
+			case "i_to_ilguzrati": i_to_il(ioz,3); break;
+			case "i_to_ilodia": i_to_il(ioz,4); break;
+			case "i_to_iltmil": i_to_il(ioz,5); break;
+			case "i_to_iltelugu": i_to_il(ioz,6); break;
+			case "i_to_ilknrra": i_to_il(ioz,7); break;
+			case "i_to_ilmlyalm": i_to_il(ioz,8); break;
 //////////
 			case "u_to_u8hin":				
 				ioz.o.value = u_to_u8hin(ioz.i.value, 0);
