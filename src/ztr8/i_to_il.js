@@ -1,97 +1,16 @@
-/*const i_to_ilhin_dict = { I : 'i', O : 'o', E : 'e', U : 'u',C : 'ꞇ',c : 'ꞇ',G : 'g', // a:'α',
-	A : 'अ', D : 'द', H : 'ह', T : 'त',  n : 'न', // N : 'ṅ',
-	k : 'k', K : 'k', q : 'ƙ', Q : 'ƙ',  z : 'z', j : 'ź', Z : 'z', J : 'ź',
-	v : 'v', V : 'v', W : 'ⱱ', // w : 'ⱱ',
-	t : 'ट', d : 'ड',  p : 'प', P : 'प', F: 'फ', f: 'फ',
-	b : 'ब', B : 'ब', m : 'म', M : 'म', y : 'य', Y : 'य', r : 'र', R : 'र',
- 	l : 'ल', L : 'ल',  S : 'स', s : 'स', 	
-} */
-const i_to_ilhin_dict = {
-	t : 'ट', d : 'ड',  p : 'प', b : 'ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'
-}
-const i_to_ilsinh_dict = { 
-	t : 'ට', d : 'ඩ',  p : 'ප', b : 'බ', s : 'ස', y : 'ය', r : 'ර', l : 'ල', m : 'ම', n : 'න', f: 'ඵ'
-}
-//const ahin = ['ट', 'ड','प','ब', s : 'स', y : 'य', r : 'र', l : 'ल', m : 'म', n : 'न', f: 'फ'] ;
-const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
-"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
-"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ"] ;
-export function i_to_il(ioz , arg_oli) {
-  const inputLength = ioz.i.value.length;
-  // alert("in i_to_il ioz.i.value is " + ioz.i.value + " and inputLength is : "+inputLength);
-  ioz.o.value = ''; 
-  let indeks = 0; let curr_char = ''; let nekst_char = '';
-  curr_char = ioz.i.value[indeks];  
-  while (indeks < inputLength) {
-	if(curr_char in i_to_ilhin_dict) {
-		let oc = i_to_ilhin_dict[curr_char];
-		let occ = oc.charCodeAt();
-		if(occ > 128) {
-			switch(arg_oli) {				
-				case 5: // tmil
-					switch(curr_char) {
-						case 'd': ioz.o.value += 'd' ; break ;
-						case 'D': ioz.o.value += 'D' ; break ;
-						case 'B': case 'b': ioz.o.value += 'b' ; break ;
-						case 'F': case 'f': ioz.o.value += 'f' ; break ;
-						default: ioz.o.value += String.fromCharCode(occ + 128*5);
-					} 
-				break;
-				case 8: // mlyalm t=t
-					switch(curr_char) {
-						case 't': ioz.o.value += 't' ; break ;
-						default: ioz.o.value += String.fromCharCode(occ + 128*8);
-					}
-				break;
-			    default:
-					ioz.o.value += String.fromCharCode(occ + 128*arg_oli);
-			}
-		}
-		else { ioz.o.value += oc; }
-	}
-	else {ioz.o.value += curr_char;}
-    indeks++ ;
-	curr_char = ioz.i.value[indeks];
-  }
-  //return ioz.o.value;
-}
-
-export function i_to_il_all(ioz) {
+export function i_to_il(ioz) {
+  const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
+		"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
+		"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ"] ;
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(9).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
-	//if(curr_char in i_to_ilhin_dict) { 
-	if("tdpbsyrlmnf".includes(curr_char)) { 
-	//if("tdpbsyrlmnf".indexOf(curr_char) > -1) { 
-		let oc = i_to_ilhin_dict[curr_char];
-		let occ = oc.charCodeAt();
-		for (let i = 0; i < 9; i++) {
-			switch(i) {				
-				case 5: // tmil
-					switch(curr_char) {
-						case 'd': oarr[5] += 'd' ; break ;
-						case 'b': oarr[5] += 'b' ; break ;
-						case 'f': oarr[5] += 'f' ; break ;
-						default: oarr[5] += String.fromCharCode(occ + 128*5);
-					} 
-				break;
-				case 8: // mlyalm t=t
-					switch(curr_char) {
-						case 't': oarr[8] += 't' ; break ;
-						default: oarr[8] += String.fromCharCode(occ + 128*8);
-					}
-				break;
-				default:
-					oarr[i] += String.fromCharCode(occ + 128*i);
-			}
-		}
-	}
-	else {
-		for (let i = 0; i < 9; i++) {
-			oarr[i] += curr_char;
-		}
+	let izileven = "tdpbsyrlmnf".indexOf(curr_char);
+	for (let i = 0; i < 9; i++) {
+		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
+		else { oarr[i] += curr_char; }
 	}
     indeks++ ;
 	curr_char = ioz.i.value[indeks];

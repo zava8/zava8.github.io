@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import { ue_to_il } from './ztr8/ue_to_il.js'
 import { i_to_il } from './ztr8/i_to_il.js'
-import { i_to_ilsinh } from './ztr8/i_to_ilsinh.js'
 
 import { u_to_i } from './ztr8/u_to_i.js'
 import { u_to_u8hin } from './ztr8/u_to_u8hin.js'
