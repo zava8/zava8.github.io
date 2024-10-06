@@ -24,10 +24,9 @@ function n_to_null_output(ioz) {
 		/ṅ(\s)/g,"$1");
 }
 ///////
-export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.value);	
+export const doztr = function  (ioz){
 		switch (ioz.z.value) {
 			case "e_to_i":
-				//alert("doztr::e_to_i ioz.i.value is : "+ioz.i.value);
 				e_to_i.e_to_i(ioz);
 				break;
 			case "u_to_i":
@@ -35,10 +34,7 @@ export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.v
 				n_to_null_output(ioz);
 				break;
 ////////////			
-			case "i_to_il_all":
-				//alert("doztr::i_to_il_all");
-				i_to_il_all(ioz);
-			break;
+			case "i_to_il_all": i_to_il_all(ioz); break;
 ////////////			
 			case "i_to_ilsinh": ioz.o.value = i_to_ilsinh(ioz.i.value); break;
 ////////////			

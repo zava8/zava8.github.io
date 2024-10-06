@@ -54,11 +54,10 @@ export function i_to_il(ioz , arg_oli) {
 
 export function i_to_il_all(ioz) {
   const inputLength = ioz.i.value.length;
-  //alert("in i_to_il_all inputLength is : "+inputLength);
   ioz.o.value = ''; const oarr = Array(9).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
-  while (indeks < inputLength) { //alert("61 curr_char is" +curr_char);
+  while (indeks < inputLength) {
 	if(curr_char in i_to_ilhin_dict) { 
 		let oc = i_to_ilhin_dict[curr_char];
 		let occ = oc.charCodeAt();
@@ -83,14 +82,13 @@ export function i_to_il_all(ioz) {
 			}
 		}
 	}
-	else { //alert("86 curr_char is" +curr_char);
+	else {
 		for (let i = 0; i < 9; i++) {
 			oarr[i] += curr_char;
 		}
 	}
     indeks++ ;
 	curr_char = ioz.i.value[indeks];
-	//alert("93 curr_char is" +curr_char);
   }
   ioz.o.value =
 		oarr[0] + "\n" + oarr[1] + "\n" + oarr[2] + "\n" +
