@@ -1,7 +1,7 @@
 import { i_to_u8 } from './i_to_u8.js'
 import { i_to_u8sinh } from './i_to_u8sinh.js'
 
-import { u_to_a } from './u_to_a.js'
+import { u_to_i } from './u_to_i.js'
 import { u_to_u8hin } from './u_to_u8hin.js'
 import { u_to_u8pnz } from './u_to_u8pnz.js'
 import { u_to_u8guzrati } from './u_to_u8guzrati.js'
@@ -13,7 +13,7 @@ import { u_to_u8telugu } from './u_to_u8telugu.js'
 import { u_to_u8mlyalm } from './u_to_u8mlyalm.js'
 import { u_to_u8knrra } from './u_to_u8knrra.js'
 ////////////////
-import * as ztrahnw from './ztrahnw.js'
+import * as e_to_i from './e_to_i.js'
 ////////////////
 function n_to_null_output(ioz) {
 	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
@@ -26,14 +26,18 @@ function n_to_null_output(ioz) {
 ///////
 export const doztr = function  (ioz){	// alert("doztr ioz.z.value is : "+ioz.z.value);	
 		switch (ioz.z.value) {
-			case "u_to_a":
-				ioz.o.value = u_to_a(ioz.i.value, 0);
+			case "e_to_i":
+				//alert("doztr::e_to_i ioz.i.value is : "+ioz.i.value);
+				e_to_i.e_to_i(ioz);
+				break;
+			case "u_to_i":
+				ioz.o.value = u_to_i(ioz.i.value, 0);
 				n_to_null_output(ioz);
 				break;
 ////////////			
 			case "i_to_u8sinh": ioz.o.value = i_to_u8sinh(ioz.i.value); break;
 ////////////			
-			case "i_to_u8hin": ztrahnw.Eng_to_ing(ioz); ioz.o.value = i_to_u8(ioz.i.value, 0); break;
+			case "i_to_u8hin": ioz.o.value = i_to_u8(ioz.i.value, 0); break;
 			case "i_to_u8bngali": ioz.o.value = i_to_u8(ioz.i.value,1); break;
 			case "i_to_u8pnz": ioz.o.value = i_to_u8(ioz.i.value,2); break;
 			case "i_to_u8guzrati": ioz.o.value = i_to_u8(ioz.i.value,3); break;

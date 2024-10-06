@@ -1,4 +1,4 @@
-const u_to_a_dict = {
+const u_to_i_dict = {
   all_phoniks_list: [
     '', // 	ऀ	900	2304		inverted candrabindu
     '', // 	ँ	901	2305		anunasika(candrabindu)
@@ -137,7 +137,7 @@ const u_to_a_dict = {
     0x15, 0x17, 0x1A, 0x1C, 0x1F, 0x21, 0x24, 0x26, 0x2A, 0x2C, 0x37, 0x58, 0x5A, 0x5B, 0x79, 0x7C, 0x7E, 0x7F,
   ],
 };
-export function u_to_a (input,isa8) {
+export function u_to_i (input,isa8) {
 	function is_in_it (list, val) {
 		if (!Array.isArray(list)) { list = Object.keys(list); }
 		return list.indexOf(val) !== -1;
@@ -169,7 +169,7 @@ export function u_to_a (input,isa8) {
       if( 0x39 === curr_char_modulo ) {
         if(
           prev_lang_code>0x11 && prev_lang_code<0x1B &&
-          is_in_it(u_to_a_dict.hard_consonants_modulo_list, prev_char_modulo)
+          is_in_it(u_to_i_dict.hard_consonants_modulo_list, prev_char_modulo)
         ) {
            if(isa8) output += 'j'; else output += 'ɦ';
           }
@@ -188,9 +188,9 @@ export function u_to_a (input,isa8) {
         {
           if(isa8) output += 'q'; else output += 'à';
          }
-        output += u_to_a_dict.all_phoniks_list[curr_char_modulo];
+        output += u_to_i_dict.all_phoniks_list[curr_char_modulo];
       }
-      else { output += u_to_a_dict.all_phoniks_list[curr_char_modulo]; }
+      else { output += u_to_i_dict.all_phoniks_list[curr_char_modulo]; }
       indeks++ ;
     } // end oph indik lang iph
     else { output += curr_char; indeks++ ; }

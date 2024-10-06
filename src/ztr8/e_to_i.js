@@ -72,7 +72,7 @@ export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/\bh/g,"H").replaceAll(
 		/([^kgcjztdpbsw])h/ig,"$1H");
 }
-export const Eng_to_ing = function (ioz) {
+export const e_to_i = function (ioz) {
 	Hh_to_hh(ioz);
 	Nn_to_nn(ioz); 
 	Ww_to_vv(ioz);	
@@ -85,4 +85,5 @@ export const Eng_to_ing = function (ioz) {
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		/W/g,'ⱱ').replaceAll('ज्ञ', 'gy');
+	ioz.o.value = ioz.i.value ;
 }		
