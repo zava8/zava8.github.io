@@ -84,7 +84,10 @@ export const e_to_i = function (ioz) {
 		/à/g,'a').replaceAll(
 		/H/g,'ɦ').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		/W/g,'ⱱ').replaceAll('ज्ञ', 'gy');
+		/W/g,'ⱱ').replaceAll(
+		/\sक्ष/g, 'sh').replaceAll(
+		/^क्ष/g, 'sh').replaceAll(
+		'ज्ञ', 'gy');
 	ioz.i.value = ioz.i.value.toLowerCase();
 	ioz.o.value = ioz.i.value ;
 }		
