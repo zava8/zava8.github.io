@@ -1,14 +1,14 @@
 export function i_to_il(ioz) {
   const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
 		"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
-		"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ","ටඩපබසයරලමනඵ"] ;
+		"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ","ටඩපබසයරලමනඵ","ㅌ다ㅍ바ㅅy라lㅁㄴf"] ;
   const inputLength = ioz.i.value.length;
-  ioz.o.value = ''; const oarr = Array(10).fill("");
+  ioz.o.value = ''; const oarr = Array(11).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
 	let izileven = "tdpbsyrlmnf".indexOf(curr_char);
-	for (let i = 0; i < 10; i++) {
+	for (let i = 0; i < 11; i++) {
 		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
 		else { oarr[i] += curr_char; }
 	}
@@ -25,7 +25,8 @@ export function i_to_il(ioz) {
 		"7. " + oarr[6] + "\nzava8.github.io -> font -> telugu5.ttf \n" +
 		"8. " + oarr[7] + "\nzava8.github.io -> font -> kannada5.ttf \n" +
 		"9. " + oarr[8] + "\nzava8.github.io -> font -> malayalam5.ttf \n" +
-		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinhala5.ttf \n" ;
+		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinhala5.ttf \n" +
+		"J. " + oarr[10] + "\n#korean zava8.github.io -> font -> korean5.ttf \n" ;
 }
 
 // export default i_to_il
