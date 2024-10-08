@@ -16,7 +16,7 @@ export function i_to_il(ioz) {
 	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
-		"1. " + oarr[0] + "\nzava8.github.io -> font -> hin5.ttf \n" +
+		"1. " + oarr[0] + "\nअदहत=ADHT=aꟈɦτ≠αdht N=n≠ṅ zava8.github.io -> font -> hin5.ttf \n8αiueohcg 8aꟈɦτṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
 		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali5.ttf \n" +
 		"3. " + oarr[2] + "\nzava8.github.io -> font -> pnzabi5.ttf \n" +
 		"4. " + oarr[3] + "\nzava8.github.io -> font -> guzrati5.ttf \n" +
