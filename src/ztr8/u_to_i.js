@@ -6,7 +6,7 @@ const u_to_i_dict = {
     'à', // 	ः	903	2307		visarga
     'àe', // 	ऄ	904	2308		short a ,  e in awadh
     'à', // 	अ	905	2309	vovls
-    'aα', // 	आ	906	2310	vovls
+    'αα', // 	आ	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
     'u', // 	उ	909	2313	vovls

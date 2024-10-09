@@ -10,6 +10,7 @@ function n_to_null_output(ioz) {
 		"ṅ.",".").replaceAll(
 		"ṅv","mv").replaceAll(
 		"ṅ([।\"])","$1").replaceAll(
+		/αα\b/g,"α").replaceAll(
 		/ṅ(\s)/g,"$1");
 }
 ///////
