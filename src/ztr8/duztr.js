@@ -7,10 +7,9 @@ import * as e_to_i from './e_to_i.js'
 function n_to_null_output(ioz) {
 	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
-		/ṅ([^a-zꟈɦᴛ])/g,"$1").replaceAll(
 		/αα([^a-zꟈɦṅᴛ])/g,"α$1").replaceAll(
-		/ṅ([b])/g,"m$1").replaceAll(
-		/ṅ([^kgsᴛ])/g,"m$1");
+		/ṅ([^a-zꟈɦᴛ])/g,"$1").replaceAll(
+		/ṅ([b])/g,"m$1");
 }
 ///////
 export const doztr = function  (ioz){
