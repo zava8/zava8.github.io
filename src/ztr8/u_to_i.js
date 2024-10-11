@@ -3,9 +3,9 @@ const u_to_i_dict = {
     '', // 	ऀ	900	2304		inverted candrabindu
     '', // 	ँ	901	2305		anunasika(candrabindu)
     'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
-    'à', // 	ः	903	2307		visarga
-    'àe', // 	ऄ	904	2308		short a ,  e in awadh
-    'à', // 	अ	905	2309	vovls
+    'a', // 	ः	903	2307		visarga
+    'ae', // 	ऄ	904	2308		short a ,  e in awadh
+    'a', // 	अ	905	2309	vovls
     'αα', // 	आ	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
