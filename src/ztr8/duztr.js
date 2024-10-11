@@ -5,10 +5,10 @@ import { u_to_i } from './u_to_i.js'
 import * as e_to_i from './e_to_i.js'
 ////////////////
 function n_to_null_output(ioz) {
-	//otekst.value = otekst.value.replaceAll('eiन.','ei.').replaceAll(/ṅ\b/g,"").replaceAll(/ṅ\./g,".");
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
 		/αα([^a-zꟈɦṅᴛ])/g,"α$1").replaceAll(
 		/ṅ([^a-mo-zꞇꟈɦᴛ])/ig,"$1").replaceAll(
+		/ṅ$/g,"").replaceAll(
 		/ṅ([b])/g,"m$1");
 }
 ///////
