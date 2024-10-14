@@ -2,7 +2,7 @@ export function i_to_il(ioz) {
   const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
 		"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
 		"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ","ටඩපබසයරලමනඵ","ㅌ다ㅍ바ㅅy라lㅁㄴf","тдпБсйрлмнф"] ;
-// mondly.com/blog/learn-russian-alphabet-pronunciation/
+// mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
@@ -17,18 +17,18 @@ export function i_to_il(ioz) {
 	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
-		"1. " + oarr[0] + "\nअदहत=ADHT=aꟈɦᴛ≠αdht N=ṅ≠n zava8.github.io -> font -> hin5.ttf \n8αiueohcg 8aꟈɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
-		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali5.ttf \n" +
-		"3. " + oarr[2] + "\nzava8.github.io -> font -> pnzabi5.ttf \n" +
-		"4. " + oarr[3] + "\nzava8.github.io -> font -> guzrati5.ttf \n" +
-		"5. " + oarr[4] + "\nzava8.github.io -> font -> odia5.ttf \n" +
-		"6. " + oarr[5] + "\nzava8.github.io -> font -> tamil5.ttf \n" +
-		"7. " + oarr[6] + "\nzava8.github.io -> font -> telugu5.ttf \n" +
-		"8. " + oarr[7] + "\nzava8.github.io -> font -> kannada5.ttf \n" +
-		"9. " + oarr[8] + "\nzava8.github.io -> font -> malayalam5.ttf \n" +
-		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinhala5.ttf \n" +
-		"J. " + oarr[10] + "\n#korean zava8.github.io -> font -> korean5.ttf \n" +
-		"B. " + oarr[11] + "\n#russian zava8.github.io -> font -> russian5.ttf \n" ;
+		"1. " + oarr[0] + "\nअदहत=ADHT=aꟈɦᴛ≠αdht N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8αiueohcg 8aꟈɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
+		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali115.ttf \n" +
+		"3. " + oarr[2] + "\nzava8.github.io -> font -> pnzabi115.ttf \n" +
+		"4. " + oarr[3] + "\nzava8.github.io -> font -> guzrati115.ttf \n" +
+		"5. " + oarr[4] + "\nzava8.github.io -> font -> odia115.ttf \n" +
+		"6. " + oarr[5] + "\nzava8.github.io -> font -> Tamil115.ttf \n" +
+		"7. " + oarr[6] + "\nzava8.github.io -> font -> Telugu115.ttf \n" +
+		"8. " + oarr[7] + "\nzava8.github.io -> font -> kannada115.ttf \n" +
+		"9. " + oarr[8] + "\nzava8.github.io -> font -> malayalam115.ttf \n" +
+		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinhala115.ttf \n" +
+		"J. " + oarr[10] + "\n#korean zava8.github.io -> font -> korean115.ttf \n" +
+		"B. " + oarr[11] + "\n#russian zava8.github.io -> font -> russian115.ttf \n" ;
 }
 
 // export default i_to_il
