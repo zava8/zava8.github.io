@@ -1,6 +1,6 @@
 export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
-		/\sh/g,"H").replaceAll(
+		/(\s)h/g,"$1H").replaceAll(
 		/([^kgcjztdpbswटडपबसꟈᴛ])h/ig,"$1H");
 }
 // ñṅ
