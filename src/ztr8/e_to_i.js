@@ -1,7 +1,7 @@
 export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
-		/\bh/g,"H").replaceAll(
-		/([^kgcjztdpbsw])h/ig,"$1H");
+		/\sh/g,"H").replaceAll(
+		/([^kgcjztdpbswटडपबसꟈᴛ])h/ig,"$1H");
 }
 // ñṅ
 export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
