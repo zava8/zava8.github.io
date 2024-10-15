@@ -3,9 +3,9 @@ const u_to_i_dict = {
     '', // 	ऀ	900	2304		inverted candrabindu
     '', // 	ँ	901	2305		anunasika(candrabindu)
     'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
-    'a', // 	ः	903	2307		visarga
-    'ae', // 	ऄ	904	2308		short a ,  e in awadh
-    'a', // 	अ	905	2309	vovls
+    'ᴀ', // 	ः	903	2307		visarga
+    'ᴀe', // 	ऄ	904	2308		short a ,  e in awadh
+    'ᴀ', // 	अ	905	2309	vovls
     'αα', // 	आ	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
@@ -13,14 +13,14 @@ const u_to_i_dict = {
     'u', // 	ऊ	90A	2314	vovls
     'ri', // 	ऋ	90B	2315	vovls
     'li', // 	ऌ	90C	2316	vovls
-    'a', // 	ऍ	90D	2317	no	candra e
+    'ᴀ', // 	ऍ	90D	2317	no	candra e
     'e', // 	ऎ	90E	2318	no	short e
     'e', // 	ए	90F	2319	vovls
     'e', // 	ऐ	910	2320	vovls
-    'aα', // 	ऑ	911	2321		candra o
+    'αα', // 	ऑ	911	2321		candra o
     'o', // 	ऒ	912	2322		short o
     'o', // 	ओ	913	2323
-    'ao', // 	औ	914	2324
+    'o', // 	औ	914	2324
     'k', // 	क	915	2325
     'kh', // 	ख	916	2326
     'g', // 	ग	917	2327
@@ -36,8 +36,8 @@ const u_to_i_dict = {
     'd', // 	ड	921	2337
     'dh', // 	ढ	922	2338
     'n', // 	ण	923	2339		nna
-    'ᴛ', // 	तᴛτ	924	2340
-    'ᴛh', // 	थ	925	2341
+    'T', // 	तᴛτ	924	2340
+    'Th', // 	थ	925	2341
     'ꟈ', // 	द	926	2342
     'ꟈh', // 	ध	927	2343
     'n', // 	न	928	2344
@@ -49,13 +49,13 @@ const u_to_i_dict = {
     'm', // 	म	92E	2350
     'y', // 	य	92F	2351
     'r', // 	र	930	2352
-    'rr', // 	ऱ	931	2353		rra
+    'r', // 	ऱ	931	2353		rra
     'l', // 	ल	932	2354
     'l', // 	ळ	933	2355		lla
     'l', // 	ऴ	934	2356		llla
     'v', // 	व	935	2357
     'sh', // 	श	936	2358
-    'sh', // 	ष	937	2359
+    's', // 	ष	937	2359
     's', // 	स	938	2360
     'ɦ', // 	ह	939	2361
     'oe', // 	ऺ	93A	2362		oe
@@ -68,7 +68,7 @@ const u_to_i_dict = {
     'u', // 	ु	941	2369	vvs
     'u', // 	ू	942	2370	vvs
     'ri', // 	ृ	943	2371	vvs
-    'rri', // 	ॄ	944	2372
+    'ri', // 	ॄ	944	2372
     'e', // 	ॅ	945	2373		candra e
     'ei', // 	ॆ	946	2374		short e
     'e', // 	े	947	2375
@@ -79,7 +79,7 @@ const u_to_i_dict = {
     'o', // 	ौ	94C	2380	vvs
     '', // 	्	94D	2381	virama	VIRAMA halant suppresses inherent vowel
     '', // 	ॎ	94E	2382		prishthamatra e , combines with e to form ai, with aa to form o,and with o to form au
-    'ao', // 	ॏ	94F	2383		aw
+    'ᴀo', // 	ॏ	94F	2383		aw
     'om', // 	ॐ	950	2384
     '', // 	॑	951	2385		stress sign udatta, vedic tone svarita
     '', // 	॒	952	2386		anudatta
@@ -94,12 +94,12 @@ const u_to_i_dict = {
     'z', // 	ज़	95B	2395
     'rr', // 	ड़	95C	2396
     'dh', // 	ढ़	95D	2397
-    'ph', // 	फ़	95E	2398
+    'f', // 	फ़	95E	2398
     'y', // 	य़	95F	2399
     'ri', // 	ॠ	960	2400
-    'lli', // 	ॡ	961	2401
+    'li', // 	ॡ	961	2401
     'li', // 	ॢ	962	2402
-    'lli', // 	ॣ	963	2403
+    'li', // 	ॣ	963	2403
     '.', // 	।	964	2404
     '.', // 	॥	965	2405
     '0', // 	०	966	2406
@@ -114,12 +114,12 @@ const u_to_i_dict = {
     '9', // 	९	96F	2415
     '_', // 	॰	970	2416		abbreviation sign
     '__', // 	ॱ	971	2417		high spacing dot
-    'a', // 	ॲ	972	2418		A
-    'ao', // 	ॳ	973	2419		o
-    'ae', // 	ॴ	974	2420		oe
-    'ao', // 	ॵ	975	2421		ao
-    'ai', // 	ॶ	976	2422		ui
-    'aui', // 	ॷ	977	2423		uui
+    'ᴀ', // 	ॲ	972	2418		A
+    'ᴀo', // 	ॳ	973	2419		o
+    'ᴀe', // 	ॴ	974	2420		oe
+    'ᴀo', // 	ॵ	975	2421		ao
+    'ᴀi', // 	ॶ	976	2422		ui
+    'ᴀui', // 	ॷ	977	2423		uui
     'd', // 	ॸ	978	2424		d
     'z', // 	ॹ	979	2425		z
     'y', // 	ॺ	97A	2426		y
@@ -178,7 +178,7 @@ export function u_to_i (ioz) {
       if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //इईउऊऍऎएऐओऔ
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {
-          ioz.o.value += 'a';//कई
+          ioz.o.value += 'ᴀ';//कई
          }
         ioz.o.value += u_to_i_dict.all_phoniks_list[curr_char_modulo];
       }

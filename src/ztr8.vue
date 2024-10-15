@@ -5,7 +5,7 @@ import { u_to_i } from './ztr8/u_to_i.js'
 import * as e_to_i from './ztr8/e_to_i.js'
 import * as duztr from './ztr8/duztr.js'
 ////////////////
-const itekst = ref("#hscii font -> ɦin5.ttf (ɦiनꟈi) (31=8+8+5+6+4) :- 8αiueohcg 8aꟈɦτṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ +4jqwx . कई मां: ऐस्पिरेंट्स में");
+const itekst = ref("#hscii font -> ɦin5.ttf (ɦiनꟈi) (31=8+8+5+6+4) :- 8αiueohcg 8ᴀꟈɦτṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ +4jqwx. त=ᴛ=τ≠t कई मां: ऐस्पिरेंट्स में");
 const otekst = ref("");
 const ztrdir = ref("");
 const olc = ref(0);
@@ -105,7 +105,7 @@ function macron_to_abc() {
             </select>
       </div>
       <div>
-		uniꞇode_to_iṅglish (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt):<br/>
+		uniꞇode_to_iṅglish (अहṅदत=AHNDT=aɦṅꟈτ≠αhndt  त=ᴛ=τ≠t):<br/>
 		<button @click="A_to_a">A_to_a</button>
 		<button @click="A_to_ahin">A_to_अ</button>
 		<button @click="H_to_hh">H_to_ɦ</button>
