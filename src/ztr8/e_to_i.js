@@ -32,40 +32,40 @@ export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 }
 export const Ww_to_vv = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/W/g,"w").replaceAll(
-		/away/ig,"ᴀⱱᴀy").replaceAll(/war([ey])/ig,"ⱱᴀr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
-		/who/ig,"ẃɦo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
+		/away/ig,"अⱱअy").replaceAll(/war([ey])/ig,"ⱱअr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
+		/who/ig,"ẃहo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
 		/w\b/ig,"ẃ").replaceAll(
 		/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
-		/\baw([^efknr])/ig,"ᴀⱱ$1").replaceAll(
+		/\baw([^efknr])/ig,"अⱱ$1").replaceAll(
 		/aw([efknr])/ig,"αẃ$1").replaceAll(
 		/([a-z])aw/ig,"$1αẃ").replaceAll(
 		/([eo])w/ig,"$1ẃ").replaceAll(
 		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
 }
-// ᴀα
+// अα
 export const Aa_to_aa = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 	/A/g,"a").replaceAll(
 	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
 	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
 	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
+	/ihad/ig,"iहαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
 	/ia([ck])/ig,"iα$1").replaceAll(
-	/\ba/ig,"ᴀ").replaceAll(
+	/\ba/ig,"अ").replaceAll(
 	/ai\b/g,"αi").replaceAll(
-	/uar([bce-su-z])/ig,"uᴀr$1").replaceAll(
+	/uar([bce-su-z])/ig,"uअr$1").replaceAll(
 	/([a-z])a\b/ig,"$1α").replaceAll(
 	/a([w])\b/ig,"α$1").replaceAll(
-	/\ba([ntsmd])\b/ig,"ᴀ$1").replaceAll(
-	/ar([aiey])/ig,"ᴀr$1").replaceAll(
+	/\ba([ntsmd])\b/ig,"अ$1").replaceAll(
+	/ar([aiey])/ig,"अr$1").replaceAll(
 	/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
-	/([eio\s])ar/ig,"$1ᴀr").replaceAll(
+	/([eio\s])ar/ig,"$1अr").replaceAll(
 	/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
 	///////
 	/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
 	/bar([^oiuer])/ig,"bαr$1").replaceAll(
 	///////
 	/era([\b\s])/ig,"erα$1").replaceAll(
-	/([bcdfɦ\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
+	/([bcdfह\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
 	/ava/ig,"αvα").replaceAll(
 	/([^\b\soe])ard/ig,"$1αrd").replaceAll(
 	/([ag])raph/ig,"$1rαph").replaceAll(
@@ -77,11 +77,11 @@ export const e_to_i = function (ioz) {
 	Ww_to_vv(ioz);	
 	Aa_to_aa(ioz);
 	ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
-	ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
+	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
 	ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	ioz.i.value = ioz.i.value.replaceAll(
-		//ᴀ/g,'a').replaceAll(
-		/H/g,'ɦ').replaceAll(
+		//अ/g,'a').replaceAll(
+		/H/g,'ह').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		/W/g,'ⱱ').replaceAll(
 		/\sक्ष/g, 'sh').replaceAll(
