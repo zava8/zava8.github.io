@@ -6,7 +6,7 @@ const u_to_i_dict = {
     'अ', // 	ः	903	2307		visarga
     'अe', // 	ऄ	904	2308		short a ,  e in awadh
     'अ', // 	अ	905	2309	vovls
-    'αα', // 	आ	906	2310	vovls
+    'aa', // 	आ  αα	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
     'u', // 	उ	909	2313	vovls
@@ -17,7 +17,7 @@ const u_to_i_dict = {
     'e', // 	ऎ	90E	2318	no	short e
     'e', // 	ए	90F	2319	vovls
     'e', // 	ऐ	910	2320	vovls
-    'αα', // 	ऑ	911	2321		candra o
+    'aa', // 	ऑ	911	2321		candra o
     'o', // 	ऒ	912	2322		short o
     'o', // 	ओ	913	2323
     'o', // 	औ	914	2324
@@ -62,7 +62,7 @@ const u_to_i_dict = {
     'ui', // 	ऻ	93B	2363		ooe
     '', // 	़	93C	2364		nukta for extending the alphabet to new letters
     '!', // 	ऽ	93D	2365		Avagraha
-    'α', // 	ा	93E	2366	vvs
+    'a', // 	ा	93E	2366	vvs
     'i', // 	ि	93F	2367	vvs
     'i', // 	ी	940	2368	vvs
     'u', // 	ु	941	2369	vvs
