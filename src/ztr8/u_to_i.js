@@ -165,16 +165,6 @@ export function u_to_i (ioz) {
 		}
 		else { nekst_char_code = nekst_lang_code = nekst_char_modulo = -1 ; }
     if (curr_lang_code>0x11 && curr_lang_code<0x1B) {
-      /*// 'H', // 	ह	939	2361
-      //if( 0x39 === curr_char_modulo ) { ioz.o.value += 'ɦ'; }
-      //else
-      if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
-        if( nekst_lang_code>0x11 && nekst_lang_code<0x1B && 2 < nekst_char_modulo )
-        {
-          ioz.o.value += 'ṅ';
-        }
-      }
-      else*/
       if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //इईउऊऍऎएऐओऔ
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {

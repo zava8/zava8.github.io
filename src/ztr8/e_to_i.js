@@ -76,11 +76,11 @@ export const Aa_to_aa = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 export const e_to_i = function (ioz) {
 	Hh_to_hh(ioz);
 	Nn_to_nn(ioz); 
-	Ww_to_vv(ioz);	
+	//Ww_to_vv(ioz);	
 	Aa_to_aa(ioz);
-	ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
+	//ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
 	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
-	ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
+	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	ioz.i.value = ioz.i.value.replaceAll(
 		//à/g,'a').replaceAll(
 		/H/g,'ɦ').replaceAll(
