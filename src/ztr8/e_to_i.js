@@ -1,7 +1,7 @@
 export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
 		/(\s)h/g,"$1H").replaceAll(
-		/([^kgcꞇjztdpbswटडपबसꟈᴛ])h/ig,"$1H");
+		/([^kgcꞇjztdpbswटडपबसꟈᴛτ])h/ig,"$1H");
 }
 // ñṅ
 export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
@@ -49,7 +49,7 @@ export const Aa_to_aa = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
 	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
 	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ihad/ig,"iहαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
+	/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
 	/ia([ck])/ig,"iα$1").replaceAll(
 	/\ba/ig,"à").replaceAll(
 	/ai\b/g,"αi").replaceAll(
@@ -81,11 +81,12 @@ export const e_to_i = function (ioz) {
 	//ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
 	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
+	// нHɦ
 	ioz.i.value = ioz.i.value.replaceAll(
-		//à/g,'a').replaceAll(
-		/H/g,'ɦ').replaceAll(
+		/à/g,'a').replaceAll(
+		/H/g,'н').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		/W/g,'ⱱ').replaceAll(
+		//W/g,'ⱱ').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
 		/^क्ष/g, 'sh').replaceAll(
 		'ज्ञ', 'gy');
