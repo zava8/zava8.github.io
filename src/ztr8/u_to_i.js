@@ -57,7 +57,7 @@ const u_to_i_dict = {
     'sh', // 	श	936	2358
     's', // 	ष	937	2359
     's', // 	स	938	2360
-    'н', // 	हɦнHɦ	939	2361
+    'ĥ', // 	हɦнHɦĥ	939	2361
     'oe', // 	ऺ	93A	2362		oe
     'ui', // 	ऻ	93B	2363		ooe
     '', // 	़	93C	2364		nukta for extending the alphabet to new letters

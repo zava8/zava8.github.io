@@ -81,10 +81,10 @@ export const e_to_i = function (ioz) {
 	//ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
 	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
-	// нHɦ
+	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
 		/à/g,'a').replaceAll(
-		/H/g,'н').replaceAll(
+		/H/g,'ĥ').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		//W/g,'ⱱ').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
