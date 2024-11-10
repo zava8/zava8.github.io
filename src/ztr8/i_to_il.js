@@ -1,5 +1,5 @@
 export function i_to_il(ioz) {
-  const i_to_il_arr = ["टडपबसयरलमनफà","টডপবসযরলমনফà","ਟਡਪਬਸਯਰਲਮਨਫà",
+  const i_to_il_arr = ["टडपबसयरलमनफअ","টডপবসযরলমনফà","ਟਡਪਬਸਯਰਲਮਨਫà",
 		"ટડપબસયરલમનફà","ଟଡପବସଯରଲମନଫà","டdபbஸயரலமநfà","టడపబసయరలమనఫà",
 		"ಟಡಪಬಸಯರಲಮನಫà","tഡപബസയരലമനഫà","ටඩපබසයරලමනඵà","ㅌ다ㅍ바ㅅy라lㅁㄴfà","тдпБсйрлмнфà"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
