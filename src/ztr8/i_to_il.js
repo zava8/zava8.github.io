@@ -1,14 +1,14 @@
 export function i_to_il(ioz) {
-  const i_to_il_arr = ["टडपबसयरलमनफ","টডপবসযরলমনফ","ਟਡਪਬਸਯਰਲਮਨਫ",
-		"ટડપબસયરલમનફ","ଟଡପବସଯରଲମନଫ","டdபbஸயரலமநf","టడపబసయరలమనఫ",
-		"ಟಡಪಬಸಯರಲಮನಫ","tഡപബസയരലമനഫ","ටඩපබසයරලමනඵ","ㅌ다ㅍ바ㅅy라lㅁㄴf","тдпБсйрлмнф"] ;
+  const i_to_il_arr = ["टडपबसयरलमनफà","টডপবসযরলমনফà","ਟਡਪਬਸਯਰਲਮਨਫà",
+		"ટડપબસયરલમનફà","ଟଡପବସଯରଲମନଫà","டdபbஸயரலமநfà","టడపబసయరలమనఫà",
+		"ಟಡಪಬಸಯರಲಮನಫà","tഡപബസയരലമനഫà","ටඩපබසයරලමනඵà","ㅌ다ㅍ바ㅅy라lㅁㄴfà","тдпБсйрлмнфà"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
-	let izileven = "tdpbsyrlmnf".indexOf(curr_char);
+	let izileven = "tdpbsyrlmnfà".indexOf(curr_char);
 	for (let i = 0; i < 12; i++) {
 		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
 		else { oarr[i] += curr_char; }
