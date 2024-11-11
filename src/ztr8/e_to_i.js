@@ -83,8 +83,8 @@ export const e_to_i = function (ioz) {
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
-		/à/g,'a').replaceAll(
-		/H/g,'ĥ').replaceAll(
+		//à/g,'a').replaceAll(
+		/H/g,'н').replaceAll(
 		/N/g,'ṅ').replaceAll(
 		//W/g,'ⱱ').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
