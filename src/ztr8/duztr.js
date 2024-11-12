@@ -18,6 +18,7 @@ export const doztr = function  (ioz){
 				e_to_i.e_to_i(ioz);
 				break;
 			case "u_to_i":
+				ioz.i.value = ioz.i.value.replaceAll(/ⱱ/g,'v');
 				u_to_i(ioz);
 				n_to_null_output(ioz);
 				break;

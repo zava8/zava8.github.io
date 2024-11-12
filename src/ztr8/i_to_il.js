@@ -1,14 +1,14 @@
 export function i_to_il(ioz) {
-  const i_to_il_arr = ["टडपबसयरलमनफअ","টডপবসযরলমনফà","ਟਡਪਬਸਯਰਲਮਨਫà",
-		"ટડપબસયરલમનફà","ଟଡପବସଯରଲମନଫà","டdபbஸயரலமநfà","టడపబసయరలమనఫà",
-		"ಟಡಪಬಸಯರಲಮನಫà","tഡപബസയരലമനഫà","ටඩපබසයරලමනඵà","ㅌ다ㅍ바ㅅy라lㅁㄴfà","тдпБсйрлмнфà"] ;
+  const i_to_il_arr = ["टडपबसयरलमनफअद","টডপবসযরলমনফàđ","ਟਡਪਬਸਯਰਲਮਨਫàđ",
+		"ટડપબસયરલમનફàđ","ଟଡପବସଯରଲମନଫàđ","டdபbஸயரலமநfàđ","టడపబసయరలమనఫàđ",
+		"ಟಡಪಬಸಯರಲಮನಫàđ","tഡപബസയരലമനഫàđ","ටඩපබසයරලමනඵàđ","ㅌ다ㅍ바ㅅy라lㅁㄴfàđ","тдпБсйрлмнфàđ"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
   curr_char = ioz.i.value[indeks];  
   while (indeks < inputLength) {
-	let izileven = "tdpbsyrlmnfà".indexOf(curr_char);
+	let izileven = "tdpbsyrlmnfàđ".indexOf(curr_char);
 	for (let i = 0; i < 12; i++) {
 		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
 		else { oarr[i] += curr_char; }
@@ -17,7 +17,7 @@ export function i_to_il(ioz) {
 	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
-		"1. " + oarr[0] + "\nअदहत=ADHT=ᴀꟈɦᴛ≠αdht N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8αiueohcg 8aꟈɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
+		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀꟈɦᴛ≠αdht N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8αiueohcg 8aꟈɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
 		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali115.ttf \n" +
 		"3. " + oarr[2] + "\nzava8.github.io -> font -> pnzabi115.ttf \n" +
 		"4. " + oarr[3] + "\nzava8.github.io -> font -> guzrati115.ttf \n" +

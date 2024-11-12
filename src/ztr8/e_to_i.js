@@ -86,7 +86,7 @@ export const e_to_i = function (ioz) {
 		//à/g,'a').replaceAll(
 		/H/g,'н').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		//W/g,'ⱱ').replaceAll(
+		/W/g,'ⱱ').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
 		/^क्ष/g, 'sh').replaceAll(
 		'ज्ञ', 'gy');
