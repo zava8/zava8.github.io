@@ -105,7 +105,7 @@ function macron_to_abc() {
             </select>
       </div>
       <div>
-		uniꞇode_to_iṅglish (अहṅदत=AHNDT=ᴀɦṅꟈ≠αhnd  त=ᴛ=τ≠t):<br/>
+		uniꞇode_to_iṅglish (अहṅदत=AHNDT=ᴀ=àɦṅꟈ≠αhnd  त=ᴛ=τ≠t):<br/>
 		<button @click="A_to_a">A_to_a</button>
 		<button @click="A_to_ahin">A_to_अ</button>
 		<button @click="H_to_hh">H_to_ɦ</button>
