@@ -136,7 +136,7 @@ function macron_to_abc() {
       <div>
             <pre>{{ otekst }}</pre>
       </div>
-            <div class="hidan">
+       <div class="hidan">
 	   <button @click="i_to_ilmlyalm_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; അദഹത ബഡഫ zജകk ലമനര പസt വvxയ">i_to_മലയαലമ</button>
 	   <button @click="i_to_iltmil_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; அDஹத bdf zஜகk லமநர பஸட வvxய">i_to_தமiல</button>
 	   <button @click="i_to_iltelugu_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; అదహత బడఫ zజకk లమనర పసట వvxయ">i_to_తeలugu</button>
@@ -189,10 +189,8 @@ function macron_to_abc() {
     font-size: 16px;
     resize: none;
   }
- .bggreen {
-	background-color: #0f0;
- }
- .hidan {visibility: hidden;}
+.bggreen {	background-color: #0f0; }
+.hidan {visibility: hidden;}
 @media screen and (max-width: 600px) {
   .pcdiv {
     visibility: hidden;

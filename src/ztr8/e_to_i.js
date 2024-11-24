@@ -80,7 +80,7 @@ export const e_to_i = function (ioz) {
 	Aa_to_aa(ioz);
 	//ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
 	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
-	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
+	ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
 		//à/g,'a').replaceAll(
