@@ -5,7 +5,28 @@ import { u_to_i } from './ztr8/u_to_i.js'
 import * as e_to_i from './ztr8/e_to_i.js'
 import * as duztr from './ztr8/duztr.js'
 ////////////////
-const itekst = ref("#hscii font -> ɦin5.ttf (ɦiनꟈi) (31=8+8+5+6+4) :- 8αiueoꞇgh_8άđнтṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ +4jqwx. त=ᴛ=τ≠t");
+const itekst = ref(
+`small_english(26) = singlish(26) : a-z. ing5.ttf(31) = a-z + 5άđнтṅ.
+cricket_zileven indiάn_lάnguages_zileven :
+1. 6यरलमनफ5टडपबस -> font hin115.ttf
+2. 6যরলমনফ5টডপবস -> ফoনট bαṅglα115.ttf
+3. 6ਯਰਲਮਨਫ5ਟਡਪਬਸ -> ਫoਨਟ gurumukhi115.ttf
+4. 6યરલમનફ5ટડપબસ -> ફoનટ gujraᴛi115.ttf
+5. 6ଯରଲମନଫ5ଟଡପବସ -> ଫoନଟ odiα115.ttf
+6. 6யரலமநf5டdபbஸ -> foநட ᴛάmil115.ttf
+7. 6యరలమనఫ5టడపబస -> ఫoనట ᴛelugu115.ttf
+8. 6ಯರಲಮನಫ5ಟಡಪಬಸ -> ಫoನಟ kάnnάdα115.ttf
+9. 6യരലമനഫ5tഡപബസ -> ഫoനt mάlάyαlάm115.ttf
+L. 6යරලමනඵ5ටඩපබස -> ඵoනට sinhάlα115.ttf
+J. 6y라lㅁㄴf5ㅌ다ㅍ바ㅅ -> foㄴㅌ koreάn115.ttf
+B. 6йрлмнф5тдпБс -> фoнт russiάn115.ttf
+W.
+E.
+F.
+10.
+8αiueoꞇgh_8άđнтṅkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t
+`
+);
 const otekst = ref("");
 const ztrdir = ref("");
 const olc = ref(0);
