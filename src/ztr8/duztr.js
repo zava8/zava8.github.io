@@ -6,10 +6,10 @@ import * as e_to_i from './e_to_i.js'
 ////////////////
 function n_to_null_output(ioz) {
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
-		/([a-zꟈđɦнṅᴛ])άα/g,"$1α").replaceAll(
+		/([a-zàꟈđɦнṅᴛ])àa/g,"$1a").replaceAll(
 		//ṅ([^aefghilmnoquwxyɦᴛtT])/ig,"$1").replaceAll(
 		/ṅ$/g,"").replaceAll(
-		/ṅ([\s\.!\?naeiouh])/g,"$1").replaceAll(
+		/ṅ([,\s\.!\?naeiouh])/g,"$1").replaceAll(
 		/ṅ([bp])/g,"m$1").replaceAll(
 		/ṅ([^kg])/g,"n$1");
 }

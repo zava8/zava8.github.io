@@ -3,21 +3,21 @@ const u_to_i_dict = {
     '', // 	ऀ	900	2304		inverted candrabindu
     'ṅ', // 	ँ	901	2305		anunasika(candrabindu)
     'ṅ', // 	ं	902	2306	anuswara	anusvara bindu
-    'ά', // 	ः	903	2307		visarga
-    'άe', // 	ऄ ά	904	2308		short a ,  e in awadh
-    'ά', // 	अ	905	2309	vovls
-    'άα', // 	आ  ααα	906	2310	vovls
+    'à', // 	ः	903	2307		visarga
+    'àe', // 	ऄ à	904	2308		short a ,  e in awadh
+    'à', // 	अ	905	2309	vovls
+    'àa', // 	आ  àα α	906	2310	vovls
     'i', // 	इ	907	2311	vovls
     'i', // 	ई	908	2312	vovls
     'u', // 	उ	909	2313	vovls
     'u', // 	ऊ	90A	2314	vovls
     'ri', // 	ऋ	90B	2315	vovls
     'li', // 	ऌ	90C	2316	vovls
-    'ά', // 	ऍ	90D	2317	no	candra e
+    'à', // 	ऍ	90D	2317	no	candra e
     'e', // 	ऎ	90E	2318	no	short e
     'e', // 	ए	90F	2319	vovls
     'e', // 	ऐ	910	2320	vovls
-    'άα', // 	ऑ	911	2321		candra o
+    'àa', // 	ऑ	911	2321		candra o
     'o', // 	ऒ	912	2322		short o
     'o', // 	ओ	913	2323
     'o', // 	औ	914	2324
@@ -27,7 +27,7 @@ const u_to_i_dict = {
     'gh', // 	घ	918	2328
     'ṅg', // 	ङ	919	2329
     'ꞇ', // 	चꞆꞇ	91A	2330
-    'ch', // 	छ	91B	2331
+    'ꞇh', // 	छ	91B	2331
     'z', // 	ज	91C	2332
     'zh', // 	झ	91D	2333
     'n', // 	ञ	91E	2334		nya
@@ -62,7 +62,7 @@ const u_to_i_dict = {
     'ui', // 	ऻ	93B	2363		ooe
     '', // 	़	93C	2364		nukta for extending the alphabet to new letters
     '!', // 	ऽ	93D	2365		Avagraha
-    'α', // 	ा	93E	2366	vvs
+    'a', // 	ा	93E	2366	vvs
     'i', // 	ि	93F	2367	vvs
     'i', // 	ी	940	2368	vvs
     'u', // 	ु	941	2369	vvs
@@ -79,7 +79,7 @@ const u_to_i_dict = {
     'o', // 	ौ	94C	2380	vvs
     '', // 	्	94D	2381	virama	VIRAMA halant suppresses inherent vowel
     '', // 	ॎ	94E	2382		prishthamatra e , combines with e to form ai, with aa to form o,and with o to form au
-    'άo', // 	ॏ	94F	2383		aw
+    'ào', // 	ॏ	94F	2383		aw
     'om', // 	ॐ	950	2384
     '', // 	॑	951	2385		stress sign udatta, vedic tone svarita
     '', // 	॒	952	2386		anudatta
@@ -114,12 +114,12 @@ const u_to_i_dict = {
     '9', // 	९	96F	2415
     '_', // 	॰	970	2416		abbreviation sign
     '__', // 	ॱ	971	2417		high spacing dot
-    'ά', // 	ॲ	972	2418		A
-    'άo', // 	ॳ	973	2419		o
-    'άe', // 	ॴ	974	2420		oe
-    'άo', // 	ॵ	975	2421		ao
-    'άi', // 	ॶ	976	2422		ui
-    'άui', // 	ॷ	977	2423		uui
+    'à', // 	ॲ	972	2418		A
+    'ào', // 	ॳ	973	2419		o
+    'àe', // 	ॴ	974	2420		oe
+    'ào', // 	ॵ	975	2421		ao
+    'ài', // 	ॶ	976	2422		ui
+    'àui', // 	ॷ	977	2423		uui
     'd', // 	ॸ	978	2424		d
     'z', // 	ॹ	979	2425		z
     'y', // 	ॺ	97A	2426		y
@@ -168,7 +168,7 @@ export function u_to_i (ioz) {
       if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //इईउऊऍऎएऐओऔ
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {
-          ioz.o.value += 'ά';//कई
+          ioz.o.value += 'à';//कई
          }
         ioz.o.value += u_to_i_dict.all_phoniks_list[curr_char_modulo];
       }

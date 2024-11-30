@@ -1,10 +1,10 @@
-export const Hh_to_hh = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
+export const Hh_to_phonetic_H = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
 		/(\s)h/g,"$1H").replaceAll(
-		/([^kgcꞇjztdpbswटडपबसꟈᴛτ])h/ig,"$1H");
+		/([^kgcꞇjztdpbswटडपबसꟈđᴛ])h/ig,"$1H");
 }
 // ñṅ
-export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
+export const Nn_to_phonetic_N = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/N/g,"n").replaceAll(
 		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
 		/([a-z])nk/ig,"$1ṅk").replaceAll(/oung/ig,"ouṅg").replaceAll(
@@ -30,65 +30,61 @@ export const Nn_to_nn = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/ṅ/g,"N").replaceAll(
 		/ñ/g,"n");
 }
-// ά
+// à
 export const Ww_to_vv = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/W/g,"w").replaceAll(
-		/away/ig,"άⱱάy").replaceAll(/war([ey])/ig,"ⱱάr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
+		/away/ig,"àⱱày").replaceAll(/war([ey])/ig,"ⱱàr$1").replaceAll(/wa([nrs])/ig,"ⱱα$1").replaceAll(
 		/who/ig,"ẃहo").replaceAll(/wr/ig,"ẃr").replaceAll(/\bw/ig,"ⱱ").replaceAll(
 		/w\b/ig,"ẃ").replaceAll(
 		/swer/ig,"sẃer").replaceAll(/two/ig,"tẃo").replaceAll(/([^aeo])w/ig,"$1ⱱ").replaceAll(
-		/\baw([^efknr])/ig,"άⱱ$1").replaceAll(
+		/\baw([^efknr])/ig,"àⱱ$1").replaceAll(
 		/aw([efknr])/ig,"αẃ$1").replaceAll(
 		/([a-z])aw/ig,"$1αẃ").replaceAll(
 		/([eo])w/ig,"$1ẃ").replaceAll(
 		/ẃ/g,"w").replaceAll(/ⱱ/g,"W");
 }
-// άα
-export const Aa_to_aa = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
-	/A/g,"ά").replaceAll(
-	/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
-	/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
-	/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ihad/ig,"iɦαꟈ").replaceAll(/ebab/ig,"ebαb").replaceAll(
-	/ia([ck])/ig,"iα$1").replaceAll(
-	/\ba/ig,"ά").replaceAll(
-	/ai\b/g,"αi").replaceAll(
-	/uar([bce-su-z])/ig,"uάr$1").replaceAll(
-	/([a-z])a\b/ig,"$1α").replaceAll(
-	/a([w])\b/ig,"α$1").replaceAll(
-	/\ba([ntsmd])\b/ig,"ά$1").replaceAll(
-	/ar([aiey])/ig,"άr$1").replaceAll(
-	/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
-	/([eio\s])ar/ig,"$1άr").replaceAll(
-	/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
-	///////
-	/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
-	/bar([^oiuer])/ig,"bαr$1").replaceAll(
-	///////
-	/era([\b\s])/ig,"erα$1").replaceAll(
-	/([bcdfह\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
-	/ava/ig,"αvα").replaceAll(
-	/([^\b\soe])ard/ig,"$1αrd").replaceAll(
-	/([ag])raph/ig,"$1rαph").replaceAll(
+// àα
+export const Aa_to_phonetic_Aa = function (ioz){
+	ioz.i.value = ioz.i.value.replaceAll(
+		/A/g,"a").replaceAll(
+		/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
+		/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
+		/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
+		/ihad/ig,"iɦαꟈ").replaceAll(
+		/ia([ck])/ig,"iα$1").replaceAll(
+		/\ba/ig,"à").replaceAll(
+		/ai\b/g,"αi").replaceAll(
+		/uar([bce-su-z])/ig,"uàr$1").replaceAll(
+		/([a-z])a\b/ig,"$1α").replaceAll(
+		/a([w])\b/ig,"α$1").replaceAll(
+		/\ba([ntsmd])\b/ig,"à$1").replaceAll(
+		/ar([aiey])/ig,"àr$1").replaceAll(
+		/([^uheio\s])arre([^lasn])/ig,"$1αrre$2").replaceAll(
+		/([eio\s])ar/ig,"$1àr").replaceAll(
+		/i([lgn])ar([^y])/ig,"i$1αr$2").replaceAll(
+		///////
+		/([^beiuohlgn])ar([^y])/ig,"$1αr$2").replaceAll(
+		/bar([^oiuer])/ig,"bαr$1").replaceAll(
+		///////
+		/era([\b\s])/ig,"erα$1").replaceAll(
+		/([bcdfह\b\s])all([^yo])/ig,"$1αll$2").replaceAll(
+		/ava/ig,"αvα").replaceAll(
+		/([^\b\soe])ard/ig,"$1αrd").replaceAll(
+		/([ag])raph/ig,"$1rαph").replaceAll(
 	/las([skmt])/ig,'lαs$1');
 }
-// ɦ
+// ɦ ⱱ
 export const e_to_i = function (ioz) {
-	Hh_to_hh(ioz);
-	Nn_to_nn(ioz); 
+	Hh_to_phonetic_H(ioz);
+	Nn_to_phonetic_N(ioz); 
 	//Ww_to_vv(ioz);	
-	Aa_to_aa(ioz);
-	//ioz.i.value = ioz.i.value.replaceAll(/j/ig,'ź');
-	//ioz.i.value = ioz.i.value.replaceAll(/q/ig,'ƙ');
-	ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
-	//ioz.i.value = ioz.i.value.replaceAll(/v/ig,'w');
+	Aa_to_phonetic_Aa(ioz);
+	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
-		//ά/g,'a').replaceAll(
 		/H/g,'н').replaceAll(
 		/N/g,'ṅ').replaceAll(
-		/a/g,'ά').replaceAll(
-		//W/g,'ⱱ').replaceAll(
+		/α/g,'a').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
 		/^क्ष/g, 'sh').replaceAll(
 		'ज्ञ', 'gy');
