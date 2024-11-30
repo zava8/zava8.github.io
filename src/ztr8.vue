@@ -5,7 +5,7 @@ import { u_to_i } from './ztr8/u_to_i.js'
 import * as e_to_i from './ztr8/e_to_i.js'
 import * as duztr from './ztr8/duztr.js'
 ////////////////
-const itekst = ref("#hscii font -> ɦin5.ttf (ɦiनꟈi) (31=8+8+5+6+4) :- 8αiueoꞇgh_8άđнṅтkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ +4jqwx. त=ᴛ=τ≠t");
+const itekst = ref("#hscii font -> ɦin5.ttf (ɦiनꟈi) (31=8+8+5+6+4) :- 8αiueoꞇgh_8άđнтṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ +4jqwx. त=ᴛ=τ≠t");
 const otekst = ref("");
 const ztrdir = ref("");
 const olc = ref(0);
