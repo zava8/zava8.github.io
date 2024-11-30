@@ -6,8 +6,10 @@ import * as e_to_i from './ztr8/e_to_i.js'
 import * as duztr from './ztr8/duztr.js'
 ////////////////
 const itekst = ref(
-`small_english(26) = singlish(26) : a-z. ing5.ttf(31) = a-z + 5άđнтṅ.
-cricket_zileven indiάn_lάnguages_zileven :
+`small_english(26) = singlish(26) : a-z
+indiα iṅglish5.ttf(31) = a-z + 5άđнтṅ
+cricket_zileven indiάn_lάnguages_zileven  chάrάcters:
+0. 6yrlmnf5tdpbs -> font ing115.ttf
 1. 6यरलमनफ5टडपबस -> font hin115.ttf
 2. 6যরলমনফ5টডপবস -> ফoনট bαṅglα115.ttf
 3. 6ਯਰਲਮਨਫ5ਟਡਪਬਸ -> ਫoਨਟ gurumukhi115.ttf
