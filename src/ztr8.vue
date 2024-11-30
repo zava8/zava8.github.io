@@ -72,6 +72,8 @@ function itoE_A() { itekst.value = itekst.value.replaceAll('à','A').replaceAll(
 function itoE_N() { itekst.value = itekst.value.replaceAll('ṅ','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('н','H').replaceAll('ɦ','H'); }
 function itoE_D() { itekst.value = itekst.value.replaceAll('đ','D').replaceAll('ꟈ','D'); }
+function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','đ'); }
+function D3toD4() { itekst.value = itekst.value.replaceAll('đ','ꟈ'); }
 function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
 function itoE_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
 function itoE6() {
@@ -180,6 +182,8 @@ function macron_to_abc() {
 		<button @click="itoE_N">ṅ -> N</button>
 		<button @click="itoE_H">н -> H</button>
 		<button @click="itoE_D">đ -> D</button>
+		<button @click="D4toD3">ꟈ -> đ</button>
+		<button @click="D3toD4">đ -> ꟈ</button>
 		<button @click="itoE_T">т -> T</button>
 		<button @click="itoE_c">ꞇ -> c</button>
 		<button @click="itoE6">àṅнđтꞇ -> ANHDTc</button>
