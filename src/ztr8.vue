@@ -124,9 +124,10 @@ function macron_to_abc() {
 				target="blank">2.fbse
 				</a>    
 			<a href="https://vk.com/zava810" target="blank">vk</a>
-			<a href="https://t.me/zava810" target="blank">टeलegरαम</a>
+			<a href="https://t.me/zava810" target="blank">telegram</a>
 			<a href="https://x.com/etphor" target="blank">x</a>
-			<a href="https://fb.com/ztrabc" target="blank">फaꞇeबook</a>    
+			<a href="https://fb.com/ztrabc" target="blank">fàꞇebook</a>    
+			<a href="https://zava8.vercel.app" target="blank">login</a>    
             <select class="hidan" id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
               <option value="i_to_ilhin" title="">i_to_हiनदi</option>
