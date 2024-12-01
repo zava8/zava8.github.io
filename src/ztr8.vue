@@ -72,8 +72,7 @@ function itoE_A() { itekst.value = itekst.value.replaceAll('à','A').replaceAll(
 function itoE_N() { itekst.value = itekst.value.replaceAll('ṅ','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('н','H').replaceAll('ɦ','H'); }
 function itoE_D() { itekst.value = itekst.value.replaceAll('đ','D').replaceAll('ꟈ','D'); }
-function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','đ'); }
-function D3toD4() { itekst.value = itekst.value.replaceAll('đ','ꟈ'); }
+
 function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
 function itoE_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
 function itoE6() {
@@ -89,7 +88,23 @@ function itoE6() {
 	'ꞇ','c');
 }
 // ////////iṅglish_to_English above
-
+//////// i4i3
+function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','đ'); }
+function D3toD4() { itekst.value = itekst.value.replaceAll('đ','ꟈ'); }
+function H3toH4() { itekst.value = itekst.value.replaceAll('н','ɦ'); }
+function H4toH3() { itekst.value = itekst.value.replaceAll('ɦ','н'); }
+function A3toA4() { itekst.value = itekst.value.replaceAll('à','ᴀ'); }
+function A4toA3() { itekst.value = itekst.value.replaceAll('ᴀ','à'); }
+////////
+//////// qvj kwz
+function qtok() { itekst.value = itekst.value.replaceAll('q','k'); }
+function wtov() { itekst.value = itekst.value.replaceAll('w','v'); }
+function jtoz() { itekst.value = itekst.value.replaceAll('j','z'); }
+function ktoq() { itekst.value = itekst.value.replaceAll('k','q'); }
+function ztoj() { itekst.value = itekst.value.replaceAll('z','j'); }
+function qvjtokwz() { itekst.value = itekst.value.replaceAll('q','k').replaceAll('v','w').replaceAll('j','z'); }
+function kvztoqwj() { itekst.value = itekst.value.replaceAll('k','q').replaceAll('v','w').replaceAll('z','j'); }
+////////
 function w_to_vzyuz() {
 	itekst.value = itekst.value.replaceAll(
 		//'yew','yuu').replaceAll(
@@ -182,11 +197,29 @@ function macron_to_abc() {
 		<button @click="itoE_N">ṅ -> N</button>
 		<button @click="itoE_H">н -> H</button>
 		<button @click="itoE_D">đ -> D</button>
-		<button @click="D4toD3">ꟈ -> đ</button>
-		<button @click="D3toD4">đ -> ꟈ</button>
 		<button @click="itoE_T">т -> T</button>
 		<button @click="itoE_c">ꞇ -> c</button>
 		<button @click="itoE6">àṅнđтꞇ -> ANHDTc</button>
+	  </div>
+      <div>
+		ꟈ=D=đ≠d ɦ=н=H≠h:<br/>
+		<button @click="D4toD3">ꟈ -> đ</button>
+		<button @click="D3toD4">đ -> ꟈ</button>
+		<button @click="H3toH4">н -> ɦ</button>
+		<button @click="H4toH3">ɦ -> н</button>
+		<button @click="A3toA4">à -> ᴀ</button>
+		<button @click="A4toA3">ᴀ -> à</button>
+	  </div>
+	  <div>
+		w:wote crow what W(hex)=8+5=dblun=13(decimᴀl). z:zug zune zuly zileven=8+3=J(hex)=11(decimᴀl)<br/>
+		k:kuick kuestion to kueen<br/>
+		<button @click="wtov">w -> v</button>
+		<button @click="qtok">q -> k</button>
+		<button @click="jtoz">j -> z</button>
+		<button @click="ztoj">z -> j</button>
+		<button @click="qvjtokwz">qvj -> kwz</button>
+		<button @click="ztoj">z -> j</button>
+		<button @click="kvztoqwj">kvz -> qwj</button>
 	  </div>
       <div>
             <pre>{{ otekst }}</pre>

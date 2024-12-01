@@ -78,7 +78,7 @@ export const e_to_i = function (ioz) {
 	Hh_to_phonetic_H(ioz);
 	Nn_to_phonetic_N(ioz); 
 	//Ww_to_vv(ioz);	
-	Aa_to_phonetic_Aa(ioz);
+	//Aa_to_phonetic_Aa(ioz);
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
