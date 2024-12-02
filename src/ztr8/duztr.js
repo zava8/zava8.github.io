@@ -11,7 +11,7 @@ function n_to_null_output(ioz) {
 		//ń([^aefghilmnoquwxyнᴛtT])/ig,"$1").replaceAll(
 		////ć[cċ]h/ig,"cch").replaceAll(
 		/ń$/g,"").replaceAll(
-		/ń([,\s\.!\?naeiouhć])/g,"$1").replaceAll(
+		/ń([),\s\.!\?naeiouhć])/g,"$1").replaceAll(
 		/ń([bp])/g,"m$1").replaceAll(
 		/ń([^kg])/g,"n$1");
 }
