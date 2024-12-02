@@ -4,14 +4,14 @@ import { ue_to_il } from './ztr8/ue_to_il.js'
 import { u_to_i } from './ztr8/u_to_i.js'
 import * as e_to_i from './ztr8/e_to_i.js'
 import * as duztr from './ztr8/duztr.js'
-////////////////
+////////////////[ɦꟈđꞇṅᴀ]нԃćńàᴀ
 const itekst = ref(
 `small_English(26) = singlish(26) : a-z
-india_iṅglish(31) = a-z + 5àđнтṅ
-cricket_zileven indiàn_làṅguàges_zileven chàràcters 6yrlmnf5tdpbs:
-	0. a-z + 5àđнтṅ -> font ing115.ttf
+india_ińglish(31) = a-z + 5àԃнтń , c=ꞇ=ć=च  ch=छ
+cricket_zileven indiàn_làńguàges_zileven chàràcters 6yrlmnf5tdpbs:
+	0. a-z + 5àԃнтń -> font ing115.ttf
 	1. 6यरलमनफ5टडपबस -> font hin115.ttf
-	2. 6যরলমনফ5টডপবস -> ফoনট baṅgla115.ttf
+	2. 6যরলমনফ5টডপবস -> ফoনট bańgla115.ttf
 	3. 6ਯਰਲਮਨਫ5ਟਡਪਬਸ -> ਫoਨਟ gurumukhi115.ttf
 	4. 6યરલમનફ5ટડપબસ -> ફoનટ gujraᴛi115.ttf
 	5. 6ଯରଲମନଫ5ଟଡପବସ -> ଫoନଟ odia115.ttf
@@ -26,7 +26,7 @@ cricket_zileven indiàn_làṅguàges_zileven chàràcters 6yrlmnf5tdpbs:
 	E.
 	F.
 	10.
-8aiueoꞇgh_8àđнтṅkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t
+8aiueohćg_8àԃнтńkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t
 `
 );
 const otekst = ref("");
@@ -38,7 +38,7 @@ function ztrdir_changed() { duztr.doztr(ioz); }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 //function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
 
-// ////////English_to_нiṅglish (ANHDT->अṅहदत)
+// ////////English_to_нińglish (ANHDT->अńहदत)
 function EtoH_A() { itekst.value = itekst.value.replaceAll('A','अ'); }
 function EtoH_H() { itekst.value = itekst.value.replaceAll('H','ह'); }
 function EtoH_D() { itekst.value = itekst.value.replaceAll('D','द'); }
@@ -46,55 +46,56 @@ function EtoH_T() { itekst.value = itekst.value.replaceAll('T','त'); }
 function EtoH5() {
 	itekst.value = itekst.value.replaceAll(
 		'A','अ').replaceAll(
-		'N','ṅ').replaceAll(
+		'N','ń').replaceAll(
 		'H','ह').replaceAll(
 		'D','द').replaceAll(
 	'T','त');
 }
-// ////////English_to_iṅglish (AHNDT->àнṅꟈт)
+// ////////English_to_ińglish (AHNDT->àнńԃт) ɦꟈđꞇṅ нԃćńà
 function Etoi_A() { itekst.value = itekst.value.replaceAll('A','à'); }
 function Etoi_H() { itekst.value = itekst.value.replaceAll('H','н'); }
-function Etoi_N() { itekst.value = itekst.value.replaceAll('N','ṅ'); }
-function Etoi_D() { itekst.value = itekst.value.replaceAll('D','đ'); } // ꟈ
+function Etoi_N() { itekst.value = itekst.value.replaceAll('N','ń'); }
+function Etoi_D() { itekst.value = itekst.value.replaceAll('D','ԃ'); } // ꟈԃ
 function Etoi_T() { itekst.value = itekst.value.replaceAll('T','т'); }									
-function Etoi_c() { itekst.value = itekst.value.replaceAll(/c/ig,'ꞇ'); }									
+function Etoi_c() { itekst.value = itekst.value.replaceAll(/c/ig,'ć'); } //	ꞇć								
 function Etoi6() {
 	itekst.value = itekst.value.replaceAll(
 		'A','à').replaceAll(
-		'N','ṅ').replaceAll(
+		'N','ń').replaceAll(
 		'H','н').replaceAll(
-		'D','đ').replaceAll(
+		'D','ԃ').replaceAll(
 		'T','т').replaceAll(
-	/c/ig,'ꞇ');
+	/c/ig,'ć'); // ꞇć
 }	
-// ////////iṅglish31_to_English52 below ꟈᴀ
+// ////////ińglish31_to_English52 below ԃᴀ ꟈԃ
 function itoE_A() { itekst.value = itekst.value.replaceAll('à','A').replaceAll('ᴀ','A'); }
-function itoE_N() { itekst.value = itekst.value.replaceAll('ṅ','N'); }
+function itoE_N() { itekst.value = itekst.value.replaceAll('ń','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('н','H').replaceAll('ɦ','H'); }
-function itoE_D() { itekst.value = itekst.value.replaceAll('đ','D').replaceAll('ꟈ','D'); }
+function itoE_D() { itekst.value = itekst.value.replaceAll(/'ԃ'/,'D'); }
 
 function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
-function itoE_c() { itekst.value = itekst.value.replaceAll('ꞇ','c'); }
+function itoE_c() { itekst.value = itekst.value.replaceAll('ć','c'); } //ćꞇ
 function itoE6() {
 	itekst.value = itekst.value.replaceAll(
 		'à','A').replaceAll(
 		'ᴀ','A').replaceAll(
-		'ṅ','N').replaceAll(
+		'ń','N').replaceAll(
 		'н','H').replaceAll(
 		'ɦ','H').replaceAll(
-		'đ','D').replaceAll(
-		'ꟈ','D').replaceAll(
+		'ԃ','D').replaceAll(
 		'т','T').replaceAll(
-	'ꞇ','c');
-}
-// ////////iṅglish_to_English above
+	'ć','c'); //¢ꞇ
+} //ꟈ
+// ////////ińglish_to_English above
 //////// i4i3
-function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','đ'); }
-function D3toD4() { itekst.value = itekst.value.replaceAll('đ','ꟈ'); }
+function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','ԃ'); }
+function D3toD4() { itekst.value = itekst.value.replaceAll('ԃ','ꟈ'); }
 function H3toH4() { itekst.value = itekst.value.replaceAll('н','ɦ'); }
 function H4toH3() { itekst.value = itekst.value.replaceAll('ɦ','н'); }
 function A3toA4() { itekst.value = itekst.value.replaceAll('à','ᴀ'); }
 function A4toA3() { itekst.value = itekst.value.replaceAll('ᴀ','à'); }
+function N4toN3() { itekst.value = itekst.value.replaceAll('ṅ','ń'); }
+function N3toN4() { itekst.value = itekst.value.replaceAll('ń','ṅ'); }
 ////////
 //////// qvj kwz
 function qtok() { itekst.value = itekst.value.replaceAll('q','k'); }
@@ -143,7 +144,7 @@ function macron_to_abc() {
 			<a href="https://vk.com/zava810" target="blank">vk</a>
 			<a href="https://t.me/zava810" target="blank">telegram</a>
 			<a href="https://x.com/etphor" target="blank">x</a>
-			<a href="https://fb.com/ztrabc" target="blank">fàꞇebook</a>    
+			<a href="https://fb.com/ztrabc" target="blank">fàcebook</a>    
 			<a href="https://zava8.vercel.app" target="blank">login</a>    
             <select class="hidan" id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
@@ -173,38 +174,37 @@ function macron_to_abc() {
             </select>
       </div>
       <div>
-		English52_to_нiṅglish31 (ANHDT->अṅहदत):<br/>
+		English52_to_нińglish31 (ANHDT->अńहदत c=ꞇ=ć=च  ch=छ):<br/>
 		<button @click="EtoH_A">A -> अ</button>
 		<button @click="EtoH_H">H -> ह</button>
 		<button @click="EtoH_D">D-> द</button>
 		<button @click="EtoH_T">T -> त</button>
-		<button @click="EtoH5">ANHDT -> अṅहदत</button>
-
+		<button @click="EtoH5">ANHDT -> अńहदत</button>
 	  </div>
       <div>
-		English52_to_iṅglish31:(ANHDT->àṅнꟈᴛ ᴀ=A=à≠a):<br/>
+		English52_to_ińglish31:(ANHDT->àńнԃᴛ ᴀ=A=à≠a c=ꞇ=ć=च  ch=छ):<br/>
 		<button @click="Etoi_A">A -> à</button>
-		<button @click="Etoi_N">N -> ṅ</button>
+		<button @click="Etoi_N">N -> ń</button>
 		<button @click="Etoi_H">H -> н</button>
-		<button @click="Etoi_D">D -> đ</button>
+		<button @click="Etoi_D">D -> ԃ</button>
 		<button @click="Etoi_T">T -> т</button>
-		<button @click="Etoi_c">Cc -> ꞇ</button>
-		<button @click="Etoi6">ANHDTc -> àṅнđтꞇ</button>
+		<button @click="Etoi_c">Cc -> ć</button>
+		<button @click="Etoi6">ANHDTc -> àńнԃтć</button>
 	  </div>
       <div>
-		iṅglish31_to_English52:(àṅнđᴛ->ANHDT ꟈ=D=đ≠d ɦ=н=H≠h):<br/>
+		ińglish31_to_English52:(àńнԃᴛ->ANHDT ԃ=D≠d н=H≠h c=ꞇ=ć=च  ch=छ):<br/>
 		<button @click="itoE_A">à -> A</button>
-		<button @click="itoE_N">ṅ -> N</button>
+		<button @click="itoE_N">ń -> N</button>
 		<button @click="itoE_H">н -> H</button>
-		<button @click="itoE_D">đ -> D</button>
+		<button @click="itoE_D">ԃ -> D</button>
 		<button @click="itoE_T">т -> T</button>
-		<button @click="itoE_c">ꞇ -> c</button>
-		<button @click="itoE6">àṅнđтꞇ -> ANHDTc</button>
+		<button @click="itoE_c">ć -> c</button>
+		<button @click="itoE6">àńнԃтć -> ANHDTc</button>
 	  </div>
       <div>
-		ꟈ=D=đ≠d ɦ=н=H≠h:<br/>
-		<button @click="D4toD3">ꟈ -> đ</button>
-		<button @click="D3toD4">đ -> ꟈ</button>
+		ԃ=D≠d н=H≠h:<br/>
+		<button @click="N4toN3">ṅ -> ń</button>
+		<button @click="N3toN4">ń -> ṅ</button>
 		<button @click="H3toH4">н -> ɦ</button>
 		<button @click="H4toH3">ɦ -> н</button>
 		<button @click="A3toA4">à -> ᴀ</button>
@@ -233,12 +233,12 @@ function macron_to_abc() {
 	   <button @click="i_to_ilhin_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; अदहत बडफ zजकk लमनर पसट वvxय">i_to_हiनदi</button>
 	   <button @click="i_to_ilsinh_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; අදහත බඩඵ zzkk ලමනර පසට vwxය">i_to_හiනhαලα</button>
 	   <button @click="i_to_ilpnz_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ਅਦਹਤ ਬਡਫ zਜਕk ਲਮਨਰ ਪਸਟ ਵvxਯ">i_to_ਪਨzαਬi</button>
-	   <button @click="i_to_ilbngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বṅgαলi</button>
+	   <button @click="i_to_ilbngali_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; অদহত বডফ zজকk লমনর পসট vvxয">i_to_বńgαলi</button>
 	   <button @click="i_to_ilodia_click" title="ADHT bdf jzkq lmnr pst vwxy->&#010; ଅଦହତ ବଡଫ zଜକk ଲମନର ପସଟ ଵvxଯ">i_to_oଡiα</button>
       </div>
       <div class="hidan">		
 		<button @click="u_to_u8hin_click" title="हिंदी বাংলা ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; हiनदi बaनलa guजरaतi guरuमuकhi oडiअa तमiललल तeiलugu कननड मलयaलल">u_to_हiनदi</button>		
-		<button @click="u_to_u8bngali_click" title="বাংলা हिंदी ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল">u_to_বṅgαলi</button>
+		<button @click="u_to_u8bngali_click" title="বাংলা हिंदी ગુજરાતી ਗੁਰੂਮੁਖੀ ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; বaনলa হiনদi guজরaতi guরuমuকhi oডiঅa তমiললল তeiলugu কননড মলযaলল">u_to_বńgαলi</button>
 		<button @click="u_to_u8pnz_click" title="ਗੁਰੂਮੁਖੀ বাংলা हिंदी ગુજરાતી ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; guਰuਮuਕhi ਬaਨਲa ਹiਨਦi guਜਰaਤi oਡiਅa ਤਮiਲਲਲ ਤeiਲugu ਕਨਨਡ ਮਲਯaਲਲ">u_to_ਪਨzαਬi</button>
 		<button @click="u_to_u8guzrati_click" title="ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी ଓଡିଆ தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; guજરaતi guરuમuકhi બaનલa હiનદi oડiઅa તમiલલલ તeiલugu કનનડ મલયaલલ">u_to_guzરαતi</button>
 		<button @click="u_to_u8odia_click" title="ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी தமிழ் తెలుగు ಕನ್ನಡ മലയാളം->&#010; oଡiଅa guଜରaତi guରuମuକhi ବaନଲa ହiନଦi ତମiଲଲଲ ତeiଲugu କନନଡ ମଲଯaଲଲ">u_to_oଡiα</button>
@@ -246,7 +246,7 @@ function macron_to_abc() {
 		<button @click="u_to_u8telugu_click" title="తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी ಕನ್ನಡ മലയാളം->&#010; తeiలugu తమiలలల oడiఅa guజరaతi guరuమuకhi బaనలa హiనదi కననడ మలయaలల">u_to_తeలugu</button>
 		<button @click="u_to_u8knrra_click" title="ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी മലയാളം->&#010; ಕನನಡ ತeiಲugu ತಮiಲಲಲ oಡiಅa guಜರaತi guರuಮuಕhi ಬaನಲa ಹiನದi ಮಲಯaಲಲ">u_to_kನರರα</button>
 		<button @click="u_to_u8mlyalm_click" title="മലയാളം ಕನ್ನಡ తెలుగు தமிழ் ଓଡିଆ ગુજરાતી ਗੁਰੂਮੁਖੀ বাংলা हिंदी->&#010; മലയaലല കനനഡ തeiലugu തമiലലല oഡiഅa guജരaതi guരuമuകhi ബaനലa ഹiനദi">u_to_മലയαലമ</button>
-		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_iṅg</button>
+		<button @click="u_to_a_click" title="unicode to modern_english(kvzADHT)">u_to_ińg</button>
       </div>
 	  <div class="hidan">
 		  <button @click="i_to_all_click" title="">i_to_all</button>

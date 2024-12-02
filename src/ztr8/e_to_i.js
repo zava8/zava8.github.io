@@ -1,9 +1,9 @@
 export const Hh_to_phonetic_H = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
 		/(\s)h/g,"$1H").replaceAll(
-		/([^kgcꞇjztdpbswटडपबसꟈđᴛ])h/ig,"$1H");
+		/([^kgcꞇćjztdpbswटडपबसԃᴛ])h/ig,"$1H");
 }
-// ñṅ
+//////// ñṅ ꟈԃ[ɦꟈđꞇṅᴀ]нԃćńàᴀ
 export const Nn_to_phonetic_N = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/N/g,"n").replaceAll(
 		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
@@ -50,7 +50,7 @@ export const Aa_to_phonetic_Aa = function (ioz){
 		/aft/ig,"αft").replaceAll(/aw([kf\s])/ig,"αw$1").replaceAll(
 		/\bar([cekmst])\b/ig,"αr$1").replaceAll(/guar/ig,"guαr").replaceAll(
 		/ijab/ig,"ijαb").replaceAll(/ebab/ig,"ebαb").replaceAll(
-		/ihad/ig,"iɦαꟈ").replaceAll(
+		/ihad/ig,"iHαԃ").replaceAll(
 		/ia([ck])/ig,"iα$1").replaceAll(
 		/\ba/ig,"à").replaceAll(
 		/ai\b/g,"αi").replaceAll(
@@ -79,11 +79,11 @@ export const e_to_i = function (ioz) {
 	Nn_to_phonetic_N(ioz); 
 	//Ww_to_vv(ioz);	
 	//Aa_to_phonetic_Aa(ioz);
-	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ꞇ');
+	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ć'); ///ꞇ
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,'н').replaceAll(
-		/N/g,'ṅ').replaceAll(
+		/N/g,'ń').replaceAll(
 		/α/g,'a').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
 		/^क्ष/g, 'sh').replaceAll(

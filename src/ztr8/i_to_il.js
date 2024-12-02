@@ -1,27 +1,29 @@
-export function i_to_il(ioz) {
 /*
   const i_to_il_arr = ["टडपबसयरलमनफअद","টডপবসযরলমনফঅদ","ਟਡਪਬਸਯਰਲਮਨਫਅਦ",
-		"ટડપબસયરલમનફઅદ","ଟଡପବସଯରଲମନଫଅଦ","டdபbஸயரலமநfஅđ","టడపబసయరలమనఫఅద",
-		"ಟಡಪಬಸಯರಲಮನಫಅದ","tഡപബസയരലമനഫഅദ","ටඩපබසයරලමනඵàđ","ㅌ다ㅍ바ㅅy라lㅁㄴfàđ","тдпБсйрлмнфàđ"] ;
+		"ટડપબસયરલમનફઅદ","ଟଡପବସଯରଲମନଫଅଦ","டdபbஸயரலமநfஅԃ","టడపబసయరలమనఫఅద",
+		"ಟಡಪಬಸಯರಲಮನಫಅದ","tഡപബസയരലമനഫഅദ","ටඩපබසයරලමනඵàԃ","ㅌ다ㅍ바ㅅy라lㅁㄴfàԃ","тдпБсйрлмнфàԃ"] ;
   const i_to_il_arr = ["टडपबसयरलमनफदअ","টডপবসযরলমনফদঅ","ਟਡਪਬਸਯਰਲਮਨਫਦਅ",
-		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfđஅ","టడపబసయరలమనఫదఅ",
-		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദഅ","ටඩපබසයරලමනඵđà","ㅌ다ㅍ바ㅅy라lㅁㄴfđà","тдпБсйрлмнфđà"] ;
+		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfԃஅ","టడపబసయరలమనఫదఅ",
+		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദഅ","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмнфԃà"] ;
 	const i_to_il_arr = ["टडपबसयरलमनफदअ","টডপবসযরলমনফদঅ","ਟਡਪਬਸਯਰਲਮਨਫਦਅ",
-		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfđஅ","టడపబసయరలమనఫదఅ",
-		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദà","ටඩපබසයරලමනඵđà","ㅌ다ㅍ바ㅅy라lㅁㄴfđà","тдпБсйрлмнфđà"] ;
+		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfԃஅ","టడపబసయరలమనఫదఅ",
+		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദà","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмнфԃà"] ;
 */
+///////[ɦꟈđꞇṅᴀ]нԃćńà
+export function i_to_il(ioz) {
 	const i_to_il_arr = ["टडपबसयरलमनफद","টডপবসযরলমনফদ","ਟਡਪਬਸਯਰਲਮਨਫਦ",
-		"ટડપબસયરલમનફદ","ଟଡପବସଯରଲମନଫଦ","டdபbஸயரலமநfđ","టడపబసయరలమనఫద",
-		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵđ","ㅌ다ㅍ바ㅅy라lㅁㄴfđ","тдпБсйрлмнфđ"] ;
+		"ટડપબસયરલમનફદ","ଟଡପବସଯରଲମନଫଦ","டdபbஸயரலமநfԃ","టడపబసయరలమనఫద",
+		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵԃ","ㅌ다ㅍ바ㅅy라lㅁㄴfԃ","тдпБсйрлмнфԃ"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
-  curr_char = ioz.i.value[indeks];  
+  curr_char = ioz.i.value[indeks];
+  let hinchars = "tdpbsyrlmnf"; // ԃ
   while (indeks < inputLength) {
-	// let izileven = "tdpbsyrlmnfđà".indexOf(curr_char);
-	let izileven = "tdpbsyrlmnfđ".indexOf(curr_char);
-	for (let i = 0; i < 12; i++) {
+	// let izileven = "tdpbsyrlmnfԃà".indexOf(curr_char);
+	let izileven = hinchars.indexOf(curr_char); 
+	for (let i = 0; i < hinchars.length; i++) {
 		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
 		else { oarr[i] += curr_char; }
 	}
@@ -29,7 +31,7 @@ export function i_to_il(ioz) {
 	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
-		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀꟈнᴛ=àđɦᴛ≠adht н=ɦ≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àđнᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
+		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀԃнᴛ ᴀ=A=à ԃ=D≠d ᴛ≠t н≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àԃнᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
 		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali115.ttf \n" +
 		"7. " + oarr[6] + "\nzava8.github.io -> font -> ᴛelugu115.ttf \n" +
 		"J. " + oarr[10] + "\n#korean zava8.github.io -> font -> koreàn115.ttf \n" +
