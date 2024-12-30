@@ -78,13 +78,14 @@ export const e_to_i = function (ioz) {
 	Hh_to_phonetic_H(ioz);
 	Nn_to_phonetic_N(ioz); 
 	//Ww_to_vv(ioz);	
-	//Aa_to_phonetic_Aa(ioz);
+	Aa_to_phonetic_Aa(ioz);
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ć'); ///ꞇ
 	// нHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,'н').replaceAll(
 		/N/g,'ń').replaceAll(
-		/α/g,'a').replaceAll(
+		/à/g,'a').replaceAll(
+		//α/g,'A').replaceAll(
 		/(\s)क्ष/g, "$1sh").replaceAll(
 		/^क्ष/g, 'sh').replaceAll(
 		'ज्ञ', 'gy');

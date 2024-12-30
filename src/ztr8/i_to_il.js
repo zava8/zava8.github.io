@@ -13,7 +13,7 @@
 export function i_to_il(ioz) {
 	const i_to_il_arr = ["टडपबसयरलमनफद","টডপবসযরলমনফদ","ਟਡਪਬਸਯਰਲਮਨਫਦ",
 		"ટડપબસયરલમનફદ","ଟଡପବସଯରଲମନଫଦ","டdபbஸயரலமநfԃ","టడపబసయరలమనఫద",
-		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵԃ","ㅌ다ㅍ바ㅅy라lㅁㄴfԃ","тдпБсйрлмнфԃ"] ;
+		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵԃ","ㅌㄸㅍㅂㅅㅑㄹ을ㅁㄴfԃ","тдпБсйрлмнфԃ"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");

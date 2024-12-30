@@ -1,32 +1,33 @@
 <script setup>
 import { ref } from 'vue'
-import { ue_to_il } from './ztr8/ue_to_il.js'
-import { u_to_i } from './ztr8/u_to_i.js'
 import * as e_to_i from './ztr8/e_to_i.js'
+import { u_to_i } from './ztr8/u_to_i.js'
+import { ue_to_il } from './ztr8/ue_to_il.js'
 import * as duztr from './ztr8/duztr.js'
 ////////////////[ɦꟈđꞇṅᴀ]нԃćńàᴀ
 const itekst = ref(
-`small_English(26) = singlish(26) : a-z
-india_ińglish(31) = a-z + 5àԃнтń , c=ꞇ=ć=च  ch=छ
-cricket_zileven indiàn_làńguàges_zileven chàràcters 6yrlmnf5tdpbs:
-	0. a-z + 5àԃнтń -> font ing115.ttf
+`smαll_Eńglish(26) = singlish(26) : a-z
+ińglish(31) = a-z + 5αԃńнт ,ꞇ=c=ć=च  ch=छ
+cricket_zileven indiàn_lańguages_zileven characters 6yrlmnf5tdpbs:
+	0. a-z + 5αԃńнт -> font ing115.ttf
 	1. 6यरलमनफ5टडपबस -> font hin115.ttf
-	2. 6যরলমনফ5টডপবস -> ফoনট bańgla115.ttf
+	2. 6যরলমনফ5টডপবস -> ফoনট bαńglα115.ttf
 	3. 6ਯਰਲਮਨਫ5ਟਡਪਬਸ -> ਫoਨਟ gurumukhi115.ttf
-	4. 6યરલમનફ5ટડપબસ -> ફoનટ gujraᴛi115.ttf
-	5. 6ଯରଲମନଫ5ଟଡପବସ -> ଫoନଟ odia115.ttf
-	6. 6யரலமநf5டdபbஸ -> foநட ᴛàmil115.ttf
+	4. 6યરલમનફ5ટડપબસ -> ફoનટ gujrαᴛi115.ttf
+	5. 6ଯରଲମନଫ5ଟଡପବସ -> ଫoନଟ odiα115.ttf
+	6. 6யரலமநf5டdபbஸ -> foநட ᴛamil115.ttf
 	7. 6యరలమనఫ5టడపబస -> ఫoనట ᴛelugu115.ttf
-	8. 6ಯರಲಮನಫ5ಟಡಪಬಸ -> ಫoನಟ kànnàda115.ttf
-	9. 6യരലമനഫ5tഡപബസ -> ഫoനt màlàyalàm115.ttf
-	L. 6යරලමනඵ5ටඩපබස -> ඵoනට sinhàla115.ttf
-	J. 6y라lㅁㄴf5ㅌ다ㅍ바ㅅ -> foㄴㅌ koreàn115.ttf
-	B. 6йрлмнф5тдпБс -> фoнт russiàn115.ttf
+	8. 6ಯರಲಮನಫ5ಟಡಪಬಸ -> ಫoನಟ kannadα115.ttf
+	9. 6യരലമനഫ5tഡപബസ -> ഫoനt malayαlam115.ttf
+	L. 6යරලමනඵ5ටඩපබස -> ඵoනට sinhalα115.ttf
+	J. 6ㅑㄹ을ㅁㄴf5ㅌㄸㅍㅂㅅ -> foㄴㅌ korean115.ttf
+	B. 6йрлмнф5тдпБс -> фoнт russian115.ttf
 	W.
 	E.
 	F.
 	10.
-8aiueohćg_8àԃнтńkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t
+8aiueohćg_8αԃнтńkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t A=α≠a
+αll tmαtr тrbuz тkiyα ԃαl ԃнi ԃuuԃh dosα dliyα ԃvαi doctor ańgur(grapes)
 `
 );
 const otekst = ref("");
@@ -39,20 +40,20 @@ function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 //function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
 
 // ////////English_to_нińglish (ANHDT->अńहदत)
-function EtoH_A() { itekst.value = itekst.value.replaceAll('A','अ'); }
+function EtoH_A() { itekst.value = itekst.value.replaceAll('a','अ'); }
 function EtoH_H() { itekst.value = itekst.value.replaceAll('H','ह'); }
 function EtoH_D() { itekst.value = itekst.value.replaceAll('D','द'); }
 function EtoH_T() { itekst.value = itekst.value.replaceAll('T','त'); }
 function EtoH5() {
 	itekst.value = itekst.value.replaceAll(
-		'A','अ').replaceAll(
+		'a','अ').replaceAll(
 		'N','ń').replaceAll(
 		'H','ह').replaceAll(
 		'D','द').replaceAll(
 	'T','त');
 }
 // ////////English_to_ińglish (AHNDT->àнńԃт) ɦꟈđꞇṅ нԃćńà
-function Etoi_A() { itekst.value = itekst.value.replaceAll('A','à'); }
+function Etoi_A() { itekst.value = itekst.value.replaceAll('A','α'); }
 function Etoi_H() { itekst.value = itekst.value.replaceAll('H','н'); }
 function Etoi_N() { itekst.value = itekst.value.replaceAll('N','ń'); }
 function Etoi_D() { itekst.value = itekst.value.replaceAll('D','ԃ'); } // ꟈԃ
@@ -60,7 +61,7 @@ function Etoi_T() { itekst.value = itekst.value.replaceAll('T','т'); }
 function Etoi_c() { itekst.value = itekst.value.replaceAll(/c/ig,'ć'); } //	ꞇć								
 function Etoi6() {
 	itekst.value = itekst.value.replaceAll(
-		'A','à').replaceAll(
+		'A','α').replaceAll(
 		'N','ń').replaceAll(
 		'H','н').replaceAll(
 		'D','ԃ').replaceAll(
@@ -68,7 +69,7 @@ function Etoi6() {
 	/c/ig,'ć'); // ꞇć
 }	
 // ////////ińglish31_to_English52 below ԃᴀ ꟈԃ
-function itoE_A() { itekst.value = itekst.value.replaceAll('à','A').replaceAll('ᴀ','A'); }
+function itoE_A() { itekst.value = itekst.value.replaceAll('α','A'); }// .replaceAll('ᴀ','A')
 function itoE_N() { itekst.value = itekst.value.replaceAll('ń','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('н','H').replaceAll('ɦ','H'); }
 function itoE_D() { itekst.value = itekst.value.replaceAll(/'ԃ'/,'D'); }
@@ -77,8 +78,8 @@ function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
 function itoE_c() { itekst.value = itekst.value.replaceAll('ć','c'); } //ćꞇ
 function itoE6() {
 	itekst.value = itekst.value.replaceAll(
-		'à','A').replaceAll(
-		'ᴀ','A').replaceAll(
+		'α','A').replaceAll(
+		//'ᴀ','A').replaceAll(
 		'ń','N').replaceAll(
 		'н','H').replaceAll(
 		'ɦ','H').replaceAll(
@@ -145,7 +146,8 @@ function macron_to_abc() {
 			<a href="https://t.me/zava810" target="blank">telegram</a>
 			<a href="https://x.com/etphor" target="blank">x</a>
 			<a href="https://fb.com/ztrabc" target="blank">fàcebook</a>    
-			<a href="https://zava8.vercel.app" target="blank">login</a>    
+			<a href="https://zava8.vercel.app" target="blank">login</a>
+			<a href="https://join.slack.com/t/zava8/shared_invite/zt-2vi7ihkv9-MopP~TGc9dEASP8i1XrF~g">zoin zava8.slack.com</a>
             <select class="hidan" id="comboA" v-on:change="ztrdir_changed()" v-model="ztrdir">
               <option value="">select ztr</option>
               <option value="i_to_ilhin" title="">i_to_हiनदi</option>
@@ -174,32 +176,32 @@ function macron_to_abc() {
             </select>
       </div>
       <div>
-		English52_to_нińglish31 (ANHDT->अńहदत c=ꞇ=ć=च  ch=छ):<br/>
-		<button @click="EtoH_A">A -> अ</button>
+		English52_to_нińglish31 (aNHDT->अńहदत ꞇ=c=ć=च  ch=छ):<br/>
+		<button @click="EtoH_A">a -> अ</button>
 		<button @click="EtoH_H">H -> ह</button>
 		<button @click="EtoH_D">D-> द</button>
 		<button @click="EtoH_T">T -> त</button>
-		<button @click="EtoH5">ANHDT -> अńहदत</button>
+		<button @click="EtoH5">aNHDT -> अńहदत</button>
 	  </div>
       <div>
-		English52_to_ińglish31:(ANHDT->àńнԃᴛ ᴀ=A=à≠a c=ꞇ=ć=च  ch=छ):<br/>
-		<button @click="Etoi_A">A -> à</button>
+		English52_to_ińglish31:(ANHDT->αńнԃᴛ ᴀ=A=α≠a c=ꞇ=ć=च  ch=छ):<br/>
+		<button @click="Etoi_A">A -> α</button>
 		<button @click="Etoi_N">N -> ń</button>
 		<button @click="Etoi_H">H -> н</button>
 		<button @click="Etoi_D">D -> ԃ</button>
 		<button @click="Etoi_T">T -> т</button>
 		<button @click="Etoi_c">Cc -> ć</button>
-		<button @click="Etoi6">ANHDTc -> àńнԃтć</button>
+		<button @click="Etoi6">ANHDTc -> αńнԃтć</button>
 	  </div>
       <div>
-		ińglish31_to_English52:(àńнԃᴛ->ANHDT ԃ=D≠d н=H≠h c=ꞇ=ć=च  ch=छ):<br/>
-		<button @click="itoE_A">à -> A</button>
+		ińglish31_to_English52:(αńнԃᴛ->ANHDT ԃ=D≠d н=H≠h c=ꞇ=ć=च  ch=छ):<br/>
+		<button @click="itoE_A">α -> A</button>
 		<button @click="itoE_N">ń -> N</button>
 		<button @click="itoE_H">н -> H</button>
 		<button @click="itoE_D">ԃ -> D</button>
 		<button @click="itoE_T">т -> T</button>
 		<button @click="itoE_c">ć -> c</button>
-		<button @click="itoE6">àńнԃтć -> ANHDTc</button>
+		<button @click="itoE6">αńнԃтć -> ANHDTc</button>
 	  </div>
       <div>
 		ԃ=D≠d н=H≠h:<br/>
@@ -211,8 +213,7 @@ function macron_to_abc() {
 		<button @click="A4toA3">ᴀ -> à</button>
 	  </div>
 	  <div>
-		w:wote crow what W(hex)=8+5=dblun=13(decimᴀl). z:zug zune zuly zileven=8+3=J(hex)=11(decimᴀl)<br/>
-		k:kuick kuestion to kueen<br/>
+		crow whαt W(hex)=8+5=dblun=13(decimal). z:zug zune zuly zileven=8+3=J(hex)=11(decimal)<br/>
 		<button @click="wtov">w -> v</button>
 		<button @click="qtok">q -> k</button>
 		<button @click="jtoz">j -> z</button>

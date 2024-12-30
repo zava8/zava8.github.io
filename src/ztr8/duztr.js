@@ -3,11 +3,11 @@ import { i_to_il } from './i_to_il.js'
 import { u_to_i } from './u_to_i.js'
 ////////////////
 import * as e_to_i from './e_to_i.js'
-////[ɦꟈđꞇṅᴀ]нԃ¢ńàᴀ 
+////[ɦꟈđꞇṅᴀ]нԃ¢ńàᴀ α
 // //  पांच (में) में, डाँगी आँगन चम्मच छाछ छछूंदर चचेरा चाचा 
 function n_to_null_output(ioz) {
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
-		/([a-zàԃнńᴛ])àa/g,"$1a").replaceAll(
+		/([a-zàԃнńᴛ])α/g,"$1α").replaceAll(
 		//ń([^aefghilmnoquwxyнᴛtT])/ig,"$1").replaceAll(
 		////ć[cċ]h/ig,"cch").replaceAll(
 		/ń$/g,"").replaceAll(
@@ -18,9 +18,7 @@ function n_to_null_output(ioz) {
 ///////
 export const doztr = function  (ioz){
 		switch (ioz.z.value) {
-			case "e_to_i":
-				e_to_i.e_to_i(ioz);
-				break;
+			case "e_to_i": e_to_i.e_to_i(ioz); break;
 			case "u_to_i":
 				//ioz.i.value = ioz.i.value.replaceAll(/ⱱ/g,'v');
 				u_to_i(ioz);
