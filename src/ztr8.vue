@@ -72,7 +72,7 @@ function Etoi6() {
 function itoE_A() { itekst.value = itekst.value.replaceAll('α','A'); }// .replaceAll('ᴀ','A')
 function itoE_N() { itekst.value = itekst.value.replaceAll('ń','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('н','H').replaceAll('ɦ','H'); }
-function itoE_D() { itekst.value = itekst.value.replaceAll(/'ԃ'/,'D'); }
+function itoE_D() { itekst.value = itekst.value.replaceAll('Ԃ','D'); }
 
 function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
 function itoE_c() { itekst.value = itekst.value.replaceAll('ć','c'); } //ćꞇ
@@ -83,7 +83,7 @@ function itoE6() {
 		'ń','N').replaceAll(
 		'н','H').replaceAll(
 		'ɦ','H').replaceAll(
-		'ԃ','D').replaceAll(
+		'Ԃ','D').replaceAll(
 		'т','T').replaceAll(
 	'ć','c'); //¢ꞇ
 } //ꟈ
