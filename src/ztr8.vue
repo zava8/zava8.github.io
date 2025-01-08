@@ -6,9 +6,9 @@ import { ue_to_il } from './ztr8/ue_to_il.js'
 import * as duztr from './ztr8/duztr.js'
 
 const itekst = ref(
-`smαll_Eńglish(26) = singlish(26) : a-z
+`smαll_English(26) = singlish(26) : a-z
 ińglish(31) = a-z + 5αԃńɦт ,ꞇ=c=ć=च  ch=छ
-cricket_zileven indiàn_lańguages_zileven characters 6yrlmnf5tdpbs:
+cricket_zileven indian_lańguages_zileven characters 6yrlmnf5tdpbs:
 	0. a-z + 5αԃńɦт -> font ing115.ttf
 	1. 6यरलमनफ5टडपबस -> font hin115.ttf
 	2. 6যরলমনফ5টডপবস -> ফoনট bαńglα115.ttf
@@ -21,13 +21,9 @@ cricket_zileven indiàn_lańguages_zileven characters 6yrlmnf5tdpbs:
 	9. 6യരലമനഫ5tഡപബസ -> ഫoനt malayαlam115.ttf
 	L. 6යරලමනඵ5ටඩපබස -> ඵoනට sinhalα115.ttf
 	J. 6ㅑㄹ을ㅁㄴf5ㅌㄸㅍㅂㅅ -> foㄴㅌ korean115.ttf
-	B. 6йрлмɦф5тдпБс -> фoɦт russian115.ttf
-	W.
-	E.
-	F.
-	10.
+	B. 6йрлмɦф5тдпБс -> фoɦт russian115.ttf // W. E. F. 10
 8aiueohćg_8αԃɦтńkvz 6yrlmnf5tdpbs(th dh ph bh sh). त=ᴛ≠t A=α≠a
-αll tmαtr тrbuz тkiyα ԃαl ԃɦi ԃuuԃh dosα dliyα ԃvαi doctor ańgur(grapes)
+αll tmαtr amruuԃ apple тrbuz тkiyα ԃαl ԃɦi ԃuuԃh dosα dliyα ԃvαi doctor ańgur(grapes)
 `
 );
 const otekst = ref("");
