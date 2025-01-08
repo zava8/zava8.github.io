@@ -1,19 +1,19 @@
 /*
   const i_to_il_arr = ["टडपबसयरलमनफअद","টডপবসযরলমনফঅদ","ਟਡਪਬਸਯਰਲਮਨਫਅਦ",
 		"ટડપબસયરલમનફઅદ","ଟଡପବସଯରଲମନଫଅଦ","டdபbஸயரலமநfஅԃ","టడపబసయరలమనఫఅద",
-		"ಟಡಪಬಸಯರಲಮನಫಅದ","tഡപബസയരലമനഫഅദ","ටඩපබසයරලමනඵàԃ","ㅌ다ㅍ바ㅅy라lㅁㄴfàԃ","тдпБсйрлмнфàԃ"] ;
+		"ಟಡಪಬಸಯರಲಮನಫಅದ","tഡപബസയരലമനഫഅദ","ටඩපබසයරලමනඵàԃ","ㅌ다ㅍ바ㅅy라lㅁㄴfàԃ","тдпБсйрлмɦфàԃ"] ;
   const i_to_il_arr = ["टडपबसयरलमनफदअ","টডপবসযরলমনফদঅ","ਟਡਪਬਸਯਰਲਮਨਫਦਅ",
 		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfԃஅ","టడపబసయరలమనఫదఅ",
-		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദഅ","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмнфԃà"] ;
+		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദഅ","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмɦфԃà"] ;
 	const i_to_il_arr = ["टडपबसयरलमनफदअ","টডপবসযরলমনফদঅ","ਟਡਪਬਸਯਰਲਮਨਫਦਅ",
 		"ટડપબસયરલમનફદઅ","ଟଡପବସଯରଲମନଫଦଅ","டdபbஸயரலமநfԃஅ","టడపబసయరలమనఫదఅ",
-		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദà","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмнфԃà"] ;
+		"ಟಡಪಬಸಯರಲಮನಫದಅ","tഡപബസയരലമനഫദà","ටඩපබසයරලමනඵԃà","ㅌ다ㅍ바ㅅy라lㅁㄴfԃà","тдпБсйрлмɦфԃà"] ;
 */
-///////[ɦꟈđꞇṅᴀ]нԃćńà
+///////[ɦꟈđꞇṅᴀ]ɦԃćńà
 export function i_to_il(ioz) {
 	const i_to_il_arr = ["टडपबसयरलमनफद","টডপবসযরলমনফদ","ਟਡਪਬਸਯਰਲਮਨਫਦ",
 		"ટડપબસયરલમનફદ","ଟଡପବସଯରଲମନଫଦ","டdபbஸயரலமநfԃ","టడపబసయరలమనఫద",
-		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵԃ","ㅌㄸㅍㅂㅅㅑㄹ을ㅁㄴfԃ","тдпБсйрлмнфԃ"] ;
+		"ಟಡಪಬಸಯರಲಮನಫದ","tഡപബസയരലമനഫദ","ටඩපබසයරලමනඵԃ","ㅌㄸㅍㅂㅅㅑㄹ을ㅁㄴfԃ","тдпБсйрлмɦфԃ"] ;
 // mondly.com/blog/learn-russian-alphabet-pronunciation/ cmmc caci calcium
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
@@ -31,7 +31,7 @@ export function i_to_il(ioz) {
 	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
-		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀԃнᴛ ᴀ=A=à ԃ=D≠d ᴛ≠t н≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àԃнᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
+		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀԃɦᴛ ᴀ=A=à ԃ=D≠d ᴛ≠t ɦ≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àԃɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
 		"2. " + oarr[1] + "\nzava8.github.io -> font -> bengali115.ttf \n" +
 		"7. " + oarr[6] + "\nzava8.github.io -> font -> ᴛelugu115.ttf \n" +
 		"J. " + oarr[10] + "\n#korean zava8.github.io -> font -> koreàn115.ttf \n" +
@@ -40,7 +40,7 @@ export function i_to_il(ioz) {
 		"9. " + oarr[8] + "\nzava8.github.io -> font -> màlàyalàm115.ttf \n" +
 		"B. " + oarr[11] + "\n#russiàn zava8.github.io -> font -> russiàn115.ttf \n" +
 		"5. " + oarr[4] + "\nzava8.github.io -> font -> odia115.ttf \n" +
-		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinнàla115.ttf \n" +
+		"L. " + oarr[9] + "\nzava8.github.io -> font -> sinɦàla115.ttf \n" +
 		"3. " + oarr[2] + "\nzava8.github.io -> font -> pnzabi115.ttf \n" +
 		"4. " + oarr[3] + "\nzava8.github.io -> font -> guzraᴛi115.ttf \n" ;
 }

@@ -1,5 +1,5 @@
 const u_to_i_dict = {
-/////[ɦꟈđꞇćṅᴀ]нćԃďńàᴀ	
+/////[ɦꟈđꞇćṅᴀ]ɦćԃďńàᴀ	
   all_phoniks_list: [
     '', // 	ऀ	900	2304		inverted candrabindu
     'ń', // 	ँ	901	2305		anunasika(candrabindu)
@@ -39,8 +39,8 @@ const u_to_i_dict = {
     'n', // 	ण	923	2339		nna
     'т', // 	तтτ	924	2340
     'тh', // 	थ	925	2341
-    'Ԃ', // 	द ꟈđԂ	926	2342
-    'Ԃh', // 	ध	927	2343 Ԁh dh ԃh
+    'ԃ', // 	द ꟈđԃ	926	2342
+    'ԃh', // 	ध	927	2343 Ԁh dh ԃh
     'n', // 	न	928	2344
     'n', // 	ऩ	929	2345		nnna
     'p', // 	प	92A	2346
@@ -58,7 +58,7 @@ const u_to_i_dict = {
     'sh', // 	श	936	2358
     's', // 	ष	937	2359
     's', // 	स	938	2360
-    'н', // 	हɦнHɦĥ	939	2361
+    'ɦ', // 	हɦɦHɦĥ	939	2361
     'oe', // 	ऺ	93A	2362		oe
     'ui', // 	ऻ	93B	2363		ooe
     '', // 	़	93C	2364		nukta for extending the alphabet to new letters

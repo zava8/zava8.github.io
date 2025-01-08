@@ -3,12 +3,12 @@ import { i_to_il } from './i_to_il.js'
 import { u_to_i } from './u_to_i.js'
 ////////////////
 import * as e_to_i from './e_to_i.js'
-////[ɦꟈđꞇṅᴀ]нԃ¢ńàᴀ α
+////[ɦꟈđꞇṅᴀ]ɦԃ¢ńàᴀ α
 // //  पांच (में) में, डाँगी आँगन चम्मच छाछ छछूंदर चचेरा चाचा 
 function n_to_null_output(ioz) {
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
-		/([a-zàԃнńᴛ])α/g,"$1α").replaceAll(
-		//ń([^aefghilmnoquwxyнᴛtT])/ig,"$1").replaceAll(
+		/([a-zàԃɦńᴛ])α/g,"$1α").replaceAll(
+		//ń([^aefghilmnoquwxyɦᴛtT])/ig,"$1").replaceAll(
 		////ć[cċ]h/ig,"cch").replaceAll(
 		/ń$/g,"").replaceAll(
 		/ń([),\s\.!\?naeiouhć])/g,"$1").replaceAll(
@@ -28,5 +28,5 @@ export const doztr = function  (ioz){
 		}
 }
 
-//1. 1. सvтṅтर बhαरт kα सबसe सफल oर सkसम परदhαन मṅтरi нei मoदi zi. iनke बαरe मe kuch बoलनe oर लikhनe सe पнलe बнuт सoćनα सoꞇनα पडтα нei. eसα kरiसhमαi vयkтiтv नнi दekhα kiसi vयkтi यα नeтα मe. मαтरबhuमi ke लie पuरन रuप सe समरपiт iस मнαन vयkтi ko koटi koटi परनαम. #vowelहiनदi
+//1. 1. सvтṅтर बhαरт kα सबसe सफल oर सkसम परदhαन मṅтरi ɦei मoदi zi. iनke बαरe मe kuch बoलनe oर लikhनe सe पɦलe बɦuт सoćनα सoꞇनα पडтα ɦei. eसα kरiसhमαi vयkтiтv नɦi दekhα kiसi vयkтi यα नeтα मe. मαтरबhuमi ke लie पuरन रuप सe समरपiт iस मɦαन vयkтi ko koटi koटi परनαम. #vowelहiनदi
 

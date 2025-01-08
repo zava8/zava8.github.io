@@ -1,9 +1,31 @@
+/********************** others
+ * compart.com/en/unicode/block/
+ * https://www.compart.com/en/unicode/U+03B1
+ * (U+00A3 £) (U+00A2 ¢) (U+00E0 à) (U+00E1 á) (U+0103 ă) (U+0127 ħ) (U+0144 ń)
+ * (U+0253 ɓ) (U+0256 ɖ) (U+0257 ɗ) (U+0266 ɦ) (U+0267 ɧ) (U+0271 ɱ) (U+029c small ʜ)
+ * (U+03B1 α) (U+03C4 τ)
+ * (U+043D small_н) (U+0442 small_т) (U+045B ћ)
+ * (U+0502 Ԃ) (U+0503 ԃ) (U+050F ԏ)
+**********************
+**********************
+**********************
+********************** most liked ADHTN
+ * ɦ(small_0266) ɧ(small_0267) (U+00A2 ¢) (U+0144 ń) (U+03B1 α) 
+ * (U+03C4 τ) (U+0442 small_т) (U+0503 ԃ)
+**********************
+**********************
+
+********************** most liked others
+ * ɓ(small_0253) ɱ(small_0271) (U+00A3 £) (U+00A2 ¢)
+**********************
+**********************
+**********************/
 export const Hh_to_phonetic_H = function (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/H/g,"h").replaceAll(
 		/(\s)h/g,"$1H").replaceAll(
 		/([^kgcꞇćjztdpbswटडपबसԃᴛ])h/ig,"$1H");
 }
-//////// ñṅ ꟈԃ[ɦꟈđꞇṅᴀ]нԃćńàᴀ
+//////// ñṅ ꟈԃ[ɦꟈđꞇṅᴀ]ɦԃćńàᴀ
 export const Nn_to_phonetic_N = function  (ioz){ ioz.i.value = ioz.i.value.replaceAll(
 		/N/g,"n").replaceAll(
 		/n([cgk])\b/ig,"ṅ$1").replaceAll(/\bn/ig,"ñ").replaceAll(
@@ -80,9 +102,9 @@ export const e_to_i = function (ioz) {
 	//Ww_to_vv(ioz);	
 	Aa_to_phonetic_Aa(ioz);
 	//ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ć'); ///ꞇ
-	// нHɦĥ
+	// ɦHɦĥ
 	ioz.i.value = ioz.i.value.replaceAll(
-		/H/g,'н').replaceAll(
+		/H/g,'ɦ').replaceAll(
 		/N/g,'ń').replaceAll(
 		/à/g,'a').replaceAll(
 		//α/g,'A').replaceAll(
