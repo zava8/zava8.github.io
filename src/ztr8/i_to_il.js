@@ -18,17 +18,15 @@ export function i_to_il(ioz) {
   const inputLength = ioz.i.value.length;
   ioz.o.value = ''; const oarr = Array(12).fill("");
   let indeks = 0; let curr_char = ''; let nekst_char = '';
-  curr_char = ioz.i.value[indeks];
   let hinchars = "tdpbsyrlmnf"; // ԃ
   while (indeks < inputLength) {
-	// let izileven = "tdpbsyrlmnfԃà".indexOf(curr_char);
+	curr_char = ioz.i.value[indeks];
 	let izileven = hinchars.indexOf(curr_char); 
 	for (let i = 0; i < hinchars.length; i++) {
 		if(izileven > -1) { oarr[i] += i_to_il_arr[i][izileven]; }
 		else { oarr[i] += curr_char; }
 	}
     indeks++ ;
-	curr_char = ioz.i.value[indeks];
   }
   ioz.o.value =
 		"1. " + oarr[0] + " #vowelहiनदi\nअदहत=ADHT=ᴀԃɦᴛ ᴀ=A=à ԃ=D≠d ᴛ≠t ɦ≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àԃɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
