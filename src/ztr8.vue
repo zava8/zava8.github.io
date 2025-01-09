@@ -35,7 +35,7 @@ function ztrdir_changed() { duztr.doztr(ioz); }
 function i_to_small() { itekst.value = itekst.value.toLowerCase(); }
 //function jq_to_zk() { itekst.value = itekst.value.replaceAll('j','z').replaceAll('q','k'); }
 
-// ////////English_to_ɦińglish (ANHDT->अńहदत)
+// ////////English_to_ɦińglish (ANHDT->अńहदत) //ꟈ
 function EtoH_A() { itekst.value = itekst.value.replaceAll('a','अ'); }
 function EtoH_H() { itekst.value = itekst.value.replaceAll('H','ह'); }
 function EtoH_D() { itekst.value = itekst.value.replaceAll('D','द'); }
@@ -65,22 +65,22 @@ function Etoi6() {
 	/c/ig,'ć'); // ꞇć
 }	
 // ////////ińglish31_to_English52 below ԃᴀ ꟈԃ ("ԃ"->(U+0503)) (“ԃ” -> (U+0502))
+/********************** most liked ADHTN
+ * ɦ(small_0266) (U+0144 ń) (U+03B1 α)  (U+03C4 τ) (U+0442 small_т) 
+ * (U+0503 ԃ)  ɧ(small_0267) (U+00A2 ¢) (U+0256 ɖ) (U+0257 ɗ)
+**********************
+**********************/
 function itoE_A() { itekst.value = itekst.value.replaceAll('α','A'); }
 function itoE_N() { itekst.value = itekst.value.replaceAll('ń','N'); }
 function itoE_H() { itekst.value = itekst.value.replaceAll('ɦ','H'); }
-function itoE_D() { itekst.value = itekst.value.replaceAll('ԃ','D'); } // (“ԃ” -> (U+0502))
-
-function itoE_T() { itekst.value = itekst.value.replaceAll('ᴛ','T'); }
+function itoE_D() { itekst.value = itekst.value.replaceAll('ԃ','D'); } // (U+0503 ԃ)
+function itoE_T() { itekst.value = itekst.value.replaceAll('т','T'); } // (U+0442 small_т)
 function itoE_c() { itekst.value = itekst.value.replaceAll('ć','c'); } //ćꞇ
 function itoE6() {
 	itekst.value = itekst.value.replaceAll(
-		'α','A').replaceAll(
-		'ń','N').replaceAll(
-		'ɦ','H').replaceAll(
-		'ԃ','D').replaceAll(
-		'т','T').replaceAll(
-	'ć','c'); //¢ꞇ
-} //ꟈ
+		'α','A').replaceAll('ń','N').replaceAll('ɦ','H').replaceAll('ԃ','D').replaceAll(
+		'т','T').replaceAll(	'ć','c'); //¢ꞇ
+} 
 // ////////ińglish_to_English above
 //////// i4i3
 function D4toD3() { itekst.value = itekst.value.replaceAll('ꟈ','ԃ'); }
