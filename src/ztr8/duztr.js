@@ -7,9 +7,7 @@ import * as e_to_i from './e_to_i.js'
 // //  पांच (में) में, डाँगी आँगन चम्मच छाछ छछूंदर चचेरा चाचा 
 function n_to_null_output(ioz) {
 	ioz.i.value = ioz.o.value = ioz.o.value.replaceAll(
-		/([a-zàԃɦńᴛ])α/g,"$1α").replaceAll(
-		//ń([^aefghilmnoquwxyɦᴛtT])/ig,"$1").replaceAll(
-		////ć[cċ]h/ig,"cch").replaceAll(
+		/([a-zԃɦńᴛ])αα/g,"$1α").replaceAll(
 		/ń$/g,"").replaceAll(
 		/ń([),\s\.!\?naeiouhć])/g,"$1").replaceAll(
 		/ń([bp])/g,"m$1").replaceAll(
