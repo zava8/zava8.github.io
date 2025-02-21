@@ -7,7 +7,7 @@ import * as duztr from './ztr8/duztr.js'
 
 const itekst = ref(
 `smαll_English(26) = singlish(26) : a-z
-ińglish(31) = a-z + 5αԃńɦт ,ꞇ=c=ć=च  ch=छ
+ińglish(31) = a-z + 5αԃńɦт ,ꞇ=c=ć=च  ch=छ A786(Ꞇ)
 cricket_zileven indian_lańguages_zileven characters 6yrlmnf5tdpbs:
 	0. a-z + 5αԃńɦт -> font ing115.ttf
 	1. 6यरलमनफ5टडपबस -> font hin115.ttf
