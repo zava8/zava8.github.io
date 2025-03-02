@@ -65,7 +65,7 @@ export const usinhl2idict = {
     'l', // 	dbd
     '', // 	dbe
     '', // dbf
-    'v', // 	dc0
+    'w', // 	dc0
     'sh', // 	dc1
     's', // 	dc2
     's', // 	dc3

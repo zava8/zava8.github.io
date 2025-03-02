@@ -18,7 +18,10 @@ export const doztr = function  (ioz){
 		switch (ioz.z.value) {
 			case "e_to_i": e_to_i.e_to_i(ioz); break;
 			case "u_to_i":
-				//ioz.i.value = ioz.i.value.replaceAll(/ⱱ/g,'v');
+				ioz.i.value = ioz.i.value.replaceAll(
+					/([\s\b])क्ष/g, "$1sh").replaceAll(
+					/^क्ष/g, 'sh').replaceAll(
+					'ज्ञ', 'gy');
 				u_to_i(ioz);
 				n_to_null_output(ioz);
 				break;
